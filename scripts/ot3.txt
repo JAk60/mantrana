@@ -1,0 +1,2155 @@
+
+----- PAGE 1 -----
+⚓ INS TEJAS — DAY 1 (01 Mar 26) 
+--- SITREP 01 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 01/AM/TEJAS/OPS 
+● LOCATION: 25.341019° N, 58.078485° E | Course 110° | Speed 14 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 001: S-band long-range air search radar, bearing 192°, strength 8/10 → probable correlation (0.83 
+confidence). Arleigh Burke Class Destroyer; OSINT indicates USS Mustin (DDG89) 
+● Emitter 002: AEGIS SPY-1D type emission, bearing 198°, strength 7/10 → probable correlation (0.71). Arleigh 
+Burke Class Destroyer; OSINT indicates USS Rafael Peralta (DDG115) 
+● Emitter 003: Medium-power navigation radar, bearing 210°, strength 5/10 → possible DDG escort. Arleigh Burke 
+Class Destroyer, unable to identify specifically 
+● Emitter 004: Intermittent low-power emission, bearing 178°, strength 3/10 → possible littoral combatant. OSINT 
+indicates USS Savannah (LCS28) 
+● Emitter 005: Civilian radar cluster, bearings 095°–120°, strength 4/10 
+● Emitter 006: Weak coastal radar pulse, bearing 015°, strength 2/10 
+Radar 
+● Total tracks detected: 15 
+● Merchant vessels: 12 
+● VLCC: 5 
+● Container: 4 
+● Bulk cargo: 3 
+● Naval contacts: 
+● 2 large contacts (95–110 km) (likely USS Mustin (DDG89) and USS Savanah (LCS28) 
+● 1 medium escort-type track (likely USS Rafael Peralta (DDG115)) 
+● 1 intermittent low-RCS surface contact detected north-west sector 
+Visual 
+● Nil significant due haze 
+● Distant tanker mast silhouettes visible west bearing 
+3. Fuel Status 
+● Available – 936 T / 78% 
+● Required to make 95% – 204 T / 17% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Fully serviceable / 2.2 hrs flown 
+● Cleared for: Day/Night Operations 
+● Next Insp: 05 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 11 kts 
+
+----- PAGE 2 -----
+● Swell: 1.2 m 
+● Sea State: 3 
+● Visibility: 7 km 
+● Barometric Pressure: 1012 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 18 
+● 2 civilian aircraft observed holding south-west airway junction 
+● MV density approximately 20% above expected baseline 
+● Tanker spacing inconsistent (3–5 NM) 
+● No replenishment activity sighted 
+● Jet engine noise detected twice bearing 195°–205° 
+● No fishing dhow activity north sector 
+● Merchant VHF advisory referenced "increased military aviation south sector" 
+● Weak AIS lag (~4 min) observed in one VLCC 
+● No UAV/drone activity reported 
+
+----- PAGE 3 -----
+⚓ INS TEJAS — DAY 1 (01 Mar 26) 
+--- SITREP 02 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 01/PM/TEJAS/OPS 
+● LOCATION: 24.969048° N, 58.193432° E | Course 125° | Speed 16 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 007: High-power S-band radar, bearing 205°, strength 9/10 → correlates with E002. Confirmed as USS 
+Rafael Peralta (DDG115) 
+● Emitter 008: AEGIS emission, bearing 212°, strength 7/10 → correlates with E001 
+● Emitter 009: Fire-control radar spike, bearing 200°, strength 6/10 
+● Emitter 010: Weak intermittent emission, bearing 160°, strength 3/10 → possible regional naval unit 
+● Emitter 011: Civilian radar cluster, bearings 100°–140°, strength 5/10 
+● Emitter 012: Weak surface-search radar, bearing 250°, strength 2/10 
+Radar 
+● Total tracks detected: 14 
+● Merchant vessels: 11 
+● Naval contacts: 
+● 2 escorts stabilized intermittently 
+● 1 fast small craft (~32 kts) without AIS intermittently tracked north-west sector likely IRGC Vessel 
+Visual 
+● Nil 
+● Surface visibility reduced by haze 
+3. Fuel Status 
+● Available – 900 T / 75% 
+● Required to make 95% – 240 T / 20% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 3.4 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 05 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 14 kts 
+● Swell: 1.4 m 
+● Sea State: 3 
+● Visibility: 5–6 km 
+● Barometric Pressure: 1011 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 21 
+● 4 civilian conflict alerts logged in southern airway 
+
+----- PAGE 4 -----
+● Fast surface craft behaviour inconsistent with merchant routing 
+● Fire-control radar spike duration approximately 12 sec 
+● MV count reduced by 1 during PM window 
+● Aviation noise detected 3 times between 1730–1930 IST 
+● No replenishment activity sighted 
+● Merchant chatter referenced "escort presence south sector" 
+● Weak radar clutter increasing after sunset 
+● No missile/drone advisories active 
+
+----- PAGE 5 -----
+⚓ INS TEJAS — DAY 2 (02 Mar 26) 
+--- SITREP 03 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 02/AM/TEJAS/OPS 
+● LOCATION: 24.502032° N, 58.184109° E | Course 090° | Speed 15 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 013: S-band radar, bearing 215°, strength 8/10 → correlates with E007 (USS Rafael Peralta (DDG115)) 
+● Emitter 014: AEGIS SPY-1D type emission, bearing 220°, strength 7/10 → correlates with E008 
+● Emitter 015: Medium-power radar, bearing 240°, strength 5/10 → possible correlation (0.58) 
+● Emitter 016: Weak coastal radar pulse, bearing 020°, strength 3/10 
+● Emitter 017: Civilian radar spread, bearings 085°–140°, strength 4/10 
+● Emitter 018: Weak intermittent emission, bearing 262°, strength 2/10 
+Radar 
+● Total tracks detected: 17 
+● Merchant vessels: 14 
+● Tankers: 6 
+● Container: 5 
+● Bulk: 3 
+● 2 escort-type tracks stable (likely Arleigh Burke Class Destroyers) 
+● 1 intermittent low-speed contact north-east sector 
+Visual 
+● Tanker silhouettes sighted range 11–13 km 
+● Heavy haze west sector 
+3. Fuel Status 
+● Available – 864 T / 72% 
+● Required to make 95% – 276 T / 23% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 1.9 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 05 Mar 26 
+● Any flaws in book log: Minor vibration within limits 
+5. Weather 
+● Wind: NE 16 kts 
+● Swell: 1.6 m 
+● Sea State: 4 
+● Visibility: 5 km 
+● Barometric Pressure: 1010 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 19 
+
+----- PAGE 6 -----
+● Highest MV density observed till date 
+● Convoy structure observed (5 tankers, 2.5 NM spacing) 
+● Possible NATO-type emission west sector 
+● Aviation cycle intervals reduced (~19 min) 
+● No replenishment activity sighted 
+● AIS mismatch observed in 2 merchant vessels 
+● Merchant advisory: "maintain convoy discipline" 
+● Weak sea clutter affecting low-RCS tracks 
+● No hostile UAV reports received 
+
+----- PAGE 7 -----
+⚓ INS TEJAS — DAY 2 (02 Mar 26) 
+--- SITREP 04 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 02/PM/TEJAS/OPS 
+● LOCATION: 24.049497° N, 57.999749° E | Course 135° | Speed 18 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 019: S-band radar, bearing 225°, strength 9/10 → correlates with E013. USS Rafael Peralta (DDG115) 
+● Emitter 020: AEGIS emission, bearing 232°, strength 7/10 → correlates with E014 
+● Emitter 021: Fire-control radar spike, bearing 228°, strength 6/10 
+● Emitter 022: Weak intermittent emission, bearing 150°, strength 3/10 → possible RSNF Al Jubail 
+● Emitter 023: Civilian radar cluster, bearings 090°–150°, strength 5/10 
+● Emitter 024: Weak navigation radar, bearing 268°, strength 2/10 
+Radar 
+● Total tracks detected: 15 
+● Merchant vessels: 12 
+● 2 contacts intermittently lost beyond 90 km 
+● Escort tracks maintained west bearing 
+Visual 
+● Nil 
+3. Fuel Status 
+● Available – 816 T / 68% 
+● Required to make 95% – 324 T / 27% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 3.4 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 05 Mar 26 
+● Any flaws in book log: Minor vibration persists 
+5. Weather 
+● Wind: NE 18 kts 
+● Swell: 1.8 m 
+● Sea State: 4 
+● Visibility: 4–5 km 
+● Barometric Pressure: 1009 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 23 
+● PM merchant traffic reduced by approximately 15% 
+● Fire-control radar spikes observed twice (10–15 sec duration) 
+● Speed increased to 18 kts during patrol repositioning 
+● Merchant advisory warned of temporary routing changes 
+
+----- PAGE 8 -----
+● Aviation noise detected 4 times between 1700–1930 IST 
+● Radar clutter increasing due sea state 
+● No replenishment activity observed 
+● Weak AIS inconsistency detected in one tanker 
+● No piracy or missile advisories active 
+● Propelled at Higher Speeds view Operational Requirements 
+
+----- PAGE 9 -----
+⚓ INS TEJAS — DAY 3 (03 Mar 26) 
+--- SITREP 05 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 03/AM/TEJAS/OPS 
+● LOCATION: 23.661397° N, 57.762139° E | Course 095° | Speed 15 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 025: High-power S-band radar, bearing 228°, strength 8/10 → correlates with E019 
+● Emitter 026: AEGIS emission, bearing 234°, strength 7/10 → correlates with E020. Confirmed as USS Mustin 
+(DDG 89) 
+● Emitter 027: Medium radar emission, bearing 260°, strength 5/10 → possible correlation with HMS Kent (UK Ship 
+operating as a part of CMF) 
+● Emitter 028: Weak intermittent emission, bearing 155°, strength 3/10 → correlates with E022 
+● Emitter 029: Civilian radar spread, bearings 090°–150°, strength 5/10 
+● Emitter 030: Weak navigation radar, bearing 278°, strength 2/10 
+Radar 
+● Total tracks detected: 18 
+● Merchant vessels: 15 
+● 2 escort tracks stable 
+● 1 intermittent small craft detected north-west sector 
+Visual 
+● Tanker convoy observed range 10–14 km. 5 Vessels flying flags of Convenience transmitting intermittently on AIS 
+● Low haze east sector 
+3. Fuel Status 
+● Available – 780 T / 65% 
+● Required to make 95% – 360 T / 30% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 2.3 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 05 Mar 26 
+● Any flaws in book log: Minor vibration unchanged 
+5. Weather 
+● Wind: NE 15 kts 
+● Swell: 1.7 m 
+● Sea State: 4 
+● Visibility: 5 km 
+● Barometric Pressure: 1008 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 20 
+● Highest MV density observed till date 
+
+----- PAGE 10 -----
+● Tanker convoy maintaining disciplined spacing (~2 NM) 
+● Emitter spread indicates distributed escort formation 
+● No replenishment activity sighted 
+● Aviation cycle frequency increased (~17 min intervals) 
+● AIS lag observed in one tanker (~6 min) 
+● Merchant advisory emphasized convoy discipline 
+● Weak low-RCS contact intermittently disappeared in clutter 
+● No drone activity reported 
+
+----- PAGE 11 -----
+⚓ INS TEJAS — DAY 3 (03 Mar 26) 
+--- SITREP 06 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 03/PM/TEJAS/OPS 
+● LOCATION: 23.331093° N, 57.365237° E | Course 140° | Speed 17 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 031: High-power S-band radar, bearing 235°, strength 9/10 → correlates with E025 
+● Emitter 032: AEGIS SPY-1D emission, bearing 240°, strength 7/10 → correlates with E026 
+● Emitter 033: Fire-control radar spike, bearing 238°, strength 6/10 
+● Emitter 034: Medium radar emission, bearing 265°, strength 5/10 → correlates with E027 
+● Emitter 035: Weak intermittent emission, bearing 150°, strength 3/10 → correlates with E028 
+● Emitter 036: Civilian radar cluster, bearings 095°–145°, strength 5/10 
+Radar 
+● Total tracks detected: 16 
+● Merchant vessels: 13 
+● VLCC: 5 
+● Container: 4 
+● Bulk: 4 
+● 2 intermittent track losses beyond 95 km 
+● 1 low-RCS contact briefly detected north-east sector 
+Visual 
+● Nil significant 
+● Haze intensified after sunset 
+3. Fuel Status 
+● Available – 744 T / 62% 
+● Required to make 95% – 396 T / 33% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 3.8 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 05 Mar 26 
+● Any flaws in book log: Nil; Minor vibration stable 
+5. Weather 
+● Wind: NE 18 kts 
+● Swell: 2.0 m 
+● Sea State: 4 
+● Visibility: 4–5 km 
+● Barometric Pressure: 1007 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 22 
+
+----- PAGE 12 -----
+● Merchant density reduced during PM transit window 
+● Fire-control radar spikes observed 3 times (8–14 sec) 
+● Aviation noise detected 4 times between 1800–1945 IST 
+● No replenishment activity sighted 
+● Sea clutter affecting intermittent radar returns 
+● Merchant chatter referenced "exercise activity south sector" 
+● One tanker altered course ~12° south without broadcast explanation 
+● Weak AIS delay observed in 2 merchant tracks 
+● No active NAVAREA or missile advisories received 
+● Vibration issue of ALH-01 resolved using in-situ repairs by Ships Staff 
+
+----- PAGE 13 -----
+⚓ INS TEJAS — DAY 4 (04 Mar 26) 
+--- SITREP 07 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 04/AM/TEJAS/OPS 
+● LOCATION: 23.068352° N, 56.926103° E | Course 080° | Speed 14 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 037: S-band radar emission, bearing 238°, strength 8/10 → correlates with E031 
+● Emitter 038: AEGIS-type emission, bearing 245°, strength 7/10 → correlates with E032 
+● Emitter 039: Medium radar emission, bearing 270°, strength 5/10 → correlates with E034 
+● Emitter 040: New medium-power emission, bearing 255°, strength 6/10 → possible correlation FS Auvergne (french 
+Ship Operating with CMF) (0.66) 
+● Emitter 041: Weak coastal radar pulse, bearing 012°, strength 3/10 
+● Emitter 042: Civilian radar spread, bearings 090°–140°, strength 5/10 
+Radar 
+● Total tracks detected: 19 
+● Merchant vessels: 16 
+● Naval tracks: 
+● 2 escort-type (likely Arleigh Burke Class Destroyers - Mustin and Rafael Peralta) 
+● 1 medium contact west bearing 
+● Multiple low-speed contacts north sector 
+Visual 
+● Mixed tanker/container convoy observed 
+● Dark cumulonimbus cloud build-up east sector 
+3. Fuel Status 
+● Available – 708 T / 59% 
+● Required to make 95% – 432 T / 36% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 2.0 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 05 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 20 kts 
+● Swell: 2.3 m 
+● Sea State: 5 
+● Visibility: 4 km 
+● Barometric Pressure: 1005 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 17 
+
+----- PAGE 14 -----
+● Highest merchant density recorded till date 
+● Convoy spacing irregular due deteriorating weather 
+● First probable French naval signature detected. Not Matching with INT received. 
+● AIS dropout observed in 2 merchant vessels 
+● Increased sea clutter affecting low-RCS tracking 
+● No replenishment activity sighted 
+● Merchant advisory referenced "rough weather expected central corridor" 
+● Multiple fishing dhows detected north littoral sector 
+
+----- PAGE 15 -----
+⚓ INS TEJAS — DAY 4 (04 Mar 26) 
+--- SITREP 08 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 04/PM/TEJAS/OPS 
+● LOCATION: 22.931599° N, 56.409791° E | Course 120° | Speed 19 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 043: High-power S-band radar, bearing 242°, strength 9/10 → correlates with E037 
+● Emitter 044: AEGIS emission, bearing 248°, strength 7/10 → correlates with E038 
+● Emitter 045: Fire-control radar spike, bearing 246°, strength 6/10 
+● Emitter 046: FREMM-type radar emission, bearing 258°, strength 6/10 → correlates with E040 
+● Emitter 047: Weak intermittent emission, bearing 145°, strength 3/10 
+● Emitter 048: Weak civilian navigation radar, bearing 300°, strength 2/10 
+Radar 
+● Total tracks detected: 13 
+● Merchant vessels: 10 
+● Multiple track interruptions due weather clutter 
+● Escort tracks intermittently lost beyond 80 km 
+Visual 
+● Nil due heavy weather 
+● Surface visibility severely degraded 
+3. Fuel Status 
+● Available – 648 T / 54% 
+● Required to make 95% – 492 T / 41% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Restricted due weather / 0.8 hrs flown 
+● Cleared for: Limited Operations 
+● Next Insp: 05 Mar 26 
+● Any flaws in book log: Nil additional 
+5. Weather 
+● Wind: NE 28 kts (gusting 35 kts) 
+● Swell: 3.5 m 
+● Sea State: 6 
+● Visibility: <2 km 
+● Barometric Pressure: 1001 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 9 
+● Severe weather degrading radar performance significantly 
+● Merchant traffic reduced sharply during PM period 
+● Speed increased for repositioning south-west sector 
+
+----- PAGE 16 -----
+● Merchant distress call received at 1915 IST (engine failure, self-resolved) 
+● Fire-control radar spike observed despite heavy weather 
+● No replenishment activity possible 
+● Aviation operations heavily restricted view weather 
+● Sea clutter generating multiple false low-RCS returns 
+● Merchant VHF traffic increased substantially during storm period 
+
+----- PAGE 17 -----
+⚓ INS TEJAS — DAY 5 (05 Mar 26) 
+--- SITREP 09 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 05/AM/TEJAS/OPS 
+● LOCATION: 22.897468° N, 55.899625° E | Course 060° | Speed 12 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 049: S-band radar emission, bearing 245°, strength 8/10 → correlates with E043 
+● Emitter 050: AEGIS-type emission, bearing 252°, strength 7/10 → correlates with E044 
+● Emitter 051: Medium radar emission, bearing 275°, strength 5/10 
+● Emitter 052: Weak intermittent emission, bearing 140°, strength 3/10 → correlates with E047 
+● Emitter 053: Civilian radar cluster, bearings 100°–150°, strength 4/10 
+● Emitter 054: Weak navigation radar, bearing 320°, strength 2/10 
+Radar 
+● Total tracks detected: 12 
+● Merchant vessels: 9 
+● 1 escort track maintained west bearing 
+● Low-speed dhow traffic north-east sector 
+Visual 
+● Nil significant 
+● Residual haze after storm passage 
+3. Fuel Status 
+● Available – 624 T / 52% 
+● Required to make 95% – 516 T / 43% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Unserviceable / 1.2 hrs flown 
+● Cleared for: Nil 
+● Next Insp: 10 Mar 26 
+● Any flaws in book log: Defect of NH123 pump. Replacement required 
+5. Weather 
+● Wind: NE 14 kts 
+● Swell: 2.0 m 
+● Sea State: 4 
+● Visibility: 5 km 
+● Barometric Pressure: 1006 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 15 
+● Merchant traffic below baseline following storm 
+● Replenishment tanker CNS Tango detected bearing 210° range 14 km 
+● Replenishment preparations initiated 0735 IST 
+
+----- PAGE 18 -----
+● Aviation activity reduced compared previous days 
+● Merchant backlog forming westbound sector 
+● No hostile UAV/drone reports 
+● Weak AIS inconsistencies persisted in 1 tanker 
+● Multiple fishing dhows returning north sector 
+● Merchant routing gradually normalizing 
+● ALH-01 unservicable 
+● Ship drifted to for a few hours 
+
+----- PAGE 19 -----
+⚓ INS TEJAS — DAY 5 (05 Mar 26) 
+--- SITREP 10 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 05/PM/TEJAS/OPS 
+● LOCATION: 22.879684° N, 55.807949° E | Course 085° | Speed 13 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 055: High-power S-band radar, bearing 248°, strength 8/10 → correlates with E049 
+● Emitter 056: AEGIS emission, bearing 255°, strength 7/10 → correlates with E050 
+● Emitter 057: Fire-control radar spike, bearing 250°, strength 6/10 
+● Emitter 058: Medium radar emission, bearing 278°, strength 5/10 → possible correlation with Arleigh Burke Class 
+Destroyers. INT indicates USS Pickney (DDG 91). 
+● Emitter 059: Weak intermittent emission, bearing 142°, strength 3/10 
+● Emitter 060: Civilian radar cluster, bearings 095°–155°, strength 5/10 
+Radar 
+● Total tracks detected: 11 
+● Merchant vessels: 8 
+● Escort-type track maintained south-west sector 
+● Multiple weak clutter returns during sunset period 
+Visual 
+● Nil 
+● Moderate haze west bearing 
+3. Fuel Status 
+● Available – 1020 T / 85% 
+● Required to make 95% – 120 T / 10% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 2.5 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 10 Mar 26 
+● Any flaws in book log: Pump NH123 replaced 
+5. Weather 
+● Wind: NE 12 kts 
+● Swell: 1.6 m 
+● Sea State: 3 
+● Visibility: 6 km 
+● Barometric Pressure: 1009 mb 
+6. Extra Info 
+● Replenishment with CNS Tango completed successfully 
+● Fuel transfer duration: approximately 4.5 hrs 
+● Civil aircraft in ASR: 18 
+
+----- PAGE 20 -----
+● Merchant density still below pre-storm baseline 
+● Aviation tempo returning to normal levels 
+● No allied replenishment activity sighted 
+● Merchant congestion easing eastbound corridor 
+● Fire-control radar spike observed once (~11 sec) 
+● Weak sea clutter persisted after sunset 
+● No active missile, piracy or NAVAREA advisories received 
+
+----- PAGE 21 -----
+⚓ INS TEJAS — DAY 6 (06 Mar 26) 
+--- SITREP 11 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 06/AM/TEJAS/OPS 
+● LOCATION: 23.002011° N, 56.488022° E | Course 045° | Speed 12 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 061: High-power S-band radar, bearing 250°, strength 8/10 → correlates with E055 
+● Emitter 062: AEGIS SPY-1D emission, bearing 258°, strength 7/10 → correlates with E056 
+● Emitter 063: Medium-power radar emission, bearing 274°, strength 5/10 → probable NATO escort correlation. INT 
+indicates USS Nitze (DDG 94) 
+● Emitter 064: Weak intermittent emission, bearing 148°, strength 3/10 → correlates with E059 
+● Emitter 065: Civilian radar cluster, bearings 100°–160°, strength 5/10 
+● Emitter 066: Weak coastal radar pulse, bearing 008°, strength 2/10 
+Radar 
+● Total tracks detected: 14 
+● Merchant vessels: 11 
+● Tankers: 5 
+● Container: 3 
+● Bulk cargo: 3 
+● 2 naval contacts stabilized south-west sector 
+● 1 intermittent low-speed AIS-negative contact north littoral sector 
+Visual 
+● Tanker convoy sighted west sector 
+● Weather conditions improving steadily 
+3. Fuel Status 
+● Available – 984 T / 82% 
+● Required to make 95% – 156 T / 13% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Fully serviceable / 1.8 hrs flown 
+● Cleared for: Day/Night Operations 
+● Next Insp: 10 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 10 kts 
+● Swell: 1.4 m 
+● Sea State: 3 
+● Visibility: 7 km 
+● Barometric Pressure: 1010 mb 
+6. Extra Info 
+
+----- PAGE 22 -----
+● Civil aircraft in ASR: 19 
+● Merchant density recovering after storm period 
+● Convoy spacing normalized (~3–4 NM) 
+● Aviation noise detected twice bearing 245°–260° 
+● No replenishment activity sighted 
+● Weak AIS delay (~3 min) observed in 1 tanker 
+● Fishing dhow activity resumed north sector 
+● No NAVAREA or NOTAM advisories active 
+● Tactical note forwarded: "persistent escort geometry south-west sector" 
+● No significant change in carrier-type emissions from previous reporting period 
+
+----- PAGE 23 -----
+⚓ INS TEJAS — DAY 6 (06 Mar 26) 
+--- SITREP 12 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 06/PM/TEJAS/OPS 
+● LOCATION: 23.140539° N, 56.785842° E | Course 030° | Speed 14 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 067: S-band radar emission, bearing 252°, strength 8/10 → correlates with E061 
+● Emitter 068: AEGIS emission, bearing 260°, strength 7/10 → correlates with E062 
+● Emitter 069: Fire-control radar spike, bearing 255°, strength 6/10 
+● Emitter 070: Medium radar emission, bearing 280°, strength 5/10 → possible correlation ITS Carlo Margottini 
+(Italian Ship operating as a part of CMF) (0.54) 
+● Emitter 071: Weak intermittent emission, bearing 145°, strength 3/10 
+● Emitter 072: Civilian radar cluster, bearings 105°–155°, strength 5/10 
+Radar 
+● Total tracks detected: 15 
+● Merchant vessels: 12 
+● 2 escort tracks stable beyond 85 km 
+● 1 intermittent fast craft detected north-west sector (~28 kts). Likely IRGC 
+Visual 
+● Nil significant 
+● Moderate haze west bearing 
+3. Fuel Status 
+● Available – 948 T / 79% 
+● Required to make 95% – 192 T / 16% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 3.1 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 10 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 11 kts 
+● Swell: 1.5 m 
+● Sea State: 3 
+● Visibility: 6 km 
+● Barometric Pressure: 1011 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 21 
+● Merchant traffic returned near baseline levels 
+● Fire-control radar spike duration approximately 9 sec 
+
+----- PAGE 24 -----
+● One tanker temporarily altered route ~8° south 
+● No replenishment activity observed 
+● AIS mismatch observed in 1 container vessel 
+● Aviation activity moderately increased during PM window 
+● Sea clutter minimal 
+● Merchant VHF referenced "exercise traffic south corridor" 
+● Tactical note forwarded: "possible independent NATO patrol west sector" 
+
+----- PAGE 25 -----
+⚓ INS TEJAS — DAY 7 (07 Mar 26) 
+--- SITREP 13 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 07/AM/TEJAS/OPS 
+● LOCATION: 23.335386° N, 57.114602° E | Course 350° | Speed 15 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 073: High-power S-band radar, bearing 255°, strength 8/10 → correlates with E067 
+● Emitter 074: AEGIS SPY-1D emission, bearing 262°, strength 7/10 → correlates with E068 
+● Emitter 075: Medium radar emission, bearing 282°, strength 5/10 → correlates with E070 
+● Emitter 076: Weak intermittent emission, bearing 138°, strength 3/10 
+● Emitter 077: Weak long-range emission, bearing 118°, strength 2/10 → possible distant PLAN surveillance 
+correlation 
+● Emitter 078: Civilian radar spread, bearings 100°–150°, strength 5/10 
+Radar 
+● Total tracks detected: 16 
+● Merchant vessels: 13 
+● 2 escort-type contacts stable 
+● 1 intermittent low-RCS track east sector 
+Visual 
+● Distant tanker silhouettes sighted 
+● Visibility improved compared previous days 
+3. Fuel Status 
+● Available – 900 T / 75% 
+● Required to make 95% – 240 T / 20% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 2.0 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 10 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 9 kts 
+● Swell: 1.3 m 
+● Sea State: 3 
+● Visibility: 8 km 
+● Barometric Pressure: 1013 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 22 
+● Merchant density approximately 10% above baseline 
+● First weak long-range eastern emission logged 
+
+----- PAGE 26 -----
+● Convoy discipline improving gradually 
+● Aviation cycle intervals averaging ~18 min 
+● No replenishment activity observed 
+● Fishing dhow density increased north littoral zone 
+● No active weather warnings 
+● Merchant routing stable 
+● No significant escalation indicators detected 
+● Higher Speeds used as a part of crew work up and engine trials 
+
+----- PAGE 27 -----
+⚓ INS TEJAS — DAY 7 (07 Mar 26) 
+--- SITREP 14 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 07/PM/TEJAS/OPS 
+● LOCATION: 23.538832° N, 57.325572° E | Course 020° | Speed 16 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 079: S-band radar emission, bearing 258°, strength 8/10 → correlates with E073 
+● Emitter 080: AEGIS emission, bearing 265°, strength 7/10 → correlates with E074 
+● Emitter 081: Fire-control radar spike, bearing 260°, strength 6/10 
+● Emitter 082: Medium radar emission, bearing 284°, strength 5/10 → correlates with E075 
+● Emitter 083: Weak long-range emission, bearing 120°, strength 2/10 → correlates with E077 
+● Emitter 084: Civilian radar cluster, bearings 105°–155°, strength 5/10 
+Radar 
+● Total tracks detected: 17 
+● Merchant vessels: 14 
+● 2 naval contacts maintained stable geometry 
+● 1 fast small craft without AIS intermittently tracked north-west sector 
+Visual 
+● Nil significant 
+● Moderate haze south-west sector 
+3. Fuel Status 
+● Available – 860 T / 72% 
+● Required to make 95% – 280 T / 23% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 6.7 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 10 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 12 kts 
+● Swell: 1.5 m 
+● Sea State: 3 
+● Visibility: 6–7 km 
+● Barometric Pressure: 1012 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 24 
+● Merchant traffic at highest level since storm recovery 
+● Fire-control radar spike lasted approximately 11 sec 
+● No replenishment activity sighted 
+
+----- PAGE 28 -----
+● Aviation noise detected repeatedly between 1800–1930 IST 
+● AIS inconsistency detected in one bulk cargo vessel 
+● Fast surface contact maneuvering inconsistent with merchant routing 
+● Merchant VHF referenced "possible exercise corridor activation within 48 hrs" 
+● Tactical note forwarded: "escort geometry appears increasingly distributed" 
+● No missile or piracy advisories active 
+● Extensive flying undertaken for development of Situation Awareness (SA) 
+
+----- PAGE 29 -----
+⚓ INS TEJAS — DAY 8 (08 Mar 26) 
+--- SITREP 15 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 08/AM/TEJAS/OPS 
+● LOCATION: 23.759309° N, 57.491584° E | Course 005° | Speed 18 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 085: High-power S-band radar, bearing 262°, strength 8/10 → correlates with E079 
+● Emitter 086: AEGIS SPY-1D emission, bearing 268°, strength 7/10 → correlates with E080 
+● Emitter 087: Medium radar emission, bearing 286°, strength 5/10 → probable allied frigate correlation. Unable to 
+classify. 
+● Emitter 088: Weak intermittent emission, bearing 132°, strength 3/10 
+● Emitter 089: Weak long-range eastern emission, bearing 122°, strength 2/10 → correlates with E083. Likely 49 
+APEF Frigate Xichang or 49 APEF Destroyer Zibo 
+● Emitter 090: Civilian radar cluster, bearings 100°–160°, strength 5/10 
+Radar 
+● Total tracks detected: 18 
+● Merchant vessels: 15 
+● 3 convoy formations identified 
+● 1 intermittent low-speed AIS-negative contact north sector 
+Visual 
+● Multiple tanker formations sighted 
+● Increased air traffic visually observed south-west sector 
+3. Fuel Status 
+● Available – 806 T / 65% 
+● Required to make 95% – 334 T / 30% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Fully serviceable / 2.4 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 10 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 10 kts 
+● Swell: 1.4 m 
+● Sea State: 3 
+● Visibility: 7 km 
+● Barometric Pressure: 1014 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 26 
+● NAVAREA advisory received 0615 IST regarding temporary naval exercise corridor south-central sector 
+
+----- PAGE 30 -----
+● Merchant routing beginning gradual southward adjustment 
+● Convoy spacing tightened (~2–3 NM) 
+● Aviation activity noticeably increased compared previous 48 hrs 
+● No replenishment activity observed 
+● Weak AIS delays observed in 2 merchant vessels 
+● Tactical note forwarded: "merchant adaptation to advisory visible" 
+● No active distress calls 
+● Higher Speeds used as per Operational requirements 
+● No confirmed hostile UAV activity 
+
+----- PAGE 31 -----
+⚓ INS TEJAS — DAY 8 (08 Mar 26) 
+--- SITREP 16 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 08/PM/TEJAS/OPS 
+● LOCATION: 23.949533° N, 57.567090° E | Course 355° | Speed 14 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 091: S-band radar emission, bearing 266°, strength 8/10 → correlates with E085 
+● Emitter 092: AEGIS emission, bearing 272°, strength 7/10 → correlates with E086 
+● Emitter 093: Fire-control radar spike, bearing 268°, strength 6/10 
+● Emitter 094: Medium radar emission, bearing 288°, strength 5/10 → correlates with E087 
+● Emitter 095: Weak long-range emission, bearing 125°, strength 2/10 → correlates with E089 
+● Emitter 096: Civilian radar cluster, bearings 100°–165°, strength 5/10 
+Radar 
+● Total tracks detected: 19 
+● Merchant vessels: 16 
+● 3 convoy groups stable south-west corridor 
+● 1 escort contact intermittently masked by civilian traffic 
+Visual 
+● Tanker convoy lights observed west sector 
+● Increased aviation lighting south-west horizon 
+3. Fuel Status 
+● Available – 768 T / 64% 
+● Required to make 95% – 372 T / 31% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 4.0 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 10 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 11 kts 
+● Swell: 1.5 m 
+● Sea State: 3 
+● Visibility: 6 km 
+● Barometric Pressure: 1013 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 28 
+● Merchant routing changes now clearly established after NAVAREA issue 
+● Convoy spacing reduced further (~2 NM average) 
+● Fire-control radar spike lasted ~14 sec 
+
+----- PAGE 32 -----
+● Aviation noise detected continuously between 1810–1940 IST 
+● No replenishment activity sighted 
+● One tanker temporarily entered holding pattern south-west corridor 
+● AIS lag (~5 min) observed in 2 merchant vessels 
+● Tactical note forwarded: "exercise corridor appears operationally active" 
+● No piracy or UAV advisories active 
+
+----- PAGE 33 -----
+⚓ INS TEJAS — DAY 9 (09 Mar 26) 
+--- SITREP 17 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 09/AM/TEJAS/OPS 
+● LOCATION: 24.158806° N, 57.678604° E | Course 340° | Speed 14 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 097: High-power S-band radar, bearing 270°, strength 8/10 → correlates with E091 
+● Emitter 098: AEGIS SPY-1D emission, bearing 275°, strength 7/10 → correlates with E092 
+● Emitter 099: Medium radar emission, bearing 292°, strength 5/10 
+● Emitter 100: Weak intermittent emission, bearing 130°, strength 3/10 
+● Emitter 101: Weak long-range eastern emission, bearing 128°, strength 2/10 → correlates with E095. COMINT 
+indicate 49 APEF Destroyer Zibo. 
+● Emitter 102: Civilian radar spread, bearings 095°–160°, strength 5/10 
+Radar 
+● Total tracks detected: 20 
+● Merchant vessels: 17 
+● Tankers: 8 
+● Container: 5 
+● Bulk cargo: 4 
+● 2 escort contacts maintained distributed geometry 
+● 1 intermittent low-RCS track east sector 
+Visual 
+● High merchant density visually confirmed 
+● Moderate haze north-west sector 
+3. Fuel Status 
+● Available – 730 T / 63% 
+● Required to make 95% – 410 T / 32% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Fully serviceable / 2.6 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 10 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 12 kts 
+● Swell: 1.5 m 
+● Sea State: 3 
+● Visibility: 7 km 
+● Barometric Pressure: 1014 mb 
+6. Extra Info 
+
+----- PAGE 34 -----
+● Civil aircraft in ASR: 27 
+● Merchant traffic approximately 15% above pre-storm baseline 
+● Multiple convoy groups maintaining disciplined routing 
+● Aviation sortie intervals averaging ~15–17 min 
+● No replenishment activity observed 
+● Tactical note forwarded: "escort geometry continuing distributed arc pattern" 
+● AIS mismatch detected in one VLCC 
+● Merchant VHF traffic increased significantly after NAVAREA implementation 
+● Weak radar clutter affecting small craft tracking north sector 
+● No hostile UAV/drone reports received 
+
+----- PAGE 35 -----
+⚓ INS TEJAS — DAY 9 (09 Mar 26) 
+--- SITREP 18 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 09/PM/TEJAS/OPS 
+● LOCATION: 24.345885° N, 57.690767° E | Course 320° | Speed 19 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 103: S-band radar emission, bearing 274°, strength 8/10 → correlates with E097 
+● Emitter 104: AEGIS emission, bearing 278°, strength 7/10 → correlates with E098 
+● Emitter 105: Fire-control radar spike, bearing 272°, strength 6/10 
+● Emitter 106: Medium radar emission, bearing 295°, strength 5/10 → possible correlation Arleigh Burke Class 
+Destroyer (0.57) 
+● Emitter 107: Weak intermittent emission, bearing 132°, strength 3/10 
+● Emitter 108: Civilian radar cluster, bearings 100°–165°, strength 5/10 
+Radar 
+● Total tracks detected: 18 
+● Merchant vessels: 15 
+● 2 escort tracks stable 
+● 10 fast AIS-negative surface contact detected briefly north-west sector (~34 kts). likely Pirates/ IRGC 
+Visual 
+● Indian MV SCI Swarnamala 
+● 3 fast AIS negative vessels 
+● Heavy haze after sunset 
+3. Fuel Status 
+● Available – 660 T / 55% 
+● Required to make 95% – 480 T / 40% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 6.1 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 10 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 13 kts 
+● Swell: 1.6 m 
+● Sea State: 3 
+● Visibility: 5–6 km 
+● Barometric Pressure: 1012 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 25 
+● Merchant traffic remained elevated throughout PM period 
+
+----- PAGE 36 -----
+● Fire-control radar spike observed twice (~9 sec and ~12 sec) 
+● No replenishment activity observed 
+● Aviation noise persistent south-west sector 
+● Fast surface contact maneuver inconsistent with commercial traffic 
+● Merchant convoy spacing holding at ~2 NM 
+● Tactical note forwarded: "possible multinational escort layering continuing" 
+● Minor AIS delay observed in one container vessel 
+● No distress or missile advisories active 
+● High Speed and extensive flying to engage Fast attack Crafts (likely IRGC/Pirates) proceeding towards Indian Flag 
+MV Swarnamala. Vessel proceeding due East escorted clear of area 
+
+----- PAGE 37 -----
+⚓ INS TEJAS — DAY 10 (10 Mar 26) 
+--- SITREP 19 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 10/AM/TEJAS/OPS 
+● LOCATION: 24.509103° N, 57.708484° E | Course 300° | Speed 14 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 109: High-power S-band radar, bearing 278°, strength 8/10 → correlates with E103 
+● Emitter 110: AEGIS SPY-1D emission, bearing 282°, strength 7/10 → correlates with E104 
+● Emitter 111: Medium radar emission, bearing 300°, strength 5/10 → correlates with E106. Confirmed as USS 
+Momsen (DDG 92) 
+● Emitter 112: Weak intermittent emission, bearing 135°, strength 3/10 
+● Emitter 113: Weak long-range eastern emission, bearing 130°, strength 2/10 → correlates with E101 
+● Emitter 114: Civilian radar spread, bearings 095°–160°, strength 5/10 
+Radar 
+● Total tracks detected: 17 
+● Merchant vessels: 14 
+● 2 escort contacts maintained stable geometry 
+● 1 intermittent low-speed dhow cluster north littoral sector 
+Visual 
+● Tanker silhouettes visible west bearing 
+● Visibility moderate with morning haze 
+3. Fuel Status 
+● Available – 624 T / 52% 
+● Required to make 95% – 516 T / 43% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Fully serviceable / 2.1 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 15 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 10 kts 
+● Swell: 1.4 m 
+● Sea State: 3 
+● Visibility: 7 km 
+● Barometric Pressure: 1013 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 24 
+● Merchant density stabilized after initial NAVAREA adjustment 
+● Convoy discipline remains significantly improved 
+
+----- PAGE 38 -----
+● No replenishment activity observed 
+● Aviation sortie frequency slightly reduced compared previous 48 hrs 
+● Tactical note forwarded: "exercise corridor impacts now normalized into merchant routing" 
+● AIS mismatch detected in 1 tanker 
+● Fishing dhow density moderate north sector 
+● Weak sea clutter affecting small contact resolution 
+● No hostile UAV/drone activity detected 
+● SCI Swarnamala escorted clear of area 
+
+----- PAGE 39 -----
+⚓ INS TEJAS — DAY 10 (10 Mar 26) 
+--- SITREP 20 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 10/PM/TEJAS/OPS 
+● LOCATION: 24.666724° N, 57.704311° E | Course 285° | Speed 18 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 115: S-band radar emission, bearing 282°, strength 8/10 → correlates with E109 
+● Emitter 116: AEGIS emission, bearing 286°, strength 7/10 → correlates with E110 
+● Emitter 117: Fire-control radar spike, bearing 280°, strength 6/10 
+● Emitter 118: Medium radar emission, bearing 304°, strength 5/10 → correlates with E111 
+● Emitter 119: Weak intermittent emission, bearing 138°, strength 3/10 
+● Emitter 120: Civilian radar cluster, bearings 100°–160°, strength 5/10 
+Radar 
+● Total tracks detected: 19 
+● Merchant vessels: 16 
+● 3 convoy groups identified south-west corridor 
+● 1 intermittent AIS-negative fast craft tracked briefly north-west sector 
+Visual 
+● Nil significant 
+● Moderate evening haze 
+3. Fuel Status 
+● Available – 564 T / 47% 
+● Required to make 95% – 576 T / 48% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 4.0 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 15 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 14 kts 
+● Swell: 1.7 m 
+● Sea State: 4 
+● Visibility: 5 km 
+● Barometric Pressure: 1011 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 26 
+● Merchant convoying behavior now consistent across reporting periods 
+● Fire-control radar spike duration approximately 10 sec 
+● Aviation noise detected repeatedly between 1815–1945 IST 
+
+----- PAGE 40 -----
+● Increased speed maintained during northern patrol repositioning 
+● No replenishment activity sighted 
+● Fast surface contact maneuvered north-west sector before contact loss 
+● Tactical note forwarded: "distributed escort arc highly probable" 
+● Minor AIS lag observed in 2 merchant vessels 
+● No active piracy, missile or distress advisories received 
+
+----- PAGE 41 -----
+⚓ INS TEJAS — DAY 11 (11 Mar 26) 
+--- SITREP 21 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 11/AM/TEJAS/OPS 
+● LOCATION: 24.866631° N, 57.655276° E | Course 295° | Speed 15 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 121: High-power S-band radar, bearing 286°, strength 8/10 → correlates with E115 
+● Emitter 122: AEGIS SPY-1D emission, bearing 290°, strength 7/10 → correlates with E116 
+● Emitter 123: Medium radar emission, bearing 306°, strength 5/10 
+● Emitter 124: Weak intermittent emission, bearing 142°, strength 3/10 
+● Emitter 125: Weak long-range eastern emission, bearing 132°, strength 2/10 → correlates with E113. COMINT 
+indicates replenishment planned with 49 APEF Tanker 
+● Emitter 126: Civilian radar spread, bearings 095°–160°, strength 5/10 
+Radar 
+● Total tracks detected: 18 
+● Merchant vessels: 15 
+● 2 escort-type contacts maintained west sector geometry 
+● 1 intermittent AIS-negative surface contact north-west sector 
+Visual 
+● Tanker convoy sighted 
+● Moderate haze north sector 
+3. Fuel Status 
+● Available – 516 T / 43% 
+● Required to make 95% – 624 T / 52% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Fully serviceable / 2.3 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 15 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 12 kts 
+● Swell: 1.8 m 
+● Sea State: 4 
+● Visibility: 6 km 
+● Barometric Pressure: 1010 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 25 
+● Merchant convoying behavior stable across reporting periods 
+● Aviation sortie intervals increased slightly (~19–20 min) 
+
+----- PAGE 42 -----
+● No replenishment activity observed 
+● Tactical note forwarded: "escort geometry indicates layered protection" 
+● AIS mismatch observed in one tanker 
+● Weak radar clutter affecting intermittent low-RCS tracks 
+● Fishing dhow density moderate north littoral 
+● Merchant VHF traffic remains elevated post-NAVAREA 
+● No active missile or piracy advisories 
+● Increased speed maintained during northern patrol repositioning 
+
+----- PAGE 43 -----
+⚓ INS TEJAS — DAY 11 (11 Mar 26) 
+--- SITREP 22 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 11/PM/TEJAS/OPS 
+● LOCATION: 25.001443° N, 57.605893° E | Course 305° | Speed 17 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 127: S-band radar emission, bearing 290°, strength 8/10 → correlates with E121 
+● Emitter 128: AEGIS emission, bearing 294°, strength 7/10 → correlates with E122 
+● Emitter 129: Fire-control radar spike, bearing 288°, strength 6/10 
+● Emitter 130: Medium radar emission, bearing 310°, strength 5/10 → possible correlation JS Takanami (Japanese 
+Ship part of CMF) (0.56) 
+● Emitter 131: Weak intermittent emission, bearing 145°, strength 3/10 
+● Emitter 132: Civilian radar cluster, bearings 100°–165°, strength 5/10 
+Radar 
+● Total tracks detected: 19 
+● Merchant vessels: 16 
+● 3 convoy groups identified south-west corridor 
+● 1 fast AIS-negative surface track intermittently detected (~31 kts) likely IRGC. 
+Visual 
+● Nil significant 
+● Evening haze increasing west sector 
+3. Fuel Status 
+● Available – 456 T / 38% 
+● Required to make 95% – 684 T / 57% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 4.2 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 15 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 15 kts 
+● Swell: 2.0 m 
+● Sea State: 4 
+● Visibility: 5 km 
+● Barometric Pressure: 1009 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 27 
+● Fire-control radar spike observed twice (~8 sec and ~13 sec) 
+● Merchant density remained above seasonal baseline 
+
+----- PAGE 44 -----
+● No replenishment activity sighted 
+● Aviation noise persistent between 1820–1945 IST 
+● Fast surface track maneuver inconsistent with commercial routing 
+● Tactical note forwarded: "possible multinational escort layering continuing" 
+● Weak AIS lag observed in 2 merchant vessels 
+● Increased sea clutter after sunset 
+● No hostile UAV activity reported 
+● Increased speed maintained during northern patrol repositioning 
+
+----- PAGE 45 -----
+⚓ INS TEJAS — DAY 12 (12 Mar 26) 
+--- SITREP 23 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 12/AM/TEJAS/OPS 
+● LOCATION: 25.123854° N, 57.540641° E | Course 315° | Speed 14 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 133: High-power S-band radar, bearing 294°, strength 8/10 → correlates with E127 
+● Emitter 134: AEGIS SPY-1D emission, bearing 298°, strength 7/10 → correlates with E128 
+● Emitter 135: Medium radar emission, bearing 314°, strength 5/10 → correlates with E130 
+● Emitter 136: Weak intermittent emission, bearing 150°, strength 3/10 
+● Emitter 137: Weak eastern long-range emission, bearing 136°, strength 2/10 
+● Emitter 138: Civilian radar spread, bearings 100°–160°, strength 5/10 
+Radar 
+● Total tracks detected: 17 
+● Merchant vessels: 14 
+● 2 escort contacts stable 
+● 1 intermittent low-speed AIS-negative contact north sector 
+Visual 
+● Tanker silhouettes visible west bearing 
+● Light haze 
+3. Fuel Status 
+● Available – 420 T / 35% 
+● Required to make 95% – 720 T / 60% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Fully serviceable / 3.0 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 15 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 11 kts 
+● Swell: 1.6 m 
+● Sea State: 3 
+● Visibility: 7 km 
+● Barometric Pressure: 1011 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 24 
+● UAV crash advisory received at 0545 IST west-central sector (unidentified platform) 
+● Merchant traffic briefly slowed during advisory dissemination 
+● Aviation tempo increased immediately after advisory 
+
+----- PAGE 46 -----
+● No replenishment activity observed 
+● Tactical note forwarded: "increased air activity post UAV incident" 
+● AIS inconsistency observed in one container vessel 
+● Convoy discipline remained stable 
+● Weak radar clutter north-west sector 
+● No confirmed hostile intent established regarding UAV incident 
+
+----- PAGE 47 -----
+⚓ INS TEJAS — DAY 12 (12 Mar 26) 
+--- SITREP 24 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 12/PM/TEJAS/OPS 
+● LOCATION: 25.196483° N, 57.464954° E | Course 330° | Speed 26 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 139: S-band radar emission, bearing 298°, strength 8/10 → correlates with E133 
+● Emitter 140: AEGIS emission, bearing 302°, strength 7/10 → correlates with E134 
+● Emitter 141: Fire-control radar spike, bearing 296°, strength 6/10 
+● Emitter 142: Medium radar emission, bearing 318°, strength 5/10 
+● Emitter 143: Weak intermittent emission, bearing 152°, strength 3/10 
+● Emitter 144: Civilian radar cluster, bearings 100°–165°, strength 5/10 
+Radar 
+● Total tracks detected: 20 
+● Merchant vessels: 16 
+● 3 escort contacts intermittently stabilized 
+● 1 fast AIS-negative surface contact tracked briefly (~35 kts) 
+Visual 
+● Nil significant 
+● Moderate haze after sunset 
+● 1 Medium size Merchant vessel on fire 
+3. Fuel Status 
+● Available – 328 T / 24% 
+● Required to make 95% – 812 T / 71% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 5.5 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 15 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 13 kts 
+● Swell: 1.8 m 
+● Sea State: 4 
+● Visibility: 5 km 
+● Barometric Pressure: 1010 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 29 
+● Aviation noise significantly elevated following UAV incident 
+● Fire-control radar spikes observed 3 times (~7–12 sec) 
+
+----- PAGE 48 -----
+● Increased speed for investigation of Distress Alert from unnamed MV. MV length 110m found of fire. Rescue in 
+progress. 
+● No replenishment activity observed 
+● Merchant convoy spacing tightened temporarily after advisory 
+● Tactical note forwarded: "carrier escort activity appears elevated" 
+● AIS lag observed in 2 merchant vessels 
+● Fast surface track lost in clutter after sunset 
+● No missile or distress advisories active 
+
+----- PAGE 49 -----
+⚓ INS TEJAS — DAY 13 (13 Mar 26) 
+--- SITREP 25 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 13/AM/TEJAS/OPS 
+● LOCATION: 25.259487° N, 57.384261° E | Course 340° | Speed 12 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 145: High-power S-band radar, bearing 302°, strength 8/10 → correlates with E139 
+● Emitter 146: AEGIS SPY-1D emission, bearing 306°, strength 7/10 → correlates with E140 
+● Emitter 147: Medium radar emission, bearing 320°, strength 5/10 
+● Emitter 148: Weak intermittent emission, bearing 154°, strength 3/10 
+● Emitter 149: Weak eastern long-range emission, bearing 140°, strength 2/10. Possibly 49 APEF Tanker (To be 
+confirmed) 
+● Emitter 150: Civilian radar spread, bearings 100°–160°, strength 5/10 
+Radar 
+● Total tracks detected: 16 
+● Merchant vessels: 13 
+● 2 escort contacts stable west sector 
+● 1 low-speed dhow cluster north-east sector 
+Visual 
+● Moderate merchant traffic visually confirmed 
+● Visibility improved 
+3. Fuel Status 
+● Available – 290 T / 24% 
+● Required to make 95% – 850 T / 71% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Fully serviceable / 1.7 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 15 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 9 kts 
+● Swell: 1.4 m 
+● Sea State: 3 
+● Visibility: 8 km 
+● Barometric Pressure: 1012 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 23 
+● Merchant density slightly reduced after UAV advisory cycle 
+● Aviation activity reduced compared previous PM period 
+
+----- PAGE 50 -----
+● No replenishment activity observed 
+● Tactical note forwarded: "escort geometry stabilized after elevated activity" 
+● AIS mismatch observed in one tanker 
+● Fishing dhow density moderate north sector 
+● Merchant routing normalized gradually 
+● Weak radar clutter minimal 
+● No new UAV-related advisories received 
+● 13 People rescued from the vessel on fire. MV Name - MV Dinosaur. Flag - Marshal Island. Master - Mr Jospeh 
+(Indian). Crew - 13 (03 Indian, 09 Filipino, 01 Russian). LPC - Bahrain; NPC - Kochi. Cargo - Chemicals. 
+
+----- PAGE 51 -----
+⚓ INS TEJAS — DAY 13 (13 Mar 26) 
+--- SITREP 26 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 13/PM/TEJAS/OPS 
+● LOCATION: 25.312614° N, 57.299683° E | Course 210° | Speed 14 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 151: S-band radar emission, bearing 306°, strength 8/10 → correlates with E145 
+● Emitter 152: AEGIS emission, bearing 310°, strength 7/10 → correlates with E146 
+● Emitter 153: Fire-control radar spike, bearing 304°, strength 6/10 
+● Emitter 154: Medium radar emission, bearing 322°, strength 5/10 
+● Emitter 155: Weak intermittent emission, bearing 158°, strength 3/10 
+● Emitter 156: Civilian radar cluster, bearings 100°–165°, strength 5/10 
+Radar 
+● Total tracks detected: 18 
+● Merchant vessels: 15 
+● 3 convoy formations identified south-west corridor 
+● 1 intermittent AIS-negative fast craft detected north-west sector (~33 kts) 
+Visual 
+● Nil significant 
+● Evening haze moderate 
+3. Fuel Status 
+● Available – 252 T / 21% 
+● Required to make 95% – 888 T / 74% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 4.3 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 15 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 14 kts 
+● Swell: 1.7 m 
+● Sea State: 4 
+● Visibility: 5–6 km 
+● Barometric Pressure: 1010 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 26 
+● Increased speed maintained for replenishment approach south-west sector 
+● Fire-control radar spike observed twice (~10 sec each) 
+● Merchant convoy discipline remained stable 
+
+----- PAGE 52 -----
+● Aviation noise persistent between 1800–1940 IST 
+● No merchant distress traffic reported 
+● Tactical note forwarded: "possible replenishment activity likely within next reporting cycle" 
+● AIS lag observed in one bulk cargo vessel 
+● Fast surface contact maneuver inconsistent with merchant routing 
+● No active missile or piracy advisories 
+
+----- PAGE 53 -----
+⚓ INS TEJAS — DAY 14 (14 Mar 26) 
+--- SITREP 27 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 14/AM/TEJAS/OPS 
+● LOCATION: 25.462704° N, 57.089195° E | Course 220° | Speed 11 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 157: High-power S-band radar, bearing 308°, strength 8/10 → correlates with E151 
+● Emitter 158: AEGIS SPY-1D emission, bearing 312°, strength 7/10 → correlates with E152 
+● Emitter 159: Medium radar emission, bearing 326°, strength 5/10 
+● Emitter 160: Weak intermittent emission, bearing 160°, strength 3/10 
+● Emitter 161: Weak eastern long-range emission, bearing 144°, strength 2/10 
+● Emitter 162: Civilian radar spread, bearings 100°–160°, strength 5/10 
+Radar 
+● Total tracks detected: 15 
+● Merchant vessels: 12 
+● 2 escort contacts maintained west-sector geometry 
+● 1 replenishment tanker track stabilized south-west sector 
+Visual 
+● Replenishment vessel (identified as USNS Big Horn) visually identified bearing 218° range 8 km. 
+● Moderate haze 
+3. Fuel Status 
+● Available – 228 T / 19% 
+● Required to make 95% – 912 T / 76% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 1.5 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 15 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 10 kts 
+● Swell: 1.4 m 
+● Sea State: 3 
+● Visibility: 7 km 
+● Barometric Pressure: 1011 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 22 
+● RV with CNS Tango at 0400h for replenishment operations 
+● Replenishment preparations commenced 0640 IST 
+● Merchant traffic reduced near replenishment corridor 
+
+----- PAGE 54 -----
+● AIS inconsistency detected in one tanker 
+● Fishing dhow density low north sector 
+● Weak radar clutter minimal 
+● No active UAV advisories 
+● USNS Big Horn refuelled USS Rafael Peralta from 0100h to 0400h 
+● Drifted intermittently to conserve fuel 
+
+----- PAGE 55 -----
+⚓ INS TEJAS — DAY 14 (14 Mar 26) 
+--- SITREP 28 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 14/PM/TEJAS/OPS 
+● LOCATION: 25.477051° N, 56.997564° E | Course 250° | Speed 10 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 163: S-band radar emission, bearing 310°, strength 8/10 → correlates with E157 
+● Emitter 164: AEGIS emission, bearing 314°, strength 7/10 → correlates with E158 
+● Emitter 165: Fire-control radar spike, bearing 308°, strength 6/10 
+● Emitter 166: Medium radar emission, bearing 328°, strength 5/10 
+● Emitter 167: Weak intermittent emission, bearing 162°, strength 3/10 
+● Emitter 168: Civilian radar cluster, bearings 100°–165°, strength 5/10 
+Radar 
+● Total tracks detected: 14 
+● Merchant vessels: 11 
+● 2 escort tracks stable 
+● Replenishment vessel maintained station south-west sector 
+Visual 
+● CNS Tango visible throughout PM period 
+● Surface visibility good 
+3. Fuel Status 
+● Available – 972 T / 81% 
+● Required to make 95% – 168 T / 14% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 2.8 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 15 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 8 kts 
+● Swell: 1.2 m 
+● Sea State: 3 
+● Visibility: 8 km 
+● Barometric Pressure: 1013 mb 
+6. Extra Info 
+● Replenishment with CNS Tango completed successfully 
+● Fuel transfer duration approximately 5 hrs 
+● Civil aircraft in ASR: 21 
+● Merchant traffic remained low near replenishment area 
+
+----- PAGE 56 -----
+● Aviation activity reduced during replenishment window 
+● Fire-control radar spike observed once (~9 sec) 
+● AIS lag observed in one merchant vessel 
+● No hostile UAV/drone activity reported 
+● No active missile, piracy or NAVAREA changes received 
+
+----- PAGE 57 -----
+⚓ INS TEJAS — DAY 15 (15 Mar 26) 
+--- SITREP 29 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 15/AM/TEJAS/OPS 
+● LOCATION: 25.391521° N, 57.354395° E | Course 030° | Speed 16 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 169: High-power S-band radar, bearing 314°, strength 8/10 → correlates with E163 
+● Emitter 170: AEGIS SPY-1D emission, bearing 318°, strength 7/10 → correlates with E164 
+● Emitter 171: Medium radar emission, bearing 332°, strength 5/10 
+● Emitter 172: Weak intermittent emission, bearing 166°, strength 3/10 
+● Emitter 173: Weak eastern long-range emission, bearing 148°, strength 2/10 
+● Emitter 174: Civilian radar spread, bearings 100°–160°, strength 5/10 
+Radar 
+● Total tracks detected: 18 
+● Merchant vessels: 15 
+● 3 convoy groups identified south-west corridor 
+● 1 intermittent fast surface contact detected north-west sector 
+Visual 
+● Tanker convoy visible west sector 
+● Morning haze moderate 
+3. Fuel Status 
+● Available – 924 T / 77% 
+● Required to make 95% – 216 T / 18% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Fully serviceable / 2.2 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 20 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 11 kts 
+● Swell: 1.5 m 
+● Sea State: 3 
+● Visibility: 7 km 
+● Barometric Pressure: 1012 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 24 
+● Insurance advisory Phase 1 received regarding elevated regional transit risk 
+● Merchant traffic beginning gradual reduction (~8–10%) 
+● Convoy spacing tightened to ~2 NM 
+
+----- PAGE 58 -----
+● Aviation activity slightly elevated after advisory release 
+● Tactical note forwarded: "commercial adaptation visible within 6 hrs" 
+● AIS inconsistencies detected in 2 tankers 
+● No replenishment activity observed 
+● Weak radar clutter affecting small-contact tracking 
+● No confirmed hostile military escalation indicators detected 
+● Higher speeds view Operational considerations 
+
+----- PAGE 59 -----
+⚓ INS TEJAS — DAY 15 (15 Mar 26) 
+--- SITREP 30 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 15/PM/TEJAS/OPS 
+● LOCATION: 25.200551° N, 57.538445° E | Course 055° | Speed 17 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 175: S-band radar emission, bearing 318°, strength 8/10 → correlates with E169 
+● Emitter 176: AEGIS emission, bearing 322°, strength 7/10 → correlates with E170 
+● Emitter 177: Fire-control radar spike, bearing 316°, strength 6/10 
+● Emitter 178: Medium radar emission, bearing 336°, strength 5/10 
+● Emitter 179: Weak intermittent emission, bearing 170°, strength 3/10 
+● Emitter 180: Civilian radar cluster, bearings 100°–165°, strength 5/10 
+Radar 
+● Total tracks detected: 17 
+● Merchant vessels: 13 
+● 2 escort contacts stable 
+● 1 fast AIS-negative surface track briefly stabilized (~32 kts) likely IRGC Patrol craft. 
+Visual 
+● Nil significant 
+● Evening haze increasing west sector 
+3. Fuel Status 
+● Available – 864 T / 72% 
+● Required to make 95% – 276 T / 23% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 4.0 hrs cumulative 
+● Cleared for: Day/Night Operations 
+● Next Insp: 20 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 13 kts 
+● Swell: 1.7 m 
+● Sea State: 4 
+● Visibility: 5–6 km 
+● Barometric Pressure: 1010 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 26 
+● Insurance advisory effects now visible across merchant density 
+● Merchant traffic approximately 12–15% below pre-advisory baseline 
+● Fire-control radar spikes observed twice (~8 sec each) 
+
+----- PAGE 60 -----
+● Aviation noise persistent south-west sector 
+● Tactical note forwarded: "commercial convoy discipline significantly improved" 
+● AIS lag observed in one container vessel 
+● Fast surface track maneuver inconsistent with merchant routing 
+● No replenishment activity observed 
+● Higher speeds view Operational considerations 
+
+----- PAGE 61 -----
+⚓ INS TEJAS — DAY 16 (16 Mar 26) 
+--- SITREP 31 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 16/AM/TEJAS/OPS 
+● LOCATION: 24.956153° N, 57.636336° E | Course 042° | Speed 14 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 181: High-power S-band radar, bearing 324°, strength 8/10 → correlates with E175 
+● Emitter 182: AEGIS-type emission, bearing 331°, strength 7/10 → probable escort continuity. Likely Arleigh Burke 
+Class Destroyer taking over from USS Mustin 
+● Emitter 183: Weak medium-power emission, bearing 298°, strength fluctuating 3–5/10 → correlation uncertain 
+● Emitter 184: Intermittent low-power surface-search radar, bearing 176°, strength 2/10 
+● Emitter 185: Civilian radar cluster, bearings 095°–150°, strength 4/10 
+● Emitter 186: Weak eastern long-range emission. 
+Radar 
+● Total tracks fluctuating 16–21 due intermittent clutter 
+● Merchant vessels positively identified: 14 
+● 2 escort-type contacts maintained intermittently 
+● 1 low-RCS return duplicated briefly during sunrise clutter 
+Visual 
+● Large tanker group sighted west sector 
+● Visibility variable due morning haze bands 
+3. Fuel Status 
+● Available – 822 T / 69% 
+● Required to make 95% – 318 T / 26% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable / 1.9 hrs flown 
+● Cleared for: Day Operations 
+● Next Insp: 20 Mar 26 
+● Any flaws in book log: Minor FLIR stabilization lag reported during dawn sortie; Re-test scheduled next flying 
+window 
+5. Weather 
+● Wind: Variable NE–E 8–14 kts 
+● Swell: 1.8 m 
+● Sea State: 4 
+● Visibility: 4–8 km variable 
+● Barometric Pressure: 1008 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 23 
+● Merchant traffic remained below pre-advisory baseline 
+
+----- PAGE 62 -----
+● Convoy spacing inconsistent during early morning traffic merge 
+● Aviation noise noticeably reduced between 0430–0630 IST 
+● One AIS track duplicated briefly before auto-correction 
+● Tactical note from Ops Room: "Possible escort redistribution further south" 
+● No replenishment activity observed 
+● Fishing dhow activity lower than expected north sector 
+● Weak VHF chatter referenced "insurance surcharge revisions" 
+● No confirmed UAV activity this period 
+
+----- PAGE 63 -----
+⚓ INS TEJAS — DAY 16 (16 Mar 26) 
+--- SITREP 32 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 16/PM/TEJAS/OPS 
+● LOCATION: 24.623478° N, 57.685496° E | Course 068° | Speed 18 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 187: S-band radar emission, bearing 336°, strength 8/10 → probable carrier-group correlation. INT indicates 
+USS CSG Nimitz Group Operating in Northern Arabian Sea 
+● Emitter 188: AEGIS emission, bearing 344°, strength 6/10 → correlates with E176 → intermittent fadeouts noted. 
+Likely USS Mustin (DDG 89) leaving station. 
+● Emitter 189: Brief fire-control type spike, bearing 339°, duration ~4 sec → classification uncertain 
+● Emitter 190: Medium-power emission, bearing 301°, strength 5/10 → possible allied escort. Correlation unavailable. 
+● Emitter 191: Weak civilian navigation radar overlap, bearings 100°–160° 
+● Emitter 192: Short-duration unidentified burst, bearing 021°, not reacquired 
+Radar 
+● Total tracks detected: 17 
+● Merchant vessels: 13 confirmed 
+● 1 intermittent fast craft north-west sector (~29–33 kts) 
+● Surface clutter moderate after sunset 
+Visual 
+● Nil 
+● Haze dense south-west sector 
+3. Fuel Status 
+● Available – 750 T / 63% 
+● Required to make 95% – 390 T / 33% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Partially mission capable / 3.0 hrs cumulative 
+● Cleared for: Day/Night limited surveillance 
+● Next Insp: 20 Mar 26 
+● Any flaws in book log: FLIR stabilization issue persists intermittently; EO imagery quality degraded during 
+turbulence 
+5. Weather 
+● Wind: E-NE 16 kts gusting 22 
+● Swell: 2.1 m 
+● Sea State: 4 
+● Visibility: 5 km 
+● Barometric Pressure: 1006 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 24 
+
+----- PAGE 64 -----
+● Merchant flow uneven through PM period 
+● One tanker deviated ~14 NM south of usual routing before rejoining convoy lane 
+● Aviation noise resumed heavily after 1800 IST 
+● Brief radar shadow sector encountered during turn to 068° 
+● Higher speeds view Operational considerations 
+● AIS inconsistencies reduced compared previous week 
+● Merchant VHF traffic referenced possible further insurance advisories 
+● No distress calls received 
+
+----- PAGE 65 -----
+⚓ INS TEJAS — DAY 17 (17 Mar 26) 
+--- SITREP 33 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 17/AM/TEJAS/OPS 
+● LOCATION: 24.303261° N, 57.659731° E | Course 072° | Speed 13 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 193: High-power S-band radar, bearing 342°, strength 7/10 → correlates with E187 
+● Emitter 194: AEGIS-type emission, bearing 351°, strength variable 4–7/10. Likely Arleigh Burke Class Destroyer. 
+● Emitter 195: Weak intermittent emission, bearing 286°, strength 3/10 → correlation uncertain 
+● Emitter 196: Civilian radar cluster, bearings 095°–155°, strength 5/10 
+● Emitter 197: New weak eastern long-range emission reacquired bearing 152°, strength 2/10. Matching with 49 
+APEF Frigate Xichang. 
+● Emitter 198: Coastal radar pulse bearing 012°, intermittent 
+Radar 
+● Total tracks: 14 confirmed, 4 intermittent 
+● Merchant vessels: 12 
+● 1 probable duplicate convoy track deleted manually 
+● Escort geometry less distinct than previous reporting periods 
+Visual 
+● Moderate tanker traffic west horizon 
+● Visibility improved after sunrise 
+3. Fuel Status 
+● Available – 708 T / 59% 
+● Required to make 95% – 432 T / 36% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable with restrictions / 1.6 hrs flown 
+● Cleared for: Day surveillance only 
+● Next Insp: 20 Mar 26 
+● Any flaws in book log: EO stabilization acceptable below Sea State 4 only 
+5. Weather 
+● Wind: ENE 9–11 kts 
+● Swell: 1.5 m 
+● Sea State: 3 
+● Visibility: 8 km 
+● Barometric Pressure: 1009 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 21 
+● Friday traffic reduction effect still noticeable in some lanes 
+● Merchant spacing wider compared previous 72 hrs 
+
+----- PAGE 66 -----
+● One watchkeeper assessed possible escort withdrawal west sector; assessment not confirmed 
+● Aviation tempo lower during morning cycle 
+● No replenishment activity 
+● Fishing dhow concentration unexpectedly high north-east sector 
+● Brief VHF interference observed around 0610 IST 
+● No missile or UAV advisories active 
+● 49 APEF Destroyer Zibo may be handing over 49 APEF Frigate Xichang. ELINT and COMINT being monitored. 
+
+----- PAGE 67 -----
+⚓ INS TEJAS — DAY 17 (17 Mar 26) 
+--- SITREP 34 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 17/PM/TEJAS/OPS 
+● LOCATION: 23.973700° N, 57.542002° E | Course 094° | Speed 17 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 199: S-band radar emission, bearing 349°, strength 8/10 correlates with E187 
+● Emitter 200: AEGIS emission, bearing 356°, strength 7/10 correlates with E188. signatures correlate with USS Jack 
+H Lucas (DDG 125) 
+● Emitter 201: Medium-power emission, bearing 312°, strength 4/10. Likely NATO/US Warship, further classification 
+not possible. 
+● Emitter 202: Weak intermittent emission, bearing 172°, strength 2/10 
+● Emitter 203: Civilian radar cluster heavy overlap west sector 
+● Emitter 204: One unidentified pulse bearing 041°, not repeated 
+Radar 
+● Total tracks fluctuating between 15–19 
+● Merchant vessels positively identified: 14 
+● 2 low-RCS returns intermittently merged with clutter 
+● Fast craft track lost after sunset 
+Visual 
+● Nil significant 
+● Dense haze lower south-west horizon 
+3. Fuel Status 
+● Available – 648 T / 54% 
+● Required to make 95% – 492 T / 41% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable with restrictions / 3.4 hrs cumulative 
+● Cleared for: Night deck ops restricted 
+● Next Insp: 20 Mar 26 
+● Any flaws in book log: Deck crew reported intermittent FLIR image drift 
+5. Weather 
+● Wind: E 14–18 kts 
+● Swell: 2.0 m 
+● Sea State: 4 
+● Visibility: 4–6 km 
+● Barometric Pressure: 1007 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 22 
+● Merchant density increased slightly after morning lull 
+
+----- PAGE 68 -----
+● One container vessel reported temporary GPS discrepancy over VHF 
+● Aviation noise detected intermittently only 
+● Convoy discipline remains improved despite reduced traffic 
+● Ops Room note: "Operational picture tonight less certain than earlier week" 
+● No replenishment activity observed 
+● Higher speeds view Operational considerations 
+● Surface-search performance degraded intermittently by haze 
+● No active distress or missile advisories 
+● One low-speed track north sector later assessed likely fishing dhow cluster 
+
+----- PAGE 69 -----
+⚓ INS TEJAS — DAY 18 (18 Mar 26) 
+--- SITREP 35 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 18/AM/TEJAS/OPS 
+● LOCATION: 23.656494° N, 57.328517° E | Course 102° | Speed 12 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 205: High-power S-band radar, bearing 355°, strength 7/10 → correlates with E199 → probable carrier-
+group continuity 
+● Emitter 206: AEGIS-type emission, bearing 004°, strength fluctuating 5–7/10 → correlates with E200 
+● Emitter 207: Medium-power emission, bearing 320°, strength 4/10 → correlation uncertain → correlates with E201 
+● Emitter 208: Weak intermittent emission, bearing 176°, strength 2/10 
+● Emitter 209: Civilian radar overlap heavy west sector 
+● Emitter 210: Weak eastern long-range emission not detected this period 
+Radar 
+● Total tracks: 13 confirmed, 5 intermittent 
+● Merchant vessels: 11 
+● 1 probable duplicate tanker track deleted manually 
+● Surface picture intermittently unstable during sunrise clutter 
+Visual 
+● Sparse tanker traffic west horizon 
+● Visibility variable due haze layering 
+3. Fuel Status 
+● Available – 612 T / 51% 
+● Required to make 95% – 528 T / 44% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Restricted surveillance capability / 1.2 hrs flown 
+● Cleared for: Day deck ops only 
+● Next Insp: 20 Mar 26 
+● Any flaws in book log: EO tracking drift continues intermittently; Maintenance team assessing stabilization unit 
+5. Weather 
+● Wind: Variable E–SE 7–12 kts 
+● Swell: 1.3 m 
+● Sea State: 3 
+● Visibility: 5–8 km 
+● Barometric Pressure: 1010 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 20 
+● Merchant density lower than expected for Saturday morning cycle 
+● One convoy observed splitting temporarily near southern lane merge 
+
+----- PAGE 70 -----
+● Aviation noise minimal before 0600 IST 
+● Ops Room assessment divided regarding escort disposition 
+● No replenishment activity 
+● Weak AIS latency observed intermittently in one tanker 
+● Fishing dhow concentration reduced sharply compared previous day 
+● Brief VHF silence noted across one commercial band (~4 min) 
+● No active UAV or NAVAREA updates received 
+
+----- PAGE 71 -----
+⚓ INS TEJAS — DAY 18 (18 Mar 26) 
+--- SITREP 36 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 18/PM/TEJAS/OPS 
+● LOCATION: 23.321652° N, 56.965336° E | Course 118° | Speed 19 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 211: S-band radar emission, bearing 002°, strength 8/10 → correlates with E205 
+● Emitter 212: AEGIS emission, bearing 011°, strength 6/10. Likely escort of CSG Nimitz Group. Matching with USS 
+Ted Stevens (DDG 128) 
+● Emitter 213: Brief fire-control type emission, bearing 006°, duration ~3 sec → low confidence 
+● Emitter 214: Medium-power emission, bearing 327°, strength 5/10 → possible allied destroyer → correlates with 
+E207. Matching with US Ticonderoga class 
+● Emitter 215: Weak intermittent emission, bearing 182°, strength 2/10 
+● Emitter 216: One unidentified burst bearing 054°, not reacquired 
+Radar 
+● Total tracks fluctuating 17–22 
+● Merchant vessels confirmed: 15 
+● Multiple intermittent clutter merges during course alteration 
+● Fast craft contact north-west sector later assessed uncertain 
+Visual 
+● Nil significant 
+● Haze thickening after sunset 
+3. Fuel Status 
+● Available – 540 T / 45% 
+● Required to make 95% – 600 T / 50% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable with restrictions / 1.8 hrs cumulative 
+● Cleared for: Limited night surveillance 
+● Next Insp: 20 Mar 26 
+● Any flaws in book log: EO stabilization temporarily improved after recalibration 
+5. Weather 
+● Wind: SE shifting E 16–20 kts 
+● Swell: 2.1 m 
+● Sea State: 4 
+● Visibility: 4–5 km 
+● Barometric Pressure: 1007 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 25 
+● Merchant traffic heavier during PM window than expected 
+
+----- PAGE 72 -----
+● One VLCC deviated west ~9 NM before correction 
+● Aviation activity resumed strongly after sunset 
+● Tactical note forwarded: "possible escort redistribution north-west sector" 
+● Surface-search radar performance degraded intermittently by atmospheric layering 
+● No replenishment activity observed 
+● Merchant VHF referenced rising insurance processing delays 
+● AIS mismatch resolved automatically in one contact 
+● No distress traffic active 
+● Higher Speeds view Operational Considerations 
+
+----- PAGE 73 -----
+⚓ INS TEJAS — DAY 19 (19 Mar 26) 
+--- SITREP 37 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 19/AM/TEJAS/OPS 
+● LOCATION: 23.127218° N, 56.710104° E | Course 084° | Speed 11 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 217: High-power S-band radar, bearing 008°, strength 8/10 → correlates with E211 
+● Emitter 218: AEGIS-type emission, bearing 016°, strength variable 4–7/10. → correlates with E206 
+● Emitter 219: Medium-power emission, bearing 334°, strength 4/10 → correlates with E214 
+● Emitter 220: Weak intermittent emission, bearing 188°, strength 2/10 
+● Emitter 221: Civilian radar spread west and south sectors 
+● Emitter 222: Weak eastern long-range signal reacquired bearing 158°, strength 2/10. INT confirmed handover of 
+duties in Gulf of Oman from Zibo to Xichang 
+Radar 
+● Total tracks: 14 confirmed 
+● Merchant vessels: 12 
+● One intermittent convoy track dropped during manual reclassification 
+● Surface picture generally stable 
+Visual 
+● Tanker silhouettes visible intermittently 
+● Morning haze lighter than previous day 
+3. Fuel Status 
+● Available – 504 T / 42% 
+● Required to make 95% – 636 T / 53% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Restricted surveillance capability / 1.0 hrs flown 
+● Cleared for: Day operations only 
+● Next Insp: 20 Mar 26 
+● Any flaws in book log: EO image jitter returned intermittently 
+5. Weather 
+● Wind: ESE 8–10 kts 
+● Swell: 1.4 m 
+● Sea State: 3 
+● Visibility: 7–8 km 
+● Barometric Pressure: 1011 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 19 
+● Merchant density moderate-low 
+● Friday traffic reduction now clearly observable versus prior weekdays 
+
+----- PAGE 74 -----
+● Convoy discipline remains noticeably tighter than early deployment phase 
+● Aviation activity lower throughout dawn cycle 
+● No replenishment activity 
+● One watch section assessed carrier emissions weaker due possible maneuvering; not confirmed 
+● Brief AIS dropout observed in one container vessel 
+● Fishing dhow density normalizing 
+● No active advisories received 
+● Limited flying in view of defects 
+
+----- PAGE 75 -----
+⚓ INS TEJAS — DAY 19 (19 Mar 26) 
+--- SITREP 38 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 19/PM/TEJAS/OPS 
+● LOCATION: 22.964890° N, 56.244450° E | Course 126° | Speed 16 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 223: S-band radar emission, bearing 015°, strength 8/10→ correlates with E217 
+● Emitter 224: AEGIS emission, bearing 024°, strength 7/10 → correlates with E218 
+● Emitter 225: Medium-power emission, bearing 341°, strength 5/10 → possible allied frigate 
+● Emitter 226: Weak intermittent emission, bearing 194°, strength 2/10 
+● Emitter 227: Civilian radar overlap heavy south-west sector 
+● Emitter 228: One short unidentified pulse bearing 061°, not repeated 
+Radar 
+● Total tracks fluctuating 15–18 
+● Merchant vessels confirmed: 13 
+● One low-RCS return later assessed probable clutter artifact 
+● Fast craft contact north sector lost after sunset 
+Visual 
+● Nil significant 
+● Surface visibility reduced after dusk 
+3. Fuel Status 
+● Available – 444 T / 37% 
+● Required to make 95% – 696 T / 58% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Serviceable with restrictions / 2.5 hrs cumulative 
+● Cleared for: Limited night ops 
+● Next Insp: 20 Mar 26 
+● Any flaws in book log: FLIR stabilization improved but not fully resolved 
+5. Weather 
+● Wind: E 14–17 kts 
+● Swell: 1.9 m 
+● Sea State: 4 
+● Visibility: 4–6 km 
+● Barometric Pressure: 1008 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 21 
+● Merchant flow slightly higher than expected for Friday PM cycle 
+● Aviation noise intermittent only 
+● Continued flying monitored from USS Nimitz CSG 
+
+----- PAGE 76 -----
+● No replenishment activity observed 
+● One tanker transmitted repeated AIS correction bursts 
+● Weak surface ducting suspected during PM watch 
+● Merchant VHF traffic lighter than previous week 
+● No UAV or missile advisories active 
+● Convoy structure remains intact despite lower traffic density 
+● Higher Speeds in View of Operational Considerations 
+
+----- PAGE 77 -----
+⚓ INS TEJAS — DAY 20 (20 Mar 26) 
+--- SITREP 39 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 20/AM/TEJAS/OPS 
+● LOCATION: 22.897415° N, 55.723043° E | Course 118° | Speed 10 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 229: High-power S-band radar, bearing 022°, strength 7/10 → correlates with E223 
+● Emitter 230: AEGIS-type emission, bearing 031°, strength fluctuating 5–7/10. → correlates with E224 
+● Emitter 231: Medium-power emission, bearing 346°, strength 4/10 → probable allied escort correlation → correlates 
+with E225. Likely ITS Carlo Bergamini 
+● Emitter 232: Weak intermittent emission, bearing 198°, strength 2/10 
+● Emitter 233: Civilian radar spread south-west sector 
+● Emitter 234: Weak eastern long-range signal not detected this watch 
+Radar 
+● Total tracks: 13 confirmed, 3 intermittent 
+● Merchant vessels: 11 
+● One convoy track manually reclassified after duplicate correlation 
+● Surface picture comparatively stable 
+Visual 
+● Sparse tanker movement west horizon 
+● Visibility good after sunrise 
+3. Fuel Status 
+● Available – 430 T / 36% 
+● Required to make 95% – 710 T / 59% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Partially mission capable / 0.8 hrs flown 
+● Cleared for: Day surveillance only 
+● Next Insp: 20 Mar 26 (ongoing) 
+● Any flaws in book log: EO/FLIR stabilization issue persists; One sortie curtailed early due image drift 
+5. Weather 
+● Wind: Variable E–NE 6–10 kts 
+● Swell: 1.2 m 
+● Sea State: 3 
+● Visibility: 8–9 km 
+● Barometric Pressure: 1012 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 18 
+● Friday traffic reduction still evident in northern lanes 
+● Merchant spacing wider than previous weekday averages 
+
+----- PAGE 78 -----
+● Aviation noise minimal overnight 
+● No replenishment activity observed 
+● Ops Room note: "Carrier emissions appear more dispersed than previous week" 
+● Brief VHF interference observed on secondary commercial channel 
+● One AIS-negative low-speed track later assessed probable dhow group 
+● Merchant VHF chatter referenced possible premium increases effective next week 
+● No active NAVAREA amendments received 
+● Drifting to conserve fuel. 
+
+----- PAGE 79 -----
+⚓ INS TEJAS — DAY 20 (20 Mar 26) 
+--- SITREP 40 | PM | 2000 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: INS Tejas 
+● Sitrep No / LOCATION / Eqpt No: 20/PM/TEJAS/OPS 
+● LOCATION: 22.976637° N, 55.086789° E | Course 142° | Speed 18 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 235: S-band radar emission, bearing 030°, strength 8/10. → correlates with E229 
+● Emitter 236: AEGIS emission, bearing 039°, strength 6/10. → correlates with E230 
+● Emitter 237: Brief fire-control type spike, bearing 034°, duration ~5 sec → low confidence 
+● Emitter 238: Medium-power emission, bearing 352°, strength 5/10 → correlates with E231 
+● Emitter 239: Weak intermittent emission, bearing 204°, strength 2/10 
+● Emitter 240: Unidentified short burst bearing 074°, not reacquired 
+Radar 
+● Total tracks fluctuating 16–20 
+● Merchant vessels confirmed: 14 
+● One fast surface track (~31 kts) intermittently reacquired north-west sector 
+● Heavy civilian overlap west sector after sunset 
+Visual 
+● Nil significant 
+● Dense haze lower western horizon 
+3. Fuel Status 
+● Available – 414 T / 34% 
+● Required to make 95% – 726 T / 61% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Restricted surveillance capability / 2.4 hrs cumulative 
+● Cleared for: Limited night operations 
+● Next Insp: Deferred to 21 Mar 26 due operational commitments 
+● Any flaws in book log: EO stabilization unreliable above moderate maneuvering angles 
+5. Weather 
+● Wind: E 16–19 kts 
+● Swell: 2.0 m 
+● Sea State: 4 
+● Visibility: 4–5 km 
+● Barometric Pressure: 1008 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 22 
+● Merchant traffic increased modestly during PM cycle 
+● One tanker temporarily lost AIS transmission for ~11 min before restoration 
+● Aviation activity resumed intermittently after sunset 
+
+----- PAGE 80 -----
+● Ops Room assessment: "Escort geometry presently difficult to resolve confidently" 
+● No replenishment activity observed 
+● Surface-search radar affected intermittently by atmospheric layering 
+● Convoy structure remains disciplined despite lower overall density 
+● No active distress or missile advisories 
+● Fast-contact classification remains unresolved after multiple reacquisitions 
+● Major Machinery defect in Stbd Shaft. Drifting for Repairs and conserving fuel. 
+● INS Tejas disengaged from mission and will transit back to Base for maintenance 
+● Final Report 

@@ -1,0 +1,68 @@
+
+----- PAGE 1 -----
+Appendix B - 40 Sitreps of CNS Alpha for duration of 20 days 
+ ⚓ CNS ALPHA — DAY 1 (01 Mar 26) 
+--- SITREP 01 | AM | 0800 IST (EF) --- 
+1. Basic Details 
+● Name of Ship: CNS Alpha 
+● Sitrep No / PCS / Eqpt No: 01/AM/ALPHA/OPS 
+● PCS: 082° / 96 NM from Fujairah | Course 110° | Speed 14 kts 
+2. Intelligence Report 
+ESM 
+● Emitter 001: S-band long-range air search radar, bearing 192°, strength 8/10 → 
+probable correlation (0.83 confidence). Arleigh Burke Class Destroyer; OSINT 
+indicates USS Mustin (DDG89) 
+● Emitter 002: AEGIS SPY-1D type emission, bearing 198°, strength 7/10 → 
+probable correlation (0.71). Arleigh Burke Class Destroyer; OSINT indicates USS 
+Rafael Peralta (DDG115) 
+● Emitter 003: Medium-power navigation radar, bearing 210°, strength 5/10 → 
+possible DDG escort. Arleigh Burke Class Destroyer, unable to identify 
+specifically 
+● Emitter 004: Intermittent low-power emission, bearing 178°, strength 3/10 → 
+possible littoral combatant. OSINT indicates USS Savannah (LCS28) 
+● Emitter 005: Civilian radar cluster, bearings 095°–120°, strength 4/10 
+● Emitter 006: Weak coastal radar pulse, bearing 015°, strength 2/10 
+Radar 
+● Total tracks detected: 15 
+● Merchant vessels: 12 
+○ VLCC: 5 
+○ Container: 4 
+○ Bulk cargo: 3 
+● Naval contacts: 
+
+----- PAGE 2 -----
+○ 2 large contacts (95–110 km) (likely USS Mustin (DDG89) and USS 
+Savanah (LCS28) 
+○ 1 medium escort-type track (likely USS Rafael Peralta (DDG115)) 
+● 1 intermittent low-RCS surface contact detected north-west sector 
+Visual 
+● Nil significant due haze 
+● Distant tanker mast silhouettes visible west bearing 
+3. Fuel Status 
+● Available – 936 T / 78% 
+● Required to make 95% – 204 T / 17% 
+4. A/C State 
+● Frame No: ALH-01 
+● State / Rate: Fully serviceable / 2.2 hrs flown 
+● Cleared for: Day/Night Operations 
+● Next Insp: 05 Mar 26 
+● Any flaws in book log: Nil 
+5. Weather 
+● Wind: NE 11 kts 
+● Swell: 1.2 m 
+● Sea State: 3 
+● Visibility: 7 km 
+● Barometric Pressure: 1012 mb 
+6. Extra Info 
+● Civil aircraft in ASR: 18 
+● 2 civilian aircraft observed holding south-west airway junction 
+
+----- PAGE 3 -----
+● MV density approximately 20% above expected baseline 
+● Tanker spacing inconsistent (3–5 NM) 
+● No replenishment activity sighted 
+● Jet engine noise detected twice bearing 195°–205° 
+● No fishing dhow activity north sector 
+● Merchant VHF advisory referenced “increased military aviation south sector” 
+● Weak AIS lag (~4 min) observed in one VLCC 
+● No UAV/drone activity reported 

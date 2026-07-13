@@ -1,0 +1,120 @@
+{
+  "2026-03-01T08:00:00": {
+    "sitrep_no": "01",
+    "session": "AM",
+    "date": "01 Mar 26",
+    "time": "08:00",
+    "timezone": "IST (EF)",
+    "basic_details": {
+      "name_of_ship": "CNS Alpha",
+      "sitrep_no_pcs_eqpt_no": "01/AM/ALPHA/OPS",
+      "pcs": "082° / 96 NM from Fujairah | Course 110° | Speed 14 kts"
+    },
+    "intelligence_report": {
+      "esm": [
+        {
+          "emitter": "001",
+          "description": "S-band long-range air search radar",
+          "bearing": "192°",
+          "strength": "8/10",
+          "correlation": "probable correlation (0.83 confidence). Arleigh Burke Class Destroyer; OSINT indicates USS Mustin (DDG89)"
+        },
+        {
+          "emitter": "002",
+          "description": "AEGIS SPY-1D type emission",
+          "bearing": "198°",
+          "strength": "7/10",
+          "correlation": "probable correlation (0.71). Arleigh Burke Class Destroyer; OSINT indicates USS Rafael Peralta (DDG115)"
+        },
+        {
+          "emitter": "003",
+          "description": "Medium-power navigation radar",
+          "bearing": "210°",
+          "strength": "5/10",
+          "correlation": "possible DDG escort. Arleigh Burke Class Destroyer, unable to identify specifically"
+        },
+        {
+          "emitter": "004",
+          "description": "Intermittent low-power emission",
+          "bearing": "178°",
+          "strength": "3/10",
+          "correlation": "possible littoral combatant. OSINT indicates USS Savannah (LCS28)"
+        },
+        {
+          "emitter": "005",
+          "description": "Civilian radar cluster",
+          "notes": [
+            "bearings 095°–120°"
+          ],
+          "strength": "4/10"
+        },
+        {
+          "emitter": "006",
+          "description": "Weak coastal radar pulse",
+          "bearing": "015°",
+          "strength": "2/10"
+        }
+      ],
+      "radar": [
+        {
+          "label": "Total tracks detected",
+          "value": "15"
+        },
+        {
+          "label": "Merchant vessels",
+          "value": "12",
+          "details": [
+            "VLCC: 5",
+            "Container: 4",
+            "Bulk cargo: 3"
+          ]
+        },
+        {
+          "label": "Naval contacts",
+          "value": "",
+          "details": [
+            "2 large contacts (95–110 km) (likely USS Mustin (DDG89) and USS Savanah (LCS28)",
+            "1 medium escort-type track (likely USS Rafael Peralta (DDG115))"
+          ]
+        },
+        {
+          "note": "1 intermittent low-RCS surface contact detected north-west sector"
+        }
+      ],
+      "visual": [
+        "Nil significant due haze",
+        "Distant tanker mast silhouettes visible west bearing"
+      ]
+    },
+    "fuel_status": {
+      "available": "936 T / 78%",
+      "required_to_make_95": "204 T / 17%"
+    },
+    "ac_state": {
+      "frame_no": "ALH-01",
+      "state_rate": "Fully serviceable / 2.2 hrs flown",
+      "cleared_for": "Day/Night Operations",
+      "next_insp": "05 Mar 26",
+      "any_flaws_in_book_log": "Nil"
+    },
+    "weather": {
+      "wind": "NE 11 kts",
+      "swell": "1.2 m",
+      "sea_state": "3",
+      "visibility": "7 km",
+      "barometric_pressure": "1012 mb"
+    },
+    "extra_info": [
+      "Civil aircraft in ASR: 18",
+      "2 civilian aircraft observed holding south-west airway junction",
+      "MV density approximately 20% above expected baseline",
+      "Tanker spacing inconsistent (3–5 NM)",
+      "No replenishment activity sighted",
+      "Jet engine noise detected twice bearing 195°–205°",
+      "No fishing dhow activity north sector",
+      "Merchant VHF advisory referenced “increased military aviation south sector”",
+      "Weak AIS lag (~4 min) observed in one VLCC",
+      "No UAV/drone activity reported"
+    ]
+  }
+}
