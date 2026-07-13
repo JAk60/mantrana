@@ -205,7 +205,7 @@ function CombatSection({ data, editMode, onChange }: DashboardProps) {
     <div className="flex flex-col lg:flex-row gap-2.5 w-full">
       {/* WEAPONS */}
       <div className="bg-[#111520] border border-[#1e2538] p-2.5 flex-[3] flex flex-col">
-        <div className="text-[9px] font-black tracking-[0.15em] text-[#4a5168] uppercase mb-2">Weapon Status</div>
+        <div className="text-lg font-black tracking-[0.15em] text-amber-400 uppercase mb-2">Weapon Status</div>
         <div className="grid gap-2" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(115px, 1fr))' }}>
           {Object.entries(weapons).map(([k, v]: [string, any]) => (
             <WeaponCard 
@@ -219,12 +219,12 @@ function CombatSection({ data, editMode, onChange }: DashboardProps) {
 
       {/* SYSTEMS ACCORDION */}
       <div className="bg-[#111520] border border-[#1e2538] p-2.5 flex-[2] flex flex-col gap-2">
-        <div className="text-[9px] font-black tracking-[0.15em] text-[#4a5168] uppercase mb-1">Systems</div>
+        <div className="text-lg font-black tracking-[0.15em] text-amber-400 uppercase mb-1">Systems</div>
         
         {/* Surveillance */}
         <div className="flex flex-col border border-[#1e2538] bg-[#161b28]">
           <button onClick={() => toggleSection('surveillance')} className="flex items-center justify-between px-2.5 py-2 hover:bg-[#1a1f30] transition-colors cursor-pointer outline-none text-[#4a5168]">
-            <span className="text-[9px] font-black tracking-[0.15em] uppercase">Surveillance</span>
+            <span className="text-[9px] font-black tracking-[0.15em] uppercase text-white">Surveillance</span>
             {openSection === 'surveillance' ? <ChevronDown /> : <ChevronRight />}
           </button>
           {openSection === 'surveillance' && (
@@ -239,7 +239,7 @@ function CombatSection({ data, editMode, onChange }: DashboardProps) {
         {/* Comms */}
         <div className="flex flex-col border border-[#1e2538] bg-[#161b28]">
           <button onClick={() => toggleSection('comms')} className="flex items-center justify-between px-2.5 py-2 hover:bg-[#1a1f30] transition-colors cursor-pointer outline-none text-[#4a5168]">
-            <span className="text-[9px] font-black tracking-[0.15em] uppercase">Comms</span>
+            <span className="text-[9px] font-black tracking-[0.15em] uppercase text-white">Comms</span>
             {openSection === 'comms' ? <ChevronDown /> : <ChevronRight />}
           </button>
           {openSection === 'comms' && (
@@ -254,7 +254,7 @@ function CombatSection({ data, editMode, onChange }: DashboardProps) {
         {/* Defensive */}
         <div className="flex flex-col border border-[#1e2538] bg-[#161b28]">
           <button onClick={() => toggleSection('defensive')} className="flex items-center justify-between px-2.5 py-2 hover:bg-[#1a1f30] transition-colors cursor-pointer outline-none text-[#4a5168]">
-            <span className="text-[9px] font-black tracking-[0.15em] uppercase">Defensive</span>
+            <span className="text-[9px] font-black tracking-[0.15em] uppercase text-white">Defensive</span>
             {openSection === 'defensive' ? <ChevronDown /> : <ChevronRight />}
           </button>
           {openSection === 'defensive' && (
@@ -280,7 +280,7 @@ function MissionSection({ data, editMode, onChange }: DashboardProps) {
     <div className="flex flex-col lg:flex-row gap-2.5 w-full">
       {/* HELOS */}
       <div className="bg-[#111520] border border-[#1e2538] p-2.5 flex-1 flex flex-col">
-        <div className="text-[9px] font-black tracking-[0.15em] text-[#4a5168] uppercase mb-2">Helo Availability</div>
+        <div className="text-lg font-black tracking-[0.15em] text-amber-400 uppercase mb-2">Helo Availability</div>
         <div className="grid gap-2" style={{ gridTemplateColumns: 'repeat(auto-fill, minmax(110px, 1fr))' }}>
           {Object.entries(helos).map(([k, v]: [string, any]) => (
             <HeloCard key={k} label={k} count={v} editMode={editMode} onEdit={val => onChange(['mission_enablers', 'helo_availability', k], val)} />
@@ -290,11 +290,11 @@ function MissionSection({ data, editMode, onChange }: DashboardProps) {
 
       {/* ASSETS ACCORDION */}
       <div className="bg-[#111520] border border-[#1e2538] p-2.5 flex-1 flex flex-col gap-2">
-        <div className="text-[9px] font-black tracking-[0.15em] text-[#4a5168] uppercase mb-1">Logistics / Mission</div>
+        <div className="text-lg font-black tracking-[0.15em]  text-amber-400 uppercase mb-1">Logistics / Mission</div>
         
         <div className="flex flex-col border border-[#1e2538] bg-[#161b28]">
           <button onClick={() => setOpenSection(openSection === 'assets' ? null : 'assets')} className="flex items-center justify-between px-2.5 py-2 hover:bg-[#1a1f30] transition-colors cursor-pointer outline-none text-[#4a5168]">
-            <span className="text-[9px] font-black tracking-[0.15em] uppercase">Additional Assets</span>
+            <span className="text-[9px] font-black tracking-[0.15em] uppercase text-white">Additional Assets</span>
             {openSection === 'assets' ? <ChevronDown /> : <ChevronRight />}
           </button>
           
@@ -338,26 +338,26 @@ function LogisticsSection({ data, editMode, onChange }: DashboardProps) {
       {/* SPEED WIDGET */}
       <div className="bg-[#111520] border border-[#1e2538] p-2.5 flex-1 flex flex-col justify-center">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 px-4 py-4 bg-[#161b28] border border-[#1e2538]" style={{ clipPath: NOTCH_10 }}>
-          <span className="text-[11px] font-black tracking-[0.12em] uppercase text-[#4a5168] text-center lg:text-left">Max Available Speed</span>
+          <span className="text-[11px] font-black tracking-[0.12em] uppercase text-center lg:text-left text-white">Max Available Speed</span>
           <div className="flex items-baseline gap-2">
             {editMode ? (
               <EditableNum value={speed} onCommit={v => onChange(['personnel_and_logistics_status', 'max_available_speed_knots'], v)} editMode={editMode} className="text-3xl" />
             ) : (
                <span className={`text-4xl font-black ${COLORS[getNumColor(speed, 25, 15)].text}`}>{speed}</span>
             )}
-            <span className="text-[11px] font-black text-[#4a5168]">KNOTS</span>
+            <span className="text-[11px] font-black text-white">KNOTS</span>
           </div>
         </div>
       </div>
 
       {/* READINESS ACCORDIONS */}
       <div className="bg-[#111520] border border-[#1e2538] p-2.5 flex-[2] flex flex-col gap-2">
-        <div className="text-[9px] font-black tracking-[0.15em] text-[#4a5168] uppercase mb-1">Vessel Status</div>
+        <div className="text-lg font-black tracking-[0.15em] text-amber-400 uppercase mb-1">Vessel Status</div>
         
         {/* Crew */}
         <div className="flex flex-col border border-[#1e2538] bg-[#161b28]">
           <button onClick={() => toggleSection('crew')} className="flex items-center justify-between px-2.5 py-2 hover:bg-[#1a1f30] transition-colors cursor-pointer outline-none text-[#4a5168]">
-            <span className="text-[9px] font-black tracking-[0.15em] uppercase">Crew Readiness</span>
+            <span className="text-[9px] font-black tracking-[0.15em] uppercase text-white">Crew Readiness</span>
             {openSection === 'crew' ? <ChevronDown /> : <ChevronRight />}
           </button>
           {openSection === 'crew' && (
@@ -379,7 +379,7 @@ function LogisticsSection({ data, editMode, onChange }: DashboardProps) {
         {/* Endurance */}
         <div className="flex flex-col border border-[#1e2538] bg-[#161b28]">
           <button onClick={() => toggleSection('endurance')} className="flex items-center justify-between px-2.5 py-2 hover:bg-[#1a1f30] transition-colors cursor-pointer outline-none text-[#4a5168]">
-            <span className="text-[9px] font-black tracking-[0.15em] uppercase">Endurance & Supplies</span>
+            <span className="text-[9px] font-black tracking-[0.15em] uppercase text-white">Endurance & Supplies</span>
             {openSection === 'endurance' ? <ChevronDown /> : <ChevronRight />}
           </button>
           {openSection === 'endurance' && (

@@ -291,7 +291,7 @@ function BigStatTile({
     >
       <div className="flex items-center gap-1.5 text-[8.5px] font-bold uppercase tracking-widest mb-1.5" style={{ color: DARK.textMuted }}>
         <Icon size={11} style={{ color: DARK.textMuted, flexShrink: 0 }} />
-        <span className="truncate">{label}</span>
+        <span className="truncate text-amber-400">{label}</span>
       </div>
       <div className="text-[15px] font-extrabold leading-tight truncate" style={{ color: DARK.text }}>
         {formatLabel(name)}
@@ -317,8 +317,8 @@ function MultiLabelCard({
       style={{ background: DARK.card, border: `1px solid ${DARK.borderStrong}`, fontFamily: FONT_STACK }}
     >
       <div className="flex items-center gap-1.5 text-[8.5px] font-bold uppercase tracking-widest mb-2" style={{ color: DARK.textMuted }}>
-        <Icon size={11} style={{ color: DARK.textMuted, flexShrink: 0 }} />
-        {label}
+        <Icon size={11} style={{flexShrink: 0 }} />
+        <span className='text-amber-400'>{label}</span>
         {/* <span className="ml-auto text-[8px] font-mono normal-case tracking-normal" style={{ color: DARK.textMuted }}>top 3</span> */}
       </div>
       <div className="space-y-2">

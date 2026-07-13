@@ -361,10 +361,10 @@ export default function ReliabilityResultsView({
             <table className="w-full">
               <thead>
                 <tr className="border-b border-gray-800">
-                  <th className="text-left py-3 px-4 font-semibold text-gray-500">Phase</th>
-                  <th className="text-left py-3 px-4 font-semibold text-gray-500">Duration</th>
-                  {/* <th className="text-left py-3 px-4 font-semibold text-gray-500">Reliability</th> */}
-                  <th className="text-left py-3 px-4 font-semibold text-gray-500">Preferred Equipment</th>
+                  <th className="text-left py-3 px-4 font-semibold text-amber-400">Phase</th>
+                  <th className="text-left py-3 px-4 font-semibold text-amber-400">Duration</th>
+                  {/* <th className="text-left py-3 px-4 font-semibold text-amber-400">Reliability</th> */}
+                  <th className="text-left py-3 px-4 font-semibold text-amber-400">Preferred Equipment</th>
                 </tr>
               </thead>
               <tbody>
@@ -378,7 +378,7 @@ export default function ReliabilityResultsView({
                         <span className="font-medium text-white">{phase.phase_name}</span>
                       </div>
                     </td>
-                    <td className="py-3 px-4"><span className="text-gray-400">{phase.duration_hours}h</span></td>
+                    <td className="py-3 px-4"><span className="text-white">{phase.duration_hours}h</span></td>
                     {/* <td className="py-3 px-4">
                       <Badge>
                         {formatPercent(phase.phase_reliability)}
