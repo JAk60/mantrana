@@ -14,6 +14,7 @@ import {
   Download,
 } from 'lucide-react';
 import { useSitrepReader } from '@/hooks/useSitrepReader';
+import ShipActivityPanel from './ship_panel/views/Shipactivitypanel';
 
 interface FileEntry {
   id: string;
@@ -353,6 +354,10 @@ export function SitrepUploader({ shipSlug, onClose }: SitrepUploaderProps) {
           </div>
         </div>
       )}
+      <div className='w-full h-2 mb-8 flex justify-center'>
+        OR
+      </div>
+      <ShipActivityPanel onClose={onclose}/>
     </div>
   );
 }

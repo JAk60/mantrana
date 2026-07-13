@@ -238,7 +238,7 @@ export default function ShipActivityPanel({
     return (
         <div className="flex flex-col h-full bg-[#1B1F24] text-[#D6D6D6]">
             {/* Header */}
-            <div className="shrink-0 px-5 pt-4 pb-3 border-b border-[#4A5562] bg-[#242A31]">
+            {/* <div className="shrink-0 px-5 pt-4 pb-3 border-b border-[#4A5562] bg-[#242A31]">
                 <div className="flex items-start justify-between gap-3 mb-3">
                     <div className="min-w-0">
                         <div className="flex items-center gap-2 mb-0.5">
@@ -268,7 +268,7 @@ export default function ShipActivityPanel({
                         Last updated: {lastUpdated ? formatTimestamp(lastUpdated) : '—'}
                     </span>
                 </div>
-            </div>
+            </div> */}
 
             {/* Success alert */}
             {successMsg && (
