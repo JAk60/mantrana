@@ -1,0 +1,197 @@
+{
+  "combat_system_state": {
+    "surveillance_systems": {
+      "surface_surveillance_radar": true,
+      "air_surveillance_radar": true,
+      "esm_range": true,
+      "esm_sonar_hull_mounted": true,
+      "esm_sonar_vds": true
+    },
+    "weapon_status": {
+      "anti_ship_missile": {
+        "active": 14,
+        "available": 16
+      },
+      "surface_to_air_missile_sam": {
+        "active": 28,
+        "available": 32
+      },
+      "point_defence_missile_system_pdms": {
+        "active": 0,
+        "available": 0
+      },
+      "land_attack_missile": {
+        "active": 12,
+        "available": 16
+      },
+      "torpedo": {
+        "active": 5,
+        "available": 5
+      },
+      "asw_rocket": {
+        "active": 88,
+        "available": 128
+      }
+    },
+    "communication_system": {
+      "satcom": true,
+      "broadcast": true,
+      "weapon_data_exchange_otht_cms_jtc": true
+    },
+    "defensive_system": {
+      "ciws_available": true,
+      "ecm_chaff_available": true
+    },
+    "operational_availability": {
+      "unit_availability": true
+    },
+    "machinery_health": {
+      "major_machinery_issue_opdef": [
+        "DG2 degraded"
+      ]
+    }
+  },
+  "mission_enablers": {
+    "helo_availability": {
+      "non_asw_helos": 1,
+      "asw_helos": 2,
+      "drones": 4
+    },
+    "additional_assets": {
+      "prahar_available": true,
+      "available_ribs": 2,
+      "hadr_bricks_onboard": 1
+    }
+  },
+  "personnel_and_logistics_status": {
+    "crew_readiness": {
+      "crew_worked_up": true,
+      "days_away_from_home_port": 40
+    },
+    "endurance_training": {
+      "ration_remaining_days": 32
+    },
+    "max_available_speed_knots": 27.5,
+    "fuel_status_kilolitres": 830
+  },
+  
+  
+  "timeline": {
+
+    "2026-02-06T10:30:00Z": {
+      "location": "dockyard",
+      "dockyard": "Dockyard B",
+      "log": "Shifted to Dockyard B for scheduled intermediate refit, structural inspection, hull preservation, auxiliary machinery maintenance, and repairs to the DG2 generator system."
+    },
+
+    "2026-03-01T06:45:00Z": {
+      "location": "mission",
+      "missionType": "Anti-Piracy",
+      "coordinates": "11.1200° N, 46.3800° E",
+      "log": "Commenced anti-piracy patrols along designated commercial shipping routes. Continuous radar surveillance and high-readiness RIB teams were maintained to respond rapidly to suspicious maritime activity."
+    },
+
+      "2026-04-12T10:30:00Z": {
+      "location": "dockyard",
+      "dockyard": "Dockyard B",
+      "log": "Shifted to Dockyard B for scheduled intermediate refit, structural inspection, hull preservation, auxiliary machinery maintenance, and repairs to the DG2 generator system."
+    },
+
+    "2026-05-01T03:20:00Z": {
+      "location": "mission",
+      "missionType": "SAR",
+      "coordinates": "15.3400° N, 68.4500° E",
+      "log": "Responded to a distress signal from a cargo vessel. An ASW helicopter was launched for aerial search while onboard medical teams and rescue personnel remained prepared for casualty reception."
+    },
+
+    "2026-06-10T19:55:00Z": {
+      "location": "mission",
+      "missionType": "HADR",
+      "coordinates": "06.2200° S, 105.4100° E",
+      "log": "Conducted Humanitarian Assistance and Disaster Relief operations by deploying relief stores, producing potable water, and supporting coastal communities using embarked aviation and small boats."
+    },
+
+    "2026-07-02T00:38:54Z": {
+      "location": "mission",
+      "missionType": "SAR",
+      "coordinates": "18.9220° N, 72.8347° E",
+      "log": "Dispatched to investigate an emergency locator beacon. Search patterns were established at high speed while the embarked helicopter prepared for night search operations and bridge lookouts intensified visual scanning."
+    }
+  },
+  "strike": {
+    "Data link available": "Yes",
+    "more than 4 anti-ship missiles available": "Yes",
+    "Land attack missile range above 200 nm": "Yes",
+    "more than 4 land attack missiles available": "Yes",
+    "Air surveillance radar unavailable": "Yes",
+    "more than 8 SAMs available": "Yes",
+    "CIWS available": "Yes",
+    "ECM/Chaff available": "Yes",
+    "Ship is not worked up": "Yes",
+    "Unit is not available": "Yes",
+    "Machinery reliability below 80%": "Yes",
+    "Satcom available": "Yes",
+    "Broadcast available": "Yes",
+    "Maximum available speed More than 16 knots": "Yes",
+    "Net endurance post transit More than 3 days": "Yes"
+  },
+  "strengths": [
+  {
+    "metric": "Air Surveillance Score",
+    "value": "80",
+    "unit": "%"
+  },
+  {
+    "metric": "ESM Score",
+    "value": "95",
+    "unit": "%"
+  },
+  {
+    "metric": "SSR Available",
+    "value": "Yes",
+    "unit": ""
+  },
+  {
+    "metric": "ESM Range",
+    "value": "200 nm",
+    "unit": ""
+  },
+  {
+    "metric": "ESM Available",
+    "value": "Yes",
+    "unit": ""
+  }
+],
+"gaps": [
+  {
+    "metric": "ATAS Available",
+    "type": "critical",
+    "value": "Yes",
+    "unit": ""
+  },
+  {
+    "metric": "PDMS Count",
+    "type": "critical",
+    "value": 0,
+    "unit": ""
+  },
+  {
+    "metric": "ASW Helicopters",
+    "type": "critical",
+    "value": 2,
+    "unit": ""
+  },
+  {
+    "metric": "HADR Capability",
+    "type": "critical",
+    "value": "Yes",
+    "unit": ""
+  },
+  {
+    "metric": "HADR Bricks Onboard",
+    "type": "critical",
+    "value": 1,
+    "unit": ""
+  }
+]
+}

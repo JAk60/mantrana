@@ -1,0 +1,4014 @@
+{
+  "nodes": [
+    {
+      "id": "38c084fb-9d7c-486e-b8da-4ad35bdd9e6a",
+      "label": "Eastern",
+      "type": "Command",
+      "node_properties": {
+        "class": "Command",
+        "timestamp": "2026-07-12T07:21:20.059265Z",
+        "confidence": 0.881
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "Eastern"
+    },
+    {
+      "id": "aa5cfd8f-53ac-4fba-907c-ade318ab1e9d",
+      "label": "Fleet A",
+      "type": "Fleet",
+      "node_properties": {
+        "class": "Fleet",
+        "timestamp": "2026-07-12T07:21:20.065787Z",
+        "confidence": 0.848
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "Eastern/FleetA"
+    },
+    {
+      "id": "b8fe5465-1f23-447f-bf5e-ce5b229a725e",
+      "label": "INS KOLKATA",
+      "type": "Ship",
+      "node_properties": {
+        "class": "Ship",
+        "timestamp": "2026-07-12T07:21:20.071824Z",
+        "confidence": 0.842,
+        "date_of_commission": "2022-12-21",
+        "command": "Eastern",
+        "requirement_readiness_threshold": "0.78"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "Eastern/FleetA/INSTUSHIL"
+    },
+    {
+      "id": "10febbc4-bf21-4489-9275-98fbf79c84e7",
+      "label": "Propulsion",
+      "type": "System",
+      "node_properties": {
+        "class": "System",
+        "timestamp": "2026-07-12T07:21:20.077344Z",
+        "confidence": 0.853,
+        "system_code": "1234",
+        "parent_ship": "INS KOLKATA"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Propulsion"
+    },
+    {
+      "id": "241f84ea-c5f0-44b8-abf0-7ffe6b055e41",
+      "label": "Power_Generation",
+      "type": "System",
+      "node_properties": {
+        "class": "System",
+        "timestamp": "2026-07-12T07:21:20.083613Z",
+        "confidence": 0.956,
+        "system_code": "2345",
+        "parent_ship": "INS KOLKATA"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/PowerGeneration"
+    },
+    {
+      "id": "0c809353-77ba-4770-8eba-9fa5b0aa257d",
+      "label": "Firing",
+      "type": "System",
+      "node_properties": {
+        "class": "System",
+        "timestamp": "2026-07-12T07:21:20.088406Z",
+        "confidence": 0.978,
+        "system_code": "4534",
+        "parent_ship": "INS KOLKATA"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Firing"
+    },
+    {
+      "id": "a487e757-4646-4fec-9e21-e36fe9ee82b1",
+      "label": "Support",
+      "type": "System",
+      "node_properties": {
+        "class": "System",
+        "timestamp": "2026-07-12T07:21:20.092103Z",
+        "confidence": 0.825,
+        "system_code": "3423",
+        "parent_ship": "INS KOLKATA"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Support"
+    },
+    {
+      "id": "007d738f-c7c4-4982-a677-bc20032bb29d",
+      "label": "GT1",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:20:22.235987Z",
+        "confidence": 0.73,
+        "equipment_code": "1234",
+        "oem": "SCI pvt ltd",
+        "serial_number": "5678",
+        "parent_sys": "Propulsion",
+        "name": "['GT1']"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Propulsion/GT1"
+    },
+    {
+      "id": "f250461f-a555-4732-bd2c-7b7319730373",
+      "label": "GT2",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.103243Z",
+        "confidence": 0.915,
+        "equipment_code": "21435",
+        "oem": "de",
+        "serial_number": "2134",
+        "parent_sys": "Propulsion"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Propulsion/GT2"
+    },
+    {
+      "id": "1f2a74d7-897e-45c5-86e5-8913c4f5b41e",
+      "label": "GT3",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.106805Z",
+        "confidence": 0.764,
+        "equipment_code": "232",
+        "oem": "de",
+        "serial_number": "2454",
+        "parent_sys": "Propulsion"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Propulsion/GT3"
+    },
+    {
+      "id": "ba7aa277-9f7c-4a96-9f56-247a562da804",
+      "label": "GT4",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.111870Z",
+        "confidence": 0.994,
+        "equipment_code": "2345",
+        "oem": "fr",
+        "serial_number": "123",
+        "parent_sys": "Propulsion"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Propulsion/GT4"
+    },
+    {
+      "id": "ae40f8ca-55fe-41c2-a504-b4beea947ca8",
+      "label": "GTG1",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.117342Z",
+        "confidence": 0.825,
+        "equipment_code": "978",
+        "oem": "de",
+        "serial_number": "342",
+        "parent_sys": "Power_Generation"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/PowerGeneration/GTG1"
+    },
+    {
+      "id": "aa1118d5-8a1c-4424-b73f-f60a25657d08",
+      "label": "GTG2",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.121918Z",
+        "confidence": 0.831,
+        "equipment_code": "1",
+        "oem": "s",
+        "serial_number": "2",
+        "parent_sys": "Power_Generation"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/PowerGeneration/GTG2"
+    },
+    {
+      "id": "856a200c-1ebf-4e5b-ac9e-b31573af90f8",
+      "label": "GTG3",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.125925Z",
+        "confidence": 0.951,
+        "equipment_code": "2",
+        "oem": "sd",
+        "serial_number": "3",
+        "parent_sys": "Power_Generation"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/PowerGeneration/GTG3"
+    },
+    {
+      "id": "816aee48-e3c6-4616-8298-7e84730a87f6",
+      "label": "GTG4",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.129413Z",
+        "confidence": 0.765,
+        "equipment_code": "3",
+        "oem": "d",
+        "serial_number": "4",
+        "parent_sys": "Power_Generation"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/PowerGeneration/GTG4"
+    },
+    {
+      "id": "9809da3b-032d-4f78-8e5f-0fd3e2ea697f",
+      "label": "SRGM",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.134941Z",
+        "confidence": 0.927,
+        "equipment_code": "4",
+        "oem": "d",
+        "serial_number": "4",
+        "parent_sys": "Firing"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Firing/SRGM"
+    },
+    {
+      "id": "e33ffb86-008f-4272-955f-9f384d01adb7",
+      "label": "AC1",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.139056Z",
+        "confidence": 0.982,
+        "equipment_code": "5",
+        "oem": "t",
+        "serial_number": "4",
+        "parent_sys": "Support"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Support/AC1"
+    },
+    {
+      "id": "feb49aa4-5613-4462-aedf-3132ac480bb1",
+      "label": "AC2",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.143601Z",
+        "confidence": 0.894,
+        "equipment_code": "8",
+        "oem": "y",
+        "serial_number": "7",
+        "parent_sys": "Support"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Support/AC2"
+    },
+    {
+      "id": "51dd432f-5469-41fc-8fdd-d0add1b2de3e",
+      "label": "AC3",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.148192Z",
+        "confidence": 0.733,
+        "equipment_code": "23",
+        "oem": "ds",
+        "serial_number": "21",
+        "parent_sys": "Support"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Support/AC3"
+    },
+    {
+      "id": "db00599a-5fec-4b04-9fac-2c53ef0e938b",
+      "label": "AC4",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.151728Z",
+        "confidence": 0.834,
+        "equipment_code": "23",
+        "oem": "s",
+        "serial_number": "49",
+        "parent_sys": "Support"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Support/AC4"
+    },
+    {
+      "id": "e42cddbe-5006-4f50-86a3-b4005c2e3ee4",
+      "label": "AC5",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.156836Z",
+        "confidence": 0.806,
+        "equipment_code": "7",
+        "oem": "d",
+        "serial_number": "7",
+        "parent_sys": "Support"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Support/AC5"
+    },
+    {
+      "id": "9ae105d7-fc4f-43f0-a4d6-cae04dcacc7a",
+      "label": "AC6",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-12T07:21:20.161883Z",
+        "confidence": 0.931,
+        "equipment_code": "3",
+        "oem": "s",
+        "serial_number": "454",
+        "parent_sys": "Support"
+      },
+      "status": "active",
+      "_source_graph": "b",
+      "semantic_key": "INSTUSHIL/Support/AC6"
+    },
+    {
+      "id": "69cf4d0b-7c7f-419c-b49e-66648754014e",
+      "label": "Fuel System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-12T07:20:22.272894Z",
+        "confidence": 0.739,
+        "name": "['Fuel_System']"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/FuelSystem"
+    },
+    {
+      "id": "e638c27f-d37c-4822-a913-a622c09178f3",
+      "label": "LubeOilSystem",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-12T07:20:22.307179Z",
+        "confidence": 0.873,
+        "name": "['LubeOilSystem']"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/LubeOilSystem"
+    },
+    {
+      "id": "59a84b5b-7255-4177-af1f-5ee70341196f",
+      "label": "HPAirSystem",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-12T07:20:22.332906Z",
+        "confidence": 0.812,
+        "name": "['HPAirSystem']"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/HPAirSystem"
+    },
+    {
+      "id": "c92fb632-53d0-4700-a2a4-6e7273f28942",
+      "label": "Fine Fuel Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-12T07:20:22.384063Z",
+        "confidence": 0.717,
+        "name": "['Fine_Fuel_Filter']"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/FuelSystem/FineFuelFilter"
+    },
+    {
+      "id": "c12d63eb-c6ea-4a33-9e7e-a8f96d1b9f39",
+      "label": "BoosterPump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-12T07:20:22.414607Z",
+        "confidence": 0.936,
+        "name": "['BoosterPump']"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/FuelSystem/BoosterPump"
+    },
+    {
+      "id": "4b732621-03b4-45ad-9cea-3b0fa051d8eb",
+      "label": "OilFilter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-12T07:20:22.467577Z",
+        "confidence": 0.837,
+        "name": "['OilFilter']"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/LubeOilSystem/OilFilter"
+    },
+    {
+      "id": "b97a2e59-b448-4e35-a116-c48c29831cc8",
+      "label": "OilPump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-12T07:20:22.489729Z",
+        "confidence": 0.746,
+        "name": "['OilPump']"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/LubeOilSystem/OilPump"
+    },
+    {
+      "id": "1746a7a2-8542-4cc0-8ad9-ab6d73f525de",
+      "label": "AirCompressor",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-12T07:20:22.512406Z",
+        "confidence": 0.715,
+        "name": "['AirCompressor']"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/HPAirSystem/AirCompressor"
+    },
+    {
+      "id": "2d86ddc2-9a99-4d38-a76f-325784f9c8ae",
+      "label": "AirFilter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-12T07:20:22.532054Z",
+        "confidence": 0.926,
+        "name": "['AirFilter']"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/HPAirSystem/AirFilter"
+    },
+    {
+      "id": "c6e8a75d-c8b9-4ee6-9185-e8ea3b18b551",
+      "label": "Clogging",
+      "type": "FailureMode",
+      "node_properties": {
+        "class": "FailureMode",
+        "timestamp": "2026-07-12T07:20:22.551234Z",
+        "confidence": 0.761,
+        "name": "['Clogging']",
+        "failureModeID": "7891",
+        "equipmentID": "345",
+        "failureMechanism": "Fatigue",
+        "severityRPN": "3",
+        "failureDescription": "desc"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/FuelSystem/FineFuelFilter/Clogging"
+    },
+    {
+      "id": "3b657ce7-90e1-495c-beb0-d0d3d5ed72b1",
+      "label": "Seizing",
+      "type": "FailureMode",
+      "node_properties": {
+        "class": "FailureMode",
+        "timestamp": "2026-07-12T07:20:22.574283Z",
+        "confidence": 0.954,
+        "name": "['Seizing']",
+        "failureModeID": "1234",
+        "equipmentID": "2345",
+        "failureMechanism": "Fatigue",
+        "severityRPN": "3",
+        "failureDescription": "asd"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/FuelSystem/BoosterPump/Seizing"
+    },
+    {
+      "id": "62770e3f-d7ae-4f33-abf5-489a798f0242",
+      "label": "Clogging",
+      "type": "FailureMode",
+      "node_properties": {
+        "class": "FailureMode",
+        "timestamp": "2026-07-12T07:20:22.596221Z",
+        "confidence": 0.83,
+        "name": "['Clogging']",
+        "failureModeID": "8765",
+        "equipmentID": "8765",
+        "failureMechanism": "Fatigue",
+        "severityRPN": "4",
+        "failureDescription": "desc"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/LubeOilSystem/OilFilter/Clogging"
+    },
+    {
+      "id": "6a3f8b52-2eb9-4b98-aa88-628898e115bb",
+      "label": "Leaking",
+      "type": "FailureMode",
+      "node_properties": {
+        "class": "FailureMode",
+        "timestamp": "2026-07-12T07:20:22.614310Z",
+        "confidence": 0.986,
+        "name": "['Leaking']",
+        "failureModeID": "234",
+        "equipmentID": "123",
+        "failureMechanism": "corrosion",
+        "severityRPN": "3",
+        "failureDescription": "fd"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/LubeOilSystem/OilPump/Leaking"
+    },
+    {
+      "id": "2e4aee77-a602-439b-884f-72296d9841a5",
+      "label": "Clogging",
+      "type": "FailureMode",
+      "node_properties": {
+        "class": "FailureMode",
+        "timestamp": "2026-07-12T07:20:22.637721Z",
+        "confidence": 0.788,
+        "name": "['Clogging']",
+        "failureModeID": "489",
+        "equipmentID": "489",
+        "failureMechanism": "fatigue",
+        "severityRPN": "4",
+        "failureDescription": "desc"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/HPAirSystem/AirFilter/Clogging"
+    },
+    {
+      "id": "fd8d3319-816f-4697-8b9f-11df9d5a3f1e",
+      "label": "Visual Inspection Finding",
+      "type": "Symptom",
+      "node_properties": {
+        "class": "Symptom",
+        "timestamp": "2026-07-12T07:20:22.656017Z",
+        "confidence": 0.949,
+        "name": "['Visual_Inspection_Finding']",
+        "symptom_id": "589, 345",
+        "detection_method": "Visual Inspection",
+        "description": "desc"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/FuelSystem/FineFuelFilter/Clogging/Symptom/VisualInspection"
+    },
+    {
+      "id": "dc13b881-34ad-42e4-91a4-a0ad7b363926",
+      "label": "Vibration level above threshold",
+      "type": "Symptom",
+      "node_properties": {
+        "class": "Symptom",
+        "timestamp": "2026-07-12T07:20:22.715094Z",
+        "confidence": 0.997,
+        "name": "['symptom']",
+        "symptom_id": "324",
+        "detection_method": "d1",
+        "description": "desc"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/FuelSystem/BoosterPump/Seizing/Symptom/HighVibration"
+    },
+    {
+      "id": "95c43ea5-63f1-4c41-8023-a5b16812704d",
+      "label": "Analysis Abnormality",
+      "type": "Symptom",
+      "node_properties": {
+        "class": "Symptom",
+        "timestamp": "2026-07-12T07:20:22.778498Z",
+        "confidence": 0.847,
+        "name": "['abnormality']",
+        "symptom_id": "32894",
+        "detection_method": "oil analysis",
+        "description": "desc"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/LubeOilSystem/OilFilter/Clogging/Symptom/OilAnalysisAbnormality"
+    },
+    {
+      "id": "552974c8-7134-4dc4-b80a-0d2e13a971d0",
+      "label": "Pressure Drop",
+      "type": "Symptom",
+      "node_properties": {
+        "class": "Symptom",
+        "timestamp": "2026-07-12T07:20:22.808009Z",
+        "confidence": 0.838,
+        "name": "['sdf']",
+        "symptom_id": "2134",
+        "detection_method": "detect2",
+        "description": "sd"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/LubeOilSystem/OilPump/Leaking/Symptom/PressureDrop"
+    },
+    {
+      "id": "cc4075e9-9680-45e1-9af9-156074f0b2c9",
+      "label": "Flow Restriction",
+      "type": "Effect",
+      "node_properties": {
+        "class": "Effect",
+        "timestamp": "2026-07-12T07:20:22.677726Z",
+        "confidence": 0.88,
+        "name": "['Flow_Restriction']",
+        "effect_id": "345",
+        "level": "I",
+        "description": "desc"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/FuelSystem/FineFuelFilter/Clogging/Effect/FlowRestriction"
+    },
+    {
+      "id": "f38260e4-9761-4947-af6c-e349d6947407",
+      "label": "Fuel flow interruption",
+      "type": "Effect",
+      "node_properties": {
+        "class": "Effect",
+        "timestamp": "2026-07-12T07:20:22.747487Z",
+        "confidence": 0.969,
+        "name": "['effect']",
+        "effect_id": "234",
+        "level": "I",
+        "description": "desc"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/FuelSystem/BoosterPump/Seizing/Effect/FuelFlowInterruption"
+    },
+    {
+      "id": "489ad70c-01c4-490b-84d1-7d2aa05e9da2",
+      "label": "Reduced Oil Flow",
+      "type": "Effect",
+      "node_properties": {
+        "class": "Effect",
+        "timestamp": "2026-07-12T07:20:22.795225Z",
+        "confidence": 0.755,
+        "name": "['Reduced_oil_flow']",
+        "effect_id": "345",
+        "level": "II",
+        "description": "desc"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/LubeOilSystem/OilFilter/Clogging/Effect/ReducedOilFlow"
+    },
+    {
+      "id": "f7e6ddbb-9e83-4b82-a9ff-038bbd1fec3e",
+      "label": "Loss of lubrication pressure",
+      "type": "Effect",
+      "node_properties": {
+        "class": "Effect",
+        "timestamp": "2026-07-12T07:20:22.822010Z",
+        "confidence": 0.978,
+        "name": "['Loss_of_lubrication_pressure']",
+        "effect_id": "234",
+        "level": "I",
+        "description": "desc"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/LubeOilSystem/OilPump/Leaking/Effect/LossOfLubricationPressure"
+    },
+    {
+      "id": "a03e67a0-6f35-4f90-94a7-c74e559c891e",
+      "label": "Reduced Air Flow",
+      "type": "Effect",
+      "node_properties": {
+        "class": "Effect",
+        "timestamp": "2026-07-12T07:20:22.838379Z",
+        "confidence": 0.745,
+        "name": "['Reduced_flow']",
+        "effect_id": "23456",
+        "level": "I",
+        "description": "dsc"
+      },
+      "status": "active",
+      "_source_graph": "a",
+      "semantic_key": "GT1/HPAirSystem/AirFilter/Clogging/Effect/ReducedAirFlow"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-cmd-fleet",
+      "type": "hasFleet",
+      "source": "38c084fb-9d7c-486e-b8da-4ad35bdd9e6a",
+      "target": "aa5cfd8f-53ac-4fba-907c-ade318ab1e9d",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.884,
+        "edge_type": "hasFleet"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-fleet-ship",
+      "type": "hasShip",
+      "source": "aa5cfd8f-53ac-4fba-907c-ade318ab1e9d",
+      "target": "b8fe5465-1f23-447f-bf5e-ce5b229a725e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.949,
+        "edge_type": "hasShip"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-ship-prop",
+      "type": "hasSystem",
+      "source": "b8fe5465-1f23-447f-bf5e-ce5b229a725e",
+      "target": "10febbc4-bf21-4489-9275-98fbf79c84e7",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.838,
+        "edge_type": "hasSystem"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-ship-pwr",
+      "type": "hasSystem",
+      "source": "b8fe5465-1f23-447f-bf5e-ce5b229a725e",
+      "target": "241f84ea-c5f0-44b8-abf0-7ffe6b055e41",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.925,
+        "edge_type": "hasSystem"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-ship-fire",
+      "type": "hasSystem",
+      "source": "b8fe5465-1f23-447f-bf5e-ce5b229a725e",
+      "target": "0c809353-77ba-4770-8eba-9fa5b0aa257d",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.829,
+        "edge_type": "hasSystem"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-ship-sup",
+      "type": "hasSystem",
+      "source": "b8fe5465-1f23-447f-bf5e-ce5b229a725e",
+      "target": "a487e757-4646-4fec-9e21-e36fe9ee82b1",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.862,
+        "edge_type": "hasSystem"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-prop-gt1",
+      "type": "hasEquipment",
+      "source": "10febbc4-bf21-4489-9275-98fbf79c84e7",
+      "target": "007d738f-c7c4-4982-a677-bc20032bb29d",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.911,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-prop-gt2",
+      "type": "hasEquipment",
+      "source": "10febbc4-bf21-4489-9275-98fbf79c84e7",
+      "target": "f250461f-a555-4732-bd2c-7b7319730373",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.83,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-prop-gt3",
+      "type": "hasEquipment",
+      "source": "10febbc4-bf21-4489-9275-98fbf79c84e7",
+      "target": "1f2a74d7-897e-45c5-86e5-8913c4f5b41e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.773,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-prop-gt4",
+      "type": "hasEquipment",
+      "source": "10febbc4-bf21-4489-9275-98fbf79c84e7",
+      "target": "ba7aa277-9f7c-4a96-9f56-247a562da804",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.868,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-pwr-gtg1",
+      "type": "hasEquipment",
+      "source": "241f84ea-c5f0-44b8-abf0-7ffe6b055e41",
+      "target": "ae40f8ca-55fe-41c2-a504-b4beea947ca8",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.79,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-pwr-gtg2",
+      "type": "hasEquipment",
+      "source": "241f84ea-c5f0-44b8-abf0-7ffe6b055e41",
+      "target": "aa1118d5-8a1c-4424-b73f-f60a25657d08",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.924,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-pwr-gtg3",
+      "type": "hasEquipment",
+      "source": "241f84ea-c5f0-44b8-abf0-7ffe6b055e41",
+      "target": "856a200c-1ebf-4e5b-ac9e-b31573af90f8",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.819,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-pwr-gtg4",
+      "type": "hasEquipment",
+      "source": "241f84ea-c5f0-44b8-abf0-7ffe6b055e41",
+      "target": "816aee48-e3c6-4616-8298-7e84730a87f6",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.85,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-fire-srgm",
+      "type": "hasEquipment",
+      "source": "0c809353-77ba-4770-8eba-9fa5b0aa257d",
+      "target": "9809da3b-032d-4f78-8e5f-0fd3e2ea697f",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.904,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-sup-ac1",
+      "type": "hasEquipment",
+      "source": "a487e757-4646-4fec-9e21-e36fe9ee82b1",
+      "target": "e33ffb86-008f-4272-955f-9f384d01adb7",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.97,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-sup-ac2",
+      "type": "hasEquipment",
+      "source": "a487e757-4646-4fec-9e21-e36fe9ee82b1",
+      "target": "feb49aa4-5613-4462-aedf-3132ac480bb1",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.245736Z",
+        "confidence": 0.794,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-sup-ac3",
+      "type": "hasEquipment",
+      "source": "a487e757-4646-4fec-9e21-e36fe9ee82b1",
+      "target": "51dd432f-5469-41fc-8fdd-d0add1b2de3e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.246737Z",
+        "confidence": 0.734,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-sup-ac4",
+      "type": "hasEquipment",
+      "source": "a487e757-4646-4fec-9e21-e36fe9ee82b1",
+      "target": "db00599a-5fec-4b04-9fac-2c53ef0e938b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.246737Z",
+        "confidence": 0.877,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-sup-ac5",
+      "type": "hasEquipment",
+      "source": "a487e757-4646-4fec-9e21-e36fe9ee82b1",
+      "target": "e42cddbe-5006-4f50-86a3-b4005c2e3ee4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.246737Z",
+        "confidence": 0.988,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-sup-ac6",
+      "type": "hasEquipment",
+      "source": "a487e757-4646-4fec-9e21-e36fe9ee82b1",
+      "target": "9ae105d7-fc4f-43f0-a4d6-cae04dcacc7a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:21:20.246737Z",
+        "confidence": 0.959,
+        "edge_type": "hasEquipment"
+      },
+      "_source_graph": "b"
+    },
+    {
+      "id": "e-gt1-fuel",
+      "type": "hasAssembly",
+      "source": "007d738f-c7c4-4982-a677-bc20032bb29d",
+      "target": "69cf4d0b-7c7f-419c-b49e-66648754014e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.822,
+        "edge_type": "hasAssembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt1-lube",
+      "type": "hasAssembly",
+      "source": "007d738f-c7c4-4982-a677-bc20032bb29d",
+      "target": "e638c27f-d37c-4822-a913-a622c09178f3",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.875,
+        "edge_type": "hasAssembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt1-hpair",
+      "type": "hasAssembly",
+      "source": "007d738f-c7c4-4982-a677-bc20032bb29d",
+      "target": "59a84b5b-7255-4177-af1f-5ee70341196f",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.725,
+        "edge_type": "hasAssembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fuel-fff",
+      "type": "hasSubassembly",
+      "source": "69cf4d0b-7c7f-419c-b49e-66648754014e",
+      "target": "c92fb632-53d0-4700-a2a4-6e7273f28942",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.762,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fuel-bp",
+      "type": "hasSubassembly",
+      "source": "69cf4d0b-7c7f-419c-b49e-66648754014e",
+      "target": "c12d63eb-c6ea-4a33-9e7e-a8f96d1b9f39",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.952,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-lube-of",
+      "type": "hasSubassembly",
+      "source": "e638c27f-d37c-4822-a913-a622c09178f3",
+      "target": "4b732621-03b4-45ad-9cea-3b0fa051d8eb",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.708,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-lube-op",
+      "type": "hasSubassembly",
+      "source": "e638c27f-d37c-4822-a913-a622c09178f3",
+      "target": "b97a2e59-b448-4e35-a116-c48c29831cc8",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.999,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-hpair-ac",
+      "type": "hasSubassembly",
+      "source": "59a84b5b-7255-4177-af1f-5ee70341196f",
+      "target": "1746a7a2-8542-4cc0-8ad9-ab6d73f525de",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.844,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-hpair-af",
+      "type": "hasSubassembly",
+      "source": "59a84b5b-7255-4177-af1f-5ee70341196f",
+      "target": "2d86ddc2-9a99-4d38-a76f-325784f9c8ae",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.961,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fff-fm1",
+      "type": "hasFailureMode",
+      "source": "c92fb632-53d0-4700-a2a4-6e7273f28942",
+      "target": "c6e8a75d-c8b9-4ee6-9185-e8ea3b18b551",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.756,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-bp-fm2",
+      "type": "hasFailureMode",
+      "source": "c12d63eb-c6ea-4a33-9e7e-a8f96d1b9f39",
+      "target": "3b657ce7-90e1-495c-beb0-d0d3d5ed72b1",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.975,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-oilf-fm3",
+      "type": "hasFailureMode",
+      "source": "4b732621-03b4-45ad-9cea-3b0fa051d8eb",
+      "target": "62770e3f-d7ae-4f33-abf5-489a798f0242",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.983,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-oilp-fm4",
+      "type": "hasFailureMode",
+      "source": "b97a2e59-b448-4e35-a116-c48c29831cc8",
+      "target": "6a3f8b52-2eb9-4b98-aa88-628898e115bb",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.733,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-airf-fm5",
+      "type": "hasFailureMode",
+      "source": "2d86ddc2-9a99-4d38-a76f-325784f9c8ae",
+      "target": "2e4aee77-a602-439b-884f-72296d9841a5",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.782,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fm1-sym1",
+      "type": "EXHIBITS",
+      "source": "c6e8a75d-c8b9-4ee6-9185-e8ea3b18b551",
+      "target": "fd8d3319-816f-4697-8b9f-11df9d5a3f1e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.786,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fm2-sym2",
+      "type": "EXHIBITS",
+      "source": "3b657ce7-90e1-495c-beb0-d0d3d5ed72b1",
+      "target": "dc13b881-34ad-42e4-91a4-a0ad7b363926",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.975,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fm3-sym3",
+      "type": "EXHIBITS",
+      "source": "62770e3f-d7ae-4f33-abf5-489a798f0242",
+      "target": "95c43ea5-63f1-4c41-8023-a5b16812704d",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.725,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fm4-sym4",
+      "type": "EXHIBITS",
+      "source": "6a3f8b52-2eb9-4b98-aa88-628898e115bb",
+      "target": "552974c8-7134-4dc4-b80a-0d2e13a971d0",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.997,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fm5-sym1",
+      "type": "EXHIBITS",
+      "source": "2e4aee77-a602-439b-884f-72296d9841a5",
+      "target": "fd8d3319-816f-4697-8b9f-11df9d5a3f1e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.782,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fm1-eff1",
+      "type": "PRODUCES",
+      "source": "c6e8a75d-c8b9-4ee6-9185-e8ea3b18b551",
+      "target": "cc4075e9-9680-45e1-9af9-156074f0b2c9",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.747,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fm2-eff2",
+      "type": "PRODUCES",
+      "source": "3b657ce7-90e1-495c-beb0-d0d3d5ed72b1",
+      "target": "f38260e4-9761-4947-af6c-e349d6947407",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.991,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fm3-eff3",
+      "type": "PRODUCES",
+      "source": "62770e3f-d7ae-4f33-abf5-489a798f0242",
+      "target": "489ad70c-01c4-490b-84d1-7d2aa05e9da2",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.851,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fm4-eff4",
+      "type": "PRODUCES",
+      "source": "6a3f8b52-2eb9-4b98-aa88-628898e115bb",
+      "target": "f7e6ddbb-9e83-4b82-a9ff-038bbd1fec3e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.776,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-fm5-eff5",
+      "type": "PRODUCES",
+      "source": "2e4aee77-a602-439b-884f-72296d9841a5",
+      "target": "a03e67a0-6f35-4f90-94a7-c74e559c891e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.758,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-eff1-con1",
+      "type": "LEADS_TO",
+      "source": "cc4075e9-9680-45e1-9af9-156074f0b2c9",
+      "target": "70f6d60a-132a-4604-bf58-a2e041af8ba4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.91,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-eff2-con2",
+      "type": "LEADS_TO",
+      "source": "f38260e4-9761-4947-af6c-e349d6947407",
+      "target": "10649b7d-7aeb-432a-8277-91eb8997cfa5",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.706,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-eff3-con3",
+      "type": "LEADS_TO",
+      "source": "489ad70c-01c4-490b-84d1-7d2aa05e9da2",
+      "target": "840a9d2b-492c-4fd6-b51c-a8eddbd95185",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.899,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-eff4-con4",
+      "type": "LEADS_TO",
+      "source": "f7e6ddbb-9e83-4b82-a9ff-038bbd1fec3e",
+      "target": "15956810-d14e-47e2-a4fc-63fe1e2766ac",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.915,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-eff5-con5",
+      "type": "LEADS_TO",
+      "source": "a03e67a0-6f35-4f90-94a7-c74e559c891e",
+      "target": "17abab68-318b-4fa9-a94c-5a2043ef4a99",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.992,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-sym1-cause1",
+      "type": "INDICATES",
+      "source": "fd8d3319-816f-4697-8b9f-11df9d5a3f1e",
+      "target": "0c2aa12c-6245-41fa-a4ba-27525d248d77",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.971,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-sym1-cause2",
+      "type": "INDICATES",
+      "source": "fd8d3319-816f-4697-8b9f-11df9d5a3f1e",
+      "target": "71e50d70-e71e-48a9-a023-ff9f31c6ad7c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.791,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-sym2-cause3",
+      "type": "INDICATES",
+      "source": "dc13b881-34ad-42e4-91a4-a0ad7b363926",
+      "target": "fdf49a57-f7a1-4172-8c80-2269b3e02d4e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.908,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-sym3-cause4",
+      "type": "INDICATES",
+      "source": "95c43ea5-63f1-4c41-8023-a5b16812704d",
+      "target": "1f20272c-bbf6-4230-a78e-a8140cddc38c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.773,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-sym4-cause5",
+      "type": "INDICATES",
+      "source": "552974c8-7134-4dc4-b80a-0d2e13a971d0",
+      "target": "4ca69388-dc7f-44de-9a7e-f932e59f0482",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.952,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-cause1-fm1",
+      "type": "TRIGGERS",
+      "source": "0c2aa12c-6245-41fa-a4ba-27525d248d77",
+      "target": "c6e8a75d-c8b9-4ee6-9185-e8ea3b18b551",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.884,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-cause2-fm5",
+      "type": "TRIGGERS",
+      "source": "71e50d70-e71e-48a9-a023-ff9f31c6ad7c",
+      "target": "2e4aee77-a602-439b-884f-72296d9841a5",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.851,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-cause3-fm2",
+      "type": "TRIGGERS",
+      "source": "fdf49a57-f7a1-4172-8c80-2269b3e02d4e",
+      "target": "3b657ce7-90e1-495c-beb0-d0d3d5ed72b1",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.702,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-cause4-fm3",
+      "type": "TRIGGERS",
+      "source": "1f20272c-bbf6-4230-a78e-a8140cddc38c",
+      "target": "62770e3f-d7ae-4f33-abf5-489a798f0242",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.956,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-cause5-fm4",
+      "type": "TRIGGERS",
+      "source": "4ca69388-dc7f-44de-9a7e-f932e59f0482",
+      "target": "6a3f8b52-2eb9-4b98-aa88-628898e115bb",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.916,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-con1-risk1",
+      "type": "ASSESSED_BY",
+      "source": "70f6d60a-132a-4604-bf58-a2e041af8ba4",
+      "target": "a987dba7-5943-4a7c-b5de-746eedaca3d4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.961,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-con2-risk2",
+      "type": "ASSESSED_BY",
+      "source": "10649b7d-7aeb-432a-8277-91eb8997cfa5",
+      "target": "ce4f99bc-45d6-4bdc-858a-6b9bccf6469a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.792,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-con3-risk1",
+      "type": "ASSESSED_BY",
+      "source": "840a9d2b-492c-4fd6-b51c-a8eddbd95185",
+      "target": "a987dba7-5943-4a7c-b5de-746eedaca3d4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.808,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-con4-risk3",
+      "type": "ASSESSED_BY",
+      "source": "15956810-d14e-47e2-a4fc-63fe1e2766ac",
+      "target": "4a0730af-2323-43a5-bc09-7408b3d395f6",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.833,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-con5-risk1",
+      "type": "ASSESSED_BY",
+      "source": "17abab68-318b-4fa9-a94c-5a2043ef4a99",
+      "target": "a987dba7-5943-4a7c-b5de-746eedaca3d4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.895,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-risk1-dec1",
+      "type": "RECOMMENDS",
+      "source": "a987dba7-5943-4a7c-b5de-746eedaca3d4",
+      "target": "cd5f014a-0649-4c2d-83e5-45bcb82104d3",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.884,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-risk1-dec3",
+      "type": "RECOMMENDS",
+      "source": "a987dba7-5943-4a7c-b5de-746eedaca3d4",
+      "target": "51f01368-c650-4c6e-9042-b1d54829e61b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.789,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-risk1-dec5",
+      "type": "RECOMMENDS",
+      "source": "a987dba7-5943-4a7c-b5de-746eedaca3d4",
+      "target": "21bcfaa3-7e33-4224-bbed-582e14d76f0f",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.984,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-risk2-dec2",
+      "type": "RECOMMENDS",
+      "source": "ce4f99bc-45d6-4bdc-858a-6b9bccf6469a",
+      "target": "7dae7f54-2d4f-414f-9608-d04066068018",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.715,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-risk3-dec4",
+      "type": "RECOMMENDS",
+      "source": "4a0730af-2323-43a5-bc09-7408b3d395f6",
+      "target": "77f02c54-f9d0-49c0-886e-832415ff674a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.85,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dec1-r-risk1",
+      "type": "REDUCES",
+      "source": "cd5f014a-0649-4c2d-83e5-45bcb82104d3",
+      "target": "a987dba7-5943-4a7c-b5de-746eedaca3d4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.831,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dec2-r-risk2",
+      "type": "REDUCES",
+      "source": "7dae7f54-2d4f-414f-9608-d04066068018",
+      "target": "ce4f99bc-45d6-4bdc-858a-6b9bccf6469a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.824,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dec3-r-risk1",
+      "type": "REDUCES",
+      "source": "51f01368-c650-4c6e-9042-b1d54829e61b",
+      "target": "a987dba7-5943-4a7c-b5de-746eedaca3d4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.93,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dec4-r-risk3",
+      "type": "REDUCES",
+      "source": "77f02c54-f9d0-49c0-886e-832415ff674a",
+      "target": "4a0730af-2323-43a5-bc09-7408b3d395f6",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.948,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dec5-r-risk1",
+      "type": "REDUCES",
+      "source": "21bcfaa3-7e33-4224-bbed-582e14d76f0f",
+      "target": "a987dba7-5943-4a7c-b5de-746eedaca3d4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.845,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dec1-mit-fm1",
+      "type": "MITIGATES",
+      "source": "cd5f014a-0649-4c2d-83e5-45bcb82104d3",
+      "target": "c6e8a75d-c8b9-4ee6-9185-e8ea3b18b551",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.81,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dec2-mit-fm2",
+      "type": "MITIGATES",
+      "source": "7dae7f54-2d4f-414f-9608-d04066068018",
+      "target": "3b657ce7-90e1-495c-beb0-d0d3d5ed72b1",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.804,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dec3-mit-fm3",
+      "type": "MITIGATES",
+      "source": "51f01368-c650-4c6e-9042-b1d54829e61b",
+      "target": "62770e3f-d7ae-4f33-abf5-489a798f0242",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.82,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dec4-mit-fm4",
+      "type": "MITIGATES",
+      "source": "77f02c54-f9d0-49c0-886e-832415ff674a",
+      "target": "6a3f8b52-2eb9-4b98-aa88-628898e115bb",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.85,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dec5-mit-fm5",
+      "type": "MITIGATES",
+      "source": "21bcfaa3-7e33-4224-bbed-582e14d76f0f",
+      "target": "2e4aee77-a602-439b-884f-72296d9841a5",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.811,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-con2-dt",
+      "type": "hasDowntime",
+      "source": "10649b7d-7aeb-432a-8277-91eb8997cfa5",
+      "target": "6e491f13-44cb-487b-b556-1165370007bb",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.907,
+        "edge_type": "hasDowntime"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dt-repair",
+      "type": "hasRepair",
+      "source": "6e491f13-44cb-487b-b556-1165370007bb",
+      "target": "08d5154a-8097-448f-85c5-229ec3b9d59b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.77,
+        "edge_type": "hasRepair"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dt-log",
+      "type": "hasLogistics",
+      "source": "6e491f13-44cb-487b-b556-1165370007bb",
+      "target": "1c4a345c-d305-4c02-bfc5-fc5036dee2d9",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.914,
+        "edge_type": "hasLogistics"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-dt-asmtime",
+      "type": "hasAssemblyTime",
+      "source": "6e491f13-44cb-487b-b556-1165370007bb",
+      "target": "382232db-965a-4f3b-b2fa-154c01181abe",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.982,
+        "edge_type": "hasAssemblyTime"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-1",
+      "type": "hasSubassembly",
+      "source": "82512735-299b-4d63-94fb-8e2474051ca0",
+      "target": "a74b2e07-8ab7-43ff-afee-c69c78e863d8",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.762,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-2",
+      "type": "hasSubassembly",
+      "source": "82512735-299b-4d63-94fb-8e2474051ca0",
+      "target": "09acd9aa-ae4c-4715-9d9a-3f5501c52b67",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.952,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-3",
+      "type": "hasSubassembly",
+      "source": "d8c80ec0-6b4f-49af-8825-9a4b022c1342",
+      "target": "eb9e12c6-6fc4-46b7-97b7-9915407b988d",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.708,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-4",
+      "type": "hasSubassembly",
+      "source": "d8c80ec0-6b4f-49af-8825-9a4b022c1342",
+      "target": "5417b3b0-1787-4e6a-aa17-5b10ad3b137a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.999,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-5",
+      "type": "hasSubassembly",
+      "source": "3249e00c-7dfc-447c-8e61-bd57d97d8a47",
+      "target": "99ac862f-5d0a-46ea-8ca2-a95afe7b7835",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.844,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-6",
+      "type": "hasSubassembly",
+      "source": "3249e00c-7dfc-447c-8e61-bd57d97d8a47",
+      "target": "f99828b3-3648-4255-8131-e22af15d430a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.961,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-7",
+      "type": "hasFailureMode",
+      "source": "a74b2e07-8ab7-43ff-afee-c69c78e863d8",
+      "target": "84deb502-eb00-4e40-aa3c-520b0afb2972",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.756,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-8",
+      "type": "hasFailureMode",
+      "source": "09acd9aa-ae4c-4715-9d9a-3f5501c52b67",
+      "target": "edb1969c-d2db-4b69-a8bf-a93042905e0c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.975,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-9",
+      "type": "hasFailureMode",
+      "source": "eb9e12c6-6fc4-46b7-97b7-9915407b988d",
+      "target": "7c3b39d4-c093-4a87-b46b-beea14be026e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.983,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-10",
+      "type": "hasFailureMode",
+      "source": "5417b3b0-1787-4e6a-aa17-5b10ad3b137a",
+      "target": "a3038b9d-29d2-43d2-b76c-fb7bd0a47507",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.733,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-11",
+      "type": "hasFailureMode",
+      "source": "f99828b3-3648-4255-8131-e22af15d430a",
+      "target": "b2ae18e0-186f-4e0c-b88c-539e1aede466",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.782,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-12",
+      "type": "EXHIBITS",
+      "source": "84deb502-eb00-4e40-aa3c-520b0afb2972",
+      "target": "dffc6fcb-c0de-4ec4-9ecb-399be7d3cda4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.786,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-13",
+      "type": "EXHIBITS",
+      "source": "edb1969c-d2db-4b69-a8bf-a93042905e0c",
+      "target": "7522f111-169e-43da-a92b-e620345f5e45",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.975,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-14",
+      "type": "EXHIBITS",
+      "source": "7c3b39d4-c093-4a87-b46b-beea14be026e",
+      "target": "dba30a64-cb5d-4d49-aeb1-d2cfb603442e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.725,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-15",
+      "type": "EXHIBITS",
+      "source": "a3038b9d-29d2-43d2-b76c-fb7bd0a47507",
+      "target": "bf6424c6-2f48-428e-81c4-bbc0bb9c6d28",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.997,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-16",
+      "type": "EXHIBITS",
+      "source": "b2ae18e0-186f-4e0c-b88c-539e1aede466",
+      "target": "dffc6fcb-c0de-4ec4-9ecb-399be7d3cda4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.782,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-17",
+      "type": "PRODUCES",
+      "source": "84deb502-eb00-4e40-aa3c-520b0afb2972",
+      "target": "0c0f6bc7-79b2-4bd3-b2b7-365f3f32bf95",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.747,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-18",
+      "type": "PRODUCES",
+      "source": "edb1969c-d2db-4b69-a8bf-a93042905e0c",
+      "target": "2e097d41-c416-46fb-a6a4-603350892c57",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.991,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-19",
+      "type": "PRODUCES",
+      "source": "7c3b39d4-c093-4a87-b46b-beea14be026e",
+      "target": "8a4a88fc-a488-4189-a48e-b880c1e103be",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.851,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-20",
+      "type": "PRODUCES",
+      "source": "a3038b9d-29d2-43d2-b76c-fb7bd0a47507",
+      "target": "b29781f9-8962-43ab-9308-876fc43448f9",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.776,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-21",
+      "type": "PRODUCES",
+      "source": "b2ae18e0-186f-4e0c-b88c-539e1aede466",
+      "target": "2512b7dc-3625-4ae3-847c-6d28705abddc",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.758,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-22",
+      "type": "LEADS_TO",
+      "source": "0c0f6bc7-79b2-4bd3-b2b7-365f3f32bf95",
+      "target": "0c7d5000-2727-4cba-b558-4b14be76c2f2",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.91,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-23",
+      "type": "LEADS_TO",
+      "source": "2e097d41-c416-46fb-a6a4-603350892c57",
+      "target": "c2cd0bb6-54e3-40f0-95fa-4b795de310e0",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.706,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-24",
+      "type": "LEADS_TO",
+      "source": "8a4a88fc-a488-4189-a48e-b880c1e103be",
+      "target": "9f71453c-9c71-40b4-abab-1b347d7a802c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.899,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-25",
+      "type": "LEADS_TO",
+      "source": "b29781f9-8962-43ab-9308-876fc43448f9",
+      "target": "9b7a2c53-db81-4a1d-b0d6-7deb3ad21c9a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.915,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-26",
+      "type": "LEADS_TO",
+      "source": "2512b7dc-3625-4ae3-847c-6d28705abddc",
+      "target": "1b2b2ddd-31ea-4de4-ac06-4bc5fcc21d95",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.992,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-27",
+      "type": "INDICATES",
+      "source": "dffc6fcb-c0de-4ec4-9ecb-399be7d3cda4",
+      "target": "4f70b2fa-169f-4257-add1-15b6f7a6fe66",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.971,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-28",
+      "type": "INDICATES",
+      "source": "dffc6fcb-c0de-4ec4-9ecb-399be7d3cda4",
+      "target": "871c4462-9378-4ee9-92bd-709d0aa6e2ae",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.791,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-29",
+      "type": "INDICATES",
+      "source": "7522f111-169e-43da-a92b-e620345f5e45",
+      "target": "367f343b-2e94-4de2-b650-ffaeee84c36d",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.908,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-30",
+      "type": "INDICATES",
+      "source": "dba30a64-cb5d-4d49-aeb1-d2cfb603442e",
+      "target": "d6ba3a24-c411-4b61-92fe-c69b317288f4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.773,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-31",
+      "type": "INDICATES",
+      "source": "bf6424c6-2f48-428e-81c4-bbc0bb9c6d28",
+      "target": "74a58b94-15b9-4618-b745-ff79600af7b6",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.952,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-32",
+      "type": "TRIGGERS",
+      "source": "4f70b2fa-169f-4257-add1-15b6f7a6fe66",
+      "target": "84deb502-eb00-4e40-aa3c-520b0afb2972",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.884,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-33",
+      "type": "TRIGGERS",
+      "source": "871c4462-9378-4ee9-92bd-709d0aa6e2ae",
+      "target": "b2ae18e0-186f-4e0c-b88c-539e1aede466",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.851,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-34",
+      "type": "TRIGGERS",
+      "source": "367f343b-2e94-4de2-b650-ffaeee84c36d",
+      "target": "edb1969c-d2db-4b69-a8bf-a93042905e0c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.702,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-35",
+      "type": "TRIGGERS",
+      "source": "d6ba3a24-c411-4b61-92fe-c69b317288f4",
+      "target": "7c3b39d4-c093-4a87-b46b-beea14be026e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.956,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-36",
+      "type": "TRIGGERS",
+      "source": "74a58b94-15b9-4618-b745-ff79600af7b6",
+      "target": "a3038b9d-29d2-43d2-b76c-fb7bd0a47507",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.916,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-37",
+      "type": "ASSESSED_BY",
+      "source": "0c7d5000-2727-4cba-b558-4b14be76c2f2",
+      "target": "972fe13a-cb3b-491e-b164-afeac56e621b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.961,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-38",
+      "type": "ASSESSED_BY",
+      "source": "c2cd0bb6-54e3-40f0-95fa-4b795de310e0",
+      "target": "f006773b-4a84-4cec-a847-f1092443a580",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.792,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-39",
+      "type": "ASSESSED_BY",
+      "source": "9f71453c-9c71-40b4-abab-1b347d7a802c",
+      "target": "972fe13a-cb3b-491e-b164-afeac56e621b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.808,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-40",
+      "type": "ASSESSED_BY",
+      "source": "9b7a2c53-db81-4a1d-b0d6-7deb3ad21c9a",
+      "target": "97350785-ecfb-464c-ac51-8802a548bf60",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.833,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-41",
+      "type": "ASSESSED_BY",
+      "source": "1b2b2ddd-31ea-4de4-ac06-4bc5fcc21d95",
+      "target": "972fe13a-cb3b-491e-b164-afeac56e621b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.895,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-42",
+      "type": "RECOMMENDS",
+      "source": "972fe13a-cb3b-491e-b164-afeac56e621b",
+      "target": "b424cf3a-af77-4f8d-988c-78303354ea63",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.884,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-43",
+      "type": "RECOMMENDS",
+      "source": "972fe13a-cb3b-491e-b164-afeac56e621b",
+      "target": "bda71642-0afc-428b-9a16-44e8b5c7377b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.789,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-44",
+      "type": "RECOMMENDS",
+      "source": "972fe13a-cb3b-491e-b164-afeac56e621b",
+      "target": "dc5e1204-4ea8-43a4-a37c-0b0351965c69",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.984,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-45",
+      "type": "RECOMMENDS",
+      "source": "f006773b-4a84-4cec-a847-f1092443a580",
+      "target": "99db077f-1161-422d-99c1-3c9a21c88f6a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.715,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-46",
+      "type": "RECOMMENDS",
+      "source": "97350785-ecfb-464c-ac51-8802a548bf60",
+      "target": "c19e6b75-c7ce-4a50-ac04-35179305d350",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.85,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-47",
+      "type": "REDUCES",
+      "source": "b424cf3a-af77-4f8d-988c-78303354ea63",
+      "target": "972fe13a-cb3b-491e-b164-afeac56e621b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.831,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-48",
+      "type": "REDUCES",
+      "source": "99db077f-1161-422d-99c1-3c9a21c88f6a",
+      "target": "f006773b-4a84-4cec-a847-f1092443a580",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.824,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-49",
+      "type": "REDUCES",
+      "source": "bda71642-0afc-428b-9a16-44e8b5c7377b",
+      "target": "972fe13a-cb3b-491e-b164-afeac56e621b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.93,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-50",
+      "type": "REDUCES",
+      "source": "c19e6b75-c7ce-4a50-ac04-35179305d350",
+      "target": "97350785-ecfb-464c-ac51-8802a548bf60",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.948,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-51",
+      "type": "REDUCES",
+      "source": "dc5e1204-4ea8-43a4-a37c-0b0351965c69",
+      "target": "972fe13a-cb3b-491e-b164-afeac56e621b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.845,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-52",
+      "type": "MITIGATES",
+      "source": "b424cf3a-af77-4f8d-988c-78303354ea63",
+      "target": "84deb502-eb00-4e40-aa3c-520b0afb2972",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.81,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-53",
+      "type": "MITIGATES",
+      "source": "99db077f-1161-422d-99c1-3c9a21c88f6a",
+      "target": "edb1969c-d2db-4b69-a8bf-a93042905e0c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.804,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-54",
+      "type": "MITIGATES",
+      "source": "bda71642-0afc-428b-9a16-44e8b5c7377b",
+      "target": "7c3b39d4-c093-4a87-b46b-beea14be026e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.82,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-55",
+      "type": "MITIGATES",
+      "source": "c19e6b75-c7ce-4a50-ac04-35179305d350",
+      "target": "a3038b9d-29d2-43d2-b76c-fb7bd0a47507",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.85,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-56",
+      "type": "MITIGATES",
+      "source": "dc5e1204-4ea8-43a4-a37c-0b0351965c69",
+      "target": "b2ae18e0-186f-4e0c-b88c-539e1aede466",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.811,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-57",
+      "type": "hasDowntime",
+      "source": "c2cd0bb6-54e3-40f0-95fa-4b795de310e0",
+      "target": "5aeeb41a-9d16-4a6c-ab5f-0bc7f3dcbb2f",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.907,
+        "edge_type": "hasDowntime"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-58",
+      "type": "hasRepair",
+      "source": "5aeeb41a-9d16-4a6c-ab5f-0bc7f3dcbb2f",
+      "target": "608c24bc-ede2-4bbb-809e-3999e663c8c0",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.77,
+        "edge_type": "hasRepair"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-59",
+      "type": "hasLogistics",
+      "source": "5aeeb41a-9d16-4a6c-ab5f-0bc7f3dcbb2f",
+      "target": "b7250c12-172e-41a8-ac61-74145a020274",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.914,
+        "edge_type": "hasLogistics"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-60",
+      "type": "hasAssemblyTime",
+      "source": "5aeeb41a-9d16-4a6c-ab5f-0bc7f3dcbb2f",
+      "target": "e9b31389-0171-4a81-9df8-18aec0c7d468",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.982,
+        "edge_type": "hasAssemblyTime"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-assembly-61",
+      "type": "hasAssembly",
+      "source": "f250461f-a555-4732-bd2c-7b7319730373",
+      "target": "82512735-299b-4d63-94fb-8e2474051ca0",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.822,
+        "edge_type": "hasAssembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-assembly-62",
+      "type": "hasAssembly",
+      "source": "f250461f-a555-4732-bd2c-7b7319730373",
+      "target": "d8c80ec0-6b4f-49af-8825-9a4b022c1342",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.875,
+        "edge_type": "hasAssembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt2-assembly-63",
+      "type": "hasAssembly",
+      "source": "f250461f-a555-4732-bd2c-7b7319730373",
+      "target": "3249e00c-7dfc-447c-8e61-bd57d97d8a47",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.725,
+        "edge_type": "hasAssembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-64",
+      "type": "hasSubassembly",
+      "source": "bc855b7a-8c74-4f08-8b03-a96aa7a82ce0",
+      "target": "3bcea678-9052-4eba-82b8-65853a16ad81",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.762,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-65",
+      "type": "hasSubassembly",
+      "source": "bc855b7a-8c74-4f08-8b03-a96aa7a82ce0",
+      "target": "29d6d7ac-66bb-4fe7-8d55-322877af2f4b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.952,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-66",
+      "type": "hasSubassembly",
+      "source": "270996d4-4e81-4e98-98c5-1f9adc957a07",
+      "target": "81b12130-933f-4eac-8fb2-a9b725b2601c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.708,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-67",
+      "type": "hasSubassembly",
+      "source": "270996d4-4e81-4e98-98c5-1f9adc957a07",
+      "target": "bf8ade0c-9d27-4f95-b547-123399e7943b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.999,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-68",
+      "type": "hasSubassembly",
+      "source": "2c43f030-fcb1-4037-8e7f-fa7e63804984",
+      "target": "ba035103-30c4-49b6-9bb8-59057bba9eae",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.844,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-69",
+      "type": "hasSubassembly",
+      "source": "2c43f030-fcb1-4037-8e7f-fa7e63804984",
+      "target": "2f52bba0-45bf-415a-9d19-48a98d61b150",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.961,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-70",
+      "type": "hasFailureMode",
+      "source": "3bcea678-9052-4eba-82b8-65853a16ad81",
+      "target": "ee905e0d-96f6-4ea3-83a0-fbbbebc925b4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.756,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-71",
+      "type": "hasFailureMode",
+      "source": "29d6d7ac-66bb-4fe7-8d55-322877af2f4b",
+      "target": "b530ccb3-b28c-4043-9453-14a17a6ddea9",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.975,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-72",
+      "type": "hasFailureMode",
+      "source": "81b12130-933f-4eac-8fb2-a9b725b2601c",
+      "target": "0a5c7f08-9f5e-48b9-b850-8a8df3371b08",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.983,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-73",
+      "type": "hasFailureMode",
+      "source": "bf8ade0c-9d27-4f95-b547-123399e7943b",
+      "target": "4f2f0260-52c6-414e-8a6f-dd8874ac60bb",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.733,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-74",
+      "type": "hasFailureMode",
+      "source": "2f52bba0-45bf-415a-9d19-48a98d61b150",
+      "target": "88a21eb2-42a4-4003-b086-3216c6ae0da2",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.782,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-75",
+      "type": "EXHIBITS",
+      "source": "ee905e0d-96f6-4ea3-83a0-fbbbebc925b4",
+      "target": "25fafb52-78e8-4ba5-82fd-b491f586f3bf",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.786,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-76",
+      "type": "EXHIBITS",
+      "source": "b530ccb3-b28c-4043-9453-14a17a6ddea9",
+      "target": "4792eaf3-fd64-4c0e-bd40-e2a3e4972f9f",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.975,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-77",
+      "type": "EXHIBITS",
+      "source": "0a5c7f08-9f5e-48b9-b850-8a8df3371b08",
+      "target": "c374d5b9-7956-4b19-bebf-7806038f1e0d",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.725,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-78",
+      "type": "EXHIBITS",
+      "source": "4f2f0260-52c6-414e-8a6f-dd8874ac60bb",
+      "target": "b6261c83-c896-4daf-b65a-73a0b691b15b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.997,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-79",
+      "type": "EXHIBITS",
+      "source": "88a21eb2-42a4-4003-b086-3216c6ae0da2",
+      "target": "25fafb52-78e8-4ba5-82fd-b491f586f3bf",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.782,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-80",
+      "type": "PRODUCES",
+      "source": "ee905e0d-96f6-4ea3-83a0-fbbbebc925b4",
+      "target": "4bfe2c2f-8ad6-4d59-b5b7-05ed0ccff8d4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.747,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-81",
+      "type": "PRODUCES",
+      "source": "b530ccb3-b28c-4043-9453-14a17a6ddea9",
+      "target": "9a69f5e0-f043-414d-b3a5-e3b5145c2ce2",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.991,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-82",
+      "type": "PRODUCES",
+      "source": "0a5c7f08-9f5e-48b9-b850-8a8df3371b08",
+      "target": "7cd3da6b-d061-4986-b90a-5de7ebb4b2eb",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.851,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-83",
+      "type": "PRODUCES",
+      "source": "4f2f0260-52c6-414e-8a6f-dd8874ac60bb",
+      "target": "7f73c42d-c24c-4da6-8631-9d22a9a78856",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.776,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-84",
+      "type": "PRODUCES",
+      "source": "88a21eb2-42a4-4003-b086-3216c6ae0da2",
+      "target": "ca091a3b-bdcc-4279-b693-7e5c0c9cebe0",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.758,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-85",
+      "type": "LEADS_TO",
+      "source": "4bfe2c2f-8ad6-4d59-b5b7-05ed0ccff8d4",
+      "target": "eda06e6c-f2fc-423d-b433-a2eb5734b543",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.91,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-86",
+      "type": "LEADS_TO",
+      "source": "9a69f5e0-f043-414d-b3a5-e3b5145c2ce2",
+      "target": "e98afd98-9fb6-46ac-9520-6931f8c4f018",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.706,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-87",
+      "type": "LEADS_TO",
+      "source": "7cd3da6b-d061-4986-b90a-5de7ebb4b2eb",
+      "target": "dea33699-1c4a-4bf7-abde-3f163f540180",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.899,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-88",
+      "type": "LEADS_TO",
+      "source": "7f73c42d-c24c-4da6-8631-9d22a9a78856",
+      "target": "f0250271-c2b8-4e3e-b388-8a272e249d52",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.915,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-89",
+      "type": "LEADS_TO",
+      "source": "ca091a3b-bdcc-4279-b693-7e5c0c9cebe0",
+      "target": "6ceafd8f-dba9-4fb3-9d1f-ea5d3217481a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.992,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-90",
+      "type": "INDICATES",
+      "source": "25fafb52-78e8-4ba5-82fd-b491f586f3bf",
+      "target": "ad7ed8b0-28a7-46a7-a4ce-6ca4365a49fd",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.971,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-91",
+      "type": "INDICATES",
+      "source": "25fafb52-78e8-4ba5-82fd-b491f586f3bf",
+      "target": "b146d328-7ba8-4794-ae15-5be0f6da89f6",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.791,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-92",
+      "type": "INDICATES",
+      "source": "4792eaf3-fd64-4c0e-bd40-e2a3e4972f9f",
+      "target": "1e6defbf-c944-4897-ad2b-d0fea0dede33",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.908,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-93",
+      "type": "INDICATES",
+      "source": "c374d5b9-7956-4b19-bebf-7806038f1e0d",
+      "target": "af90535d-633d-42dc-bd9e-eab04487d5df",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.773,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-94",
+      "type": "INDICATES",
+      "source": "b6261c83-c896-4daf-b65a-73a0b691b15b",
+      "target": "475de047-0e81-4d4f-bf37-23f6f3b8cec6",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.952,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-95",
+      "type": "TRIGGERS",
+      "source": "ad7ed8b0-28a7-46a7-a4ce-6ca4365a49fd",
+      "target": "ee905e0d-96f6-4ea3-83a0-fbbbebc925b4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.884,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-96",
+      "type": "TRIGGERS",
+      "source": "b146d328-7ba8-4794-ae15-5be0f6da89f6",
+      "target": "88a21eb2-42a4-4003-b086-3216c6ae0da2",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.851,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-97",
+      "type": "TRIGGERS",
+      "source": "1e6defbf-c944-4897-ad2b-d0fea0dede33",
+      "target": "b530ccb3-b28c-4043-9453-14a17a6ddea9",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.702,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-98",
+      "type": "TRIGGERS",
+      "source": "af90535d-633d-42dc-bd9e-eab04487d5df",
+      "target": "0a5c7f08-9f5e-48b9-b850-8a8df3371b08",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.956,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-99",
+      "type": "TRIGGERS",
+      "source": "475de047-0e81-4d4f-bf37-23f6f3b8cec6",
+      "target": "4f2f0260-52c6-414e-8a6f-dd8874ac60bb",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.916,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-100",
+      "type": "ASSESSED_BY",
+      "source": "eda06e6c-f2fc-423d-b433-a2eb5734b543",
+      "target": "7699fe06-aa3c-464e-be09-e8058cbfe613",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.961,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-101",
+      "type": "ASSESSED_BY",
+      "source": "e98afd98-9fb6-46ac-9520-6931f8c4f018",
+      "target": "31440074-842e-4af9-900e-1f1013f82fab",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.792,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-102",
+      "type": "ASSESSED_BY",
+      "source": "dea33699-1c4a-4bf7-abde-3f163f540180",
+      "target": "7699fe06-aa3c-464e-be09-e8058cbfe613",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.808,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-103",
+      "type": "ASSESSED_BY",
+      "source": "f0250271-c2b8-4e3e-b388-8a272e249d52",
+      "target": "236c4302-f1f0-4776-bb9f-3ee43fa17c56",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.833,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-104",
+      "type": "ASSESSED_BY",
+      "source": "6ceafd8f-dba9-4fb3-9d1f-ea5d3217481a",
+      "target": "7699fe06-aa3c-464e-be09-e8058cbfe613",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.895,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-105",
+      "type": "RECOMMENDS",
+      "source": "7699fe06-aa3c-464e-be09-e8058cbfe613",
+      "target": "2e6e33df-93d3-47e9-a8cd-482de3f6d204",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.884,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-106",
+      "type": "RECOMMENDS",
+      "source": "7699fe06-aa3c-464e-be09-e8058cbfe613",
+      "target": "934ad483-457c-4856-a067-22344004d44a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.789,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-107",
+      "type": "RECOMMENDS",
+      "source": "7699fe06-aa3c-464e-be09-e8058cbfe613",
+      "target": "cfc3ec49-21d4-482a-9a93-bb6c6968d68f",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.984,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-108",
+      "type": "RECOMMENDS",
+      "source": "31440074-842e-4af9-900e-1f1013f82fab",
+      "target": "385250bb-f18e-4def-9ccb-3191e334768a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.715,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-109",
+      "type": "RECOMMENDS",
+      "source": "236c4302-f1f0-4776-bb9f-3ee43fa17c56",
+      "target": "d96071b2-0707-46ed-beb5-657fa725b122",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.85,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-110",
+      "type": "REDUCES",
+      "source": "2e6e33df-93d3-47e9-a8cd-482de3f6d204",
+      "target": "7699fe06-aa3c-464e-be09-e8058cbfe613",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.831,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-111",
+      "type": "REDUCES",
+      "source": "385250bb-f18e-4def-9ccb-3191e334768a",
+      "target": "31440074-842e-4af9-900e-1f1013f82fab",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.824,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-112",
+      "type": "REDUCES",
+      "source": "934ad483-457c-4856-a067-22344004d44a",
+      "target": "7699fe06-aa3c-464e-be09-e8058cbfe613",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.93,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-113",
+      "type": "REDUCES",
+      "source": "d96071b2-0707-46ed-beb5-657fa725b122",
+      "target": "236c4302-f1f0-4776-bb9f-3ee43fa17c56",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.948,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-114",
+      "type": "REDUCES",
+      "source": "cfc3ec49-21d4-482a-9a93-bb6c6968d68f",
+      "target": "7699fe06-aa3c-464e-be09-e8058cbfe613",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.845,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-115",
+      "type": "MITIGATES",
+      "source": "2e6e33df-93d3-47e9-a8cd-482de3f6d204",
+      "target": "ee905e0d-96f6-4ea3-83a0-fbbbebc925b4",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.81,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-116",
+      "type": "MITIGATES",
+      "source": "385250bb-f18e-4def-9ccb-3191e334768a",
+      "target": "b530ccb3-b28c-4043-9453-14a17a6ddea9",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.804,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-117",
+      "type": "MITIGATES",
+      "source": "934ad483-457c-4856-a067-22344004d44a",
+      "target": "0a5c7f08-9f5e-48b9-b850-8a8df3371b08",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.82,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-118",
+      "type": "MITIGATES",
+      "source": "d96071b2-0707-46ed-beb5-657fa725b122",
+      "target": "4f2f0260-52c6-414e-8a6f-dd8874ac60bb",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.85,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-119",
+      "type": "MITIGATES",
+      "source": "cfc3ec49-21d4-482a-9a93-bb6c6968d68f",
+      "target": "88a21eb2-42a4-4003-b086-3216c6ae0da2",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.811,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-120",
+      "type": "hasDowntime",
+      "source": "e98afd98-9fb6-46ac-9520-6931f8c4f018",
+      "target": "f4eaf139-2f5c-4b28-9479-378a58f9b3db",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.907,
+        "edge_type": "hasDowntime"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-121",
+      "type": "hasRepair",
+      "source": "f4eaf139-2f5c-4b28-9479-378a58f9b3db",
+      "target": "f8139c71-876b-4e01-aeda-ef71194768cd",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.77,
+        "edge_type": "hasRepair"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-122",
+      "type": "hasLogistics",
+      "source": "f4eaf139-2f5c-4b28-9479-378a58f9b3db",
+      "target": "35d6a18c-139c-434d-8591-228fadd9e2f5",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.914,
+        "edge_type": "hasLogistics"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-123",
+      "type": "hasAssemblyTime",
+      "source": "f4eaf139-2f5c-4b28-9479-378a58f9b3db",
+      "target": "548f8609-eb10-4771-90c8-282498ee2597",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.982,
+        "edge_type": "hasAssemblyTime"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-assembly-124",
+      "type": "hasAssembly",
+      "source": "1f2a74d7-897e-45c5-86e5-8913c4f5b41e",
+      "target": "bc855b7a-8c74-4f08-8b03-a96aa7a82ce0",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.822,
+        "edge_type": "hasAssembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-assembly-125",
+      "type": "hasAssembly",
+      "source": "1f2a74d7-897e-45c5-86e5-8913c4f5b41e",
+      "target": "270996d4-4e81-4e98-98c5-1f9adc957a07",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.875,
+        "edge_type": "hasAssembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt3-assembly-126",
+      "type": "hasAssembly",
+      "source": "1f2a74d7-897e-45c5-86e5-8913c4f5b41e",
+      "target": "2c43f030-fcb1-4037-8e7f-fa7e63804984",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.725,
+        "edge_type": "hasAssembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-127",
+      "type": "hasSubassembly",
+      "source": "4f2251ce-5227-44cb-a55d-cb2a62fb98ff",
+      "target": "fca652f6-babe-498d-b48c-11a5308a4407",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.762,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-128",
+      "type": "hasSubassembly",
+      "source": "4f2251ce-5227-44cb-a55d-cb2a62fb98ff",
+      "target": "f834805b-aa4a-450c-aaeb-eb836f48d6c9",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.952,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-129",
+      "type": "hasSubassembly",
+      "source": "2faa8d50-e414-4e90-8271-b1272c54048d",
+      "target": "65196516-64f0-49a1-8911-fa69f1ab38a8",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.708,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-130",
+      "type": "hasSubassembly",
+      "source": "2faa8d50-e414-4e90-8271-b1272c54048d",
+      "target": "ae4ae2da-2b47-482a-a8e1-4732cf1f4061",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.999,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-131",
+      "type": "hasSubassembly",
+      "source": "98cf6c7d-bfff-4398-9713-9ef3c6891e6f",
+      "target": "b70a5d46-5371-489c-9b8c-779d3990b826",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.844,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-132",
+      "type": "hasSubassembly",
+      "source": "98cf6c7d-bfff-4398-9713-9ef3c6891e6f",
+      "target": "69bb95d9-35be-45f0-805b-26b53e2b0ea6",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.961,
+        "edge_type": "hasSubassembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-133",
+      "type": "hasFailureMode",
+      "source": "fca652f6-babe-498d-b48c-11a5308a4407",
+      "target": "0d6e2497-8ac1-42fa-ba18-6ef35f70ca15",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.756,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-134",
+      "type": "hasFailureMode",
+      "source": "f834805b-aa4a-450c-aaeb-eb836f48d6c9",
+      "target": "3b2c362c-e664-41de-823d-1cbcbac2ff8c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.975,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-135",
+      "type": "hasFailureMode",
+      "source": "65196516-64f0-49a1-8911-fa69f1ab38a8",
+      "target": "31c08ae3-f097-4a0d-bc74-ed301fd6f65a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.983,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-136",
+      "type": "hasFailureMode",
+      "source": "ae4ae2da-2b47-482a-a8e1-4732cf1f4061",
+      "target": "a86b61ff-72db-46a9-b454-219a9abe139b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.733,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-137",
+      "type": "hasFailureMode",
+      "source": "69bb95d9-35be-45f0-805b-26b53e2b0ea6",
+      "target": "d1dc2fb1-400e-414d-8438-57b1b1085790",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.782,
+        "edge_type": "hasFailureMode"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-138",
+      "type": "EXHIBITS",
+      "source": "0d6e2497-8ac1-42fa-ba18-6ef35f70ca15",
+      "target": "c179c82b-bbff-4336-93e0-cfc86962c78c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.786,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-139",
+      "type": "EXHIBITS",
+      "source": "3b2c362c-e664-41de-823d-1cbcbac2ff8c",
+      "target": "a7454f69-5126-426d-856c-ddeab99a8a72",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.975,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-140",
+      "type": "EXHIBITS",
+      "source": "31c08ae3-f097-4a0d-bc74-ed301fd6f65a",
+      "target": "1d7e30af-0ddc-4b2d-aa07-8048019a6428",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.725,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-141",
+      "type": "EXHIBITS",
+      "source": "a86b61ff-72db-46a9-b454-219a9abe139b",
+      "target": "3f1e2e0e-ec97-43a3-a410-1d87d79e0654",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.997,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-142",
+      "type": "EXHIBITS",
+      "source": "d1dc2fb1-400e-414d-8438-57b1b1085790",
+      "target": "c179c82b-bbff-4336-93e0-cfc86962c78c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.782,
+        "edge_type": "EXHIBITS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-143",
+      "type": "PRODUCES",
+      "source": "0d6e2497-8ac1-42fa-ba18-6ef35f70ca15",
+      "target": "392afbc1-d633-4253-b0ed-f584a4525784",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.747,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-144",
+      "type": "PRODUCES",
+      "source": "3b2c362c-e664-41de-823d-1cbcbac2ff8c",
+      "target": "0ce6321d-7b6a-4f3f-8821-40a886a7b369",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.991,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-145",
+      "type": "PRODUCES",
+      "source": "31c08ae3-f097-4a0d-bc74-ed301fd6f65a",
+      "target": "44af2b2a-6688-45c1-8929-e006cc9ae1ee",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.851,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-146",
+      "type": "PRODUCES",
+      "source": "a86b61ff-72db-46a9-b454-219a9abe139b",
+      "target": "253cf2f7-5c9f-43de-8b11-560b70734f92",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.776,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-147",
+      "type": "PRODUCES",
+      "source": "d1dc2fb1-400e-414d-8438-57b1b1085790",
+      "target": "80facf8d-ddd1-47ae-bd9d-9fe96df3fa84",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.758,
+        "edge_type": "PRODUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-148",
+      "type": "LEADS_TO",
+      "source": "392afbc1-d633-4253-b0ed-f584a4525784",
+      "target": "cbbe8b13-7907-4c80-8fee-999a3416b3d0",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.91,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-149",
+      "type": "LEADS_TO",
+      "source": "0ce6321d-7b6a-4f3f-8821-40a886a7b369",
+      "target": "df9b18ab-d3c0-4c74-9573-e2ce2834dab3",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.706,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-150",
+      "type": "LEADS_TO",
+      "source": "44af2b2a-6688-45c1-8929-e006cc9ae1ee",
+      "target": "2f097b76-2bb1-4a5b-855a-6784e1363f81",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.152932Z",
+        "confidence": 0.899,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-151",
+      "type": "LEADS_TO",
+      "source": "253cf2f7-5c9f-43de-8b11-560b70734f92",
+      "target": "4947b130-ae1b-4617-81c6-e635c27d3ab5",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.915,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-152",
+      "type": "LEADS_TO",
+      "source": "80facf8d-ddd1-47ae-bd9d-9fe96df3fa84",
+      "target": "84fc3741-ea5d-4099-ab1b-a3c774226e1e",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.992,
+        "edge_type": "LEADS_TO"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-153",
+      "type": "INDICATES",
+      "source": "c179c82b-bbff-4336-93e0-cfc86962c78c",
+      "target": "fcfb2b1a-a8d8-4056-a799-cff273ae1b85",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.971,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-154",
+      "type": "INDICATES",
+      "source": "c179c82b-bbff-4336-93e0-cfc86962c78c",
+      "target": "94dfeaec-7f18-432c-88b7-93b4e194ca83",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.791,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-155",
+      "type": "INDICATES",
+      "source": "a7454f69-5126-426d-856c-ddeab99a8a72",
+      "target": "883761a2-9194-42bf-917f-81b74249165c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.908,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-156",
+      "type": "INDICATES",
+      "source": "1d7e30af-0ddc-4b2d-aa07-8048019a6428",
+      "target": "465f3437-4e86-4d42-ad37-7437b0446a29",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.773,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-157",
+      "type": "INDICATES",
+      "source": "3f1e2e0e-ec97-43a3-a410-1d87d79e0654",
+      "target": "905116da-2eb6-47fd-8302-2d3db54c0e4a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.952,
+        "edge_type": "INDICATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-158",
+      "type": "TRIGGERS",
+      "source": "fcfb2b1a-a8d8-4056-a799-cff273ae1b85",
+      "target": "0d6e2497-8ac1-42fa-ba18-6ef35f70ca15",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.884,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-159",
+      "type": "TRIGGERS",
+      "source": "94dfeaec-7f18-432c-88b7-93b4e194ca83",
+      "target": "d1dc2fb1-400e-414d-8438-57b1b1085790",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.851,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-160",
+      "type": "TRIGGERS",
+      "source": "883761a2-9194-42bf-917f-81b74249165c",
+      "target": "3b2c362c-e664-41de-823d-1cbcbac2ff8c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.702,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-161",
+      "type": "TRIGGERS",
+      "source": "465f3437-4e86-4d42-ad37-7437b0446a29",
+      "target": "31c08ae3-f097-4a0d-bc74-ed301fd6f65a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.956,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-162",
+      "type": "TRIGGERS",
+      "source": "905116da-2eb6-47fd-8302-2d3db54c0e4a",
+      "target": "a86b61ff-72db-46a9-b454-219a9abe139b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.916,
+        "edge_type": "TRIGGERS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-163",
+      "type": "ASSESSED_BY",
+      "source": "cbbe8b13-7907-4c80-8fee-999a3416b3d0",
+      "target": "d8c3a0f0-d883-448c-a35d-700b3b60e439",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.961,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-164",
+      "type": "ASSESSED_BY",
+      "source": "df9b18ab-d3c0-4c74-9573-e2ce2834dab3",
+      "target": "fbcf6bf7-2ab7-4a5b-8365-20145759b77d",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.792,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-165",
+      "type": "ASSESSED_BY",
+      "source": "2f097b76-2bb1-4a5b-855a-6784e1363f81",
+      "target": "d8c3a0f0-d883-448c-a35d-700b3b60e439",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.808,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-166",
+      "type": "ASSESSED_BY",
+      "source": "4947b130-ae1b-4617-81c6-e635c27d3ab5",
+      "target": "2f5205f4-79dd-4009-8b04-b0a0a8b25969",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.833,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-167",
+      "type": "ASSESSED_BY",
+      "source": "84fc3741-ea5d-4099-ab1b-a3c774226e1e",
+      "target": "d8c3a0f0-d883-448c-a35d-700b3b60e439",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.153931Z",
+        "confidence": 0.895,
+        "edge_type": "ASSESSED_BY"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-168",
+      "type": "RECOMMENDS",
+      "source": "d8c3a0f0-d883-448c-a35d-700b3b60e439",
+      "target": "283e3782-97d5-4236-8440-e315cc534dae",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.884,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-169",
+      "type": "RECOMMENDS",
+      "source": "d8c3a0f0-d883-448c-a35d-700b3b60e439",
+      "target": "5ce51465-c951-40ce-b688-c1bedc935ad8",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.789,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-170",
+      "type": "RECOMMENDS",
+      "source": "d8c3a0f0-d883-448c-a35d-700b3b60e439",
+      "target": "b5b7558a-4a02-4821-a2be-7d934e85bc4c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.984,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-171",
+      "type": "RECOMMENDS",
+      "source": "fbcf6bf7-2ab7-4a5b-8365-20145759b77d",
+      "target": "4767ce57-6ba9-4994-b23d-9c519fe02ac5",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.715,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-172",
+      "type": "RECOMMENDS",
+      "source": "2f5205f4-79dd-4009-8b04-b0a0a8b25969",
+      "target": "d397a4a7-6287-4429-9af5-67f3fefe868c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.85,
+        "edge_type": "RECOMMENDS"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-173",
+      "type": "REDUCES",
+      "source": "283e3782-97d5-4236-8440-e315cc534dae",
+      "target": "d8c3a0f0-d883-448c-a35d-700b3b60e439",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.831,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-174",
+      "type": "REDUCES",
+      "source": "4767ce57-6ba9-4994-b23d-9c519fe02ac5",
+      "target": "fbcf6bf7-2ab7-4a5b-8365-20145759b77d",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.824,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-175",
+      "type": "REDUCES",
+      "source": "5ce51465-c951-40ce-b688-c1bedc935ad8",
+      "target": "d8c3a0f0-d883-448c-a35d-700b3b60e439",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.93,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-176",
+      "type": "REDUCES",
+      "source": "d397a4a7-6287-4429-9af5-67f3fefe868c",
+      "target": "2f5205f4-79dd-4009-8b04-b0a0a8b25969",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.948,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-177",
+      "type": "REDUCES",
+      "source": "b5b7558a-4a02-4821-a2be-7d934e85bc4c",
+      "target": "d8c3a0f0-d883-448c-a35d-700b3b60e439",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.845,
+        "edge_type": "REDUCES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-178",
+      "type": "MITIGATES",
+      "source": "283e3782-97d5-4236-8440-e315cc534dae",
+      "target": "0d6e2497-8ac1-42fa-ba18-6ef35f70ca15",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.81,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-179",
+      "type": "MITIGATES",
+      "source": "4767ce57-6ba9-4994-b23d-9c519fe02ac5",
+      "target": "3b2c362c-e664-41de-823d-1cbcbac2ff8c",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.804,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-180",
+      "type": "MITIGATES",
+      "source": "5ce51465-c951-40ce-b688-c1bedc935ad8",
+      "target": "31c08ae3-f097-4a0d-bc74-ed301fd6f65a",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.82,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-181",
+      "type": "MITIGATES",
+      "source": "d397a4a7-6287-4429-9af5-67f3fefe868c",
+      "target": "a86b61ff-72db-46a9-b454-219a9abe139b",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.85,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-182",
+      "type": "MITIGATES",
+      "source": "b5b7558a-4a02-4821-a2be-7d934e85bc4c",
+      "target": "d1dc2fb1-400e-414d-8438-57b1b1085790",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.154940Z",
+        "confidence": 0.811,
+        "edge_type": "MITIGATES"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-183",
+      "type": "hasDowntime",
+      "source": "df9b18ab-d3c0-4c74-9573-e2ce2834dab3",
+      "target": "124ff695-6bf4-4cc4-b3dc-0a95926b9f86",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.907,
+        "edge_type": "hasDowntime"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-184",
+      "type": "hasRepair",
+      "source": "124ff695-6bf4-4cc4-b3dc-0a95926b9f86",
+      "target": "98e7c505-41e9-4d09-8b8f-cb31fc94acad",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.77,
+        "edge_type": "hasRepair"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-185",
+      "type": "hasLogistics",
+      "source": "124ff695-6bf4-4cc4-b3dc-0a95926b9f86",
+      "target": "bf259bce-bdab-43c7-bf07-4d12df3e38ac",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.914,
+        "edge_type": "hasLogistics"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-186",
+      "type": "hasAssemblyTime",
+      "source": "124ff695-6bf4-4cc4-b3dc-0a95926b9f86",
+      "target": "3a7a2624-5527-4cd8-8ead-ab073f2fc795",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.155941Z",
+        "confidence": 0.982,
+        "edge_type": "hasAssemblyTime"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-assembly-187",
+      "type": "hasAssembly",
+      "source": "ba7aa277-9f7c-4a96-9f56-247a562da804",
+      "target": "4f2251ce-5227-44cb-a55d-cb2a62fb98ff",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.822,
+        "edge_type": "hasAssembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-assembly-188",
+      "type": "hasAssembly",
+      "source": "ba7aa277-9f7c-4a96-9f56-247a562da804",
+      "target": "2faa8d50-e414-4e90-8271-b1272c54048d",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.875,
+        "edge_type": "hasAssembly"
+      },
+      "_source_graph": "a"
+    },
+    {
+      "id": "e-gt4-assembly-189",
+      "type": "hasAssembly",
+      "source": "ba7aa277-9f7c-4a96-9f56-247a562da804",
+      "target": "98cf6c7d-bfff-4398-9713-9ef3c6891e6f",
+      "edge_properties": {
+        "timestamp": "2026-07-12T07:20:23.151932Z",
+        "confidence": 0.725,
+        "edge_type": "hasAssembly"
+      },
+      "_source_graph": "a"
+    }
+  ]
+}

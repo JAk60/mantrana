@@ -1,0 +1,171 @@
+{
+  "Naval Dockyard Mumbai": {
+    "alignment": "self",
+    "status": "Operational",
+    "dryDocks": { "available": 3, "total": 4 },
+    "weather": "Clear",
+    "securityLevel": "Normal",
+    "maintenance": {
+      "Gas Turbine Workshop": "Available",
+      "Electrical Workshop": "Busy",
+      "Weapon Calibration": "Available",
+      "Radar Testing": "Busy"
+    }
+  },
+  "Port of Singapore": {
+    "alignment": "friendly",
+    "status": "Operational",
+    "dryDocks": { "available": 5, "total": 6 },
+    "weather": "Partly Cloudy",
+    "securityLevel": "Elevated",
+    "maintenance": {
+      "Gas Turbine Workshop": "Available",
+      "Electrical Workshop": "Available",
+      "Weapon Calibration": "Restricted",
+      "Radar Testing": "Available"
+    }
+  },
+  "Port of Dubai": {
+    "alignment": "friendly",
+    "status": "Operational",
+    "dryDocks": { "available": 2, "total": 4 },
+    "weather": "Clear",
+    "securityLevel": "Normal",
+    "maintenance": {
+      "Gas Turbine Workshop": "Busy",
+      "Electrical Workshop": "Available",
+      "Weapon Calibration": "Unavailable",
+      "Radar Testing": "Available"
+    }
+  },
+  "Port of Colombo": {
+    "alignment": "friendly",
+    "status": "Operational",
+    "dryDocks": { "available": 1, "total": 2 },
+    "weather": "Rainy",
+    "securityLevel": "Normal",
+    "maintenance": {
+      "Gas Turbine Workshop": "Available",
+      "Electrical Workshop": "Busy",
+      "Weapon Calibration": "Available",
+      "Radar Testing": "Unavailable"
+    }
+  },
+  "Karachi Port": {
+    "alignment": "adversary",
+    "status": "Active",
+    "dryDocks": { "available": 2, "total": 3 },
+    "weather": "Hazy",
+    "securityLevel": "High",
+    "maintenance": {
+      "Gas Turbine Workshop": "Unknown",
+      "Electrical Workshop": "Unknown",
+      "Weapon Calibration": "Unknown",
+      "Radar Testing": "Unknown"
+    }
+  },
+  "Gwadar Port": {
+    "alignment": "adversary",
+    "status": "Active",
+    "dryDocks": { "available": 1, "total": 2 },
+    "weather": "Clear",
+    "securityLevel": "High",
+    "maintenance": {
+      "Gas Turbine Workshop": "Unknown",
+      "Electrical Workshop": "Unknown",
+      "Weapon Calibration": "Unknown",
+      "Radar Testing": "Unknown"
+    }
+  },
+  "Port of Aden": {
+    "alignment": "adversary",
+    "status": "Restricted",
+    "dryDocks": { "available": 0, "total": 2 },
+    "weather": "Stormy",
+    "securityLevel": "Critical",
+    "maintenance": {
+      "Gas Turbine Workshop": "Offline",
+      "Electrical Workshop": "Offline",
+      "Weapon Calibration": "Unknown",
+      "Radar Testing": "Unknown"
+    }
+  },
+  "Port of Mombasa": {
+    "alignment": "friendly",
+    "status": "Operational",
+    "dryDocks": { "available": 2, "total": 3 },
+    "weather": "Clear",
+    "securityLevel": "Normal",
+    "maintenance": {
+      "Gas Turbine Workshop": "Available",
+      "Electrical Workshop": "Available",
+      "Weapon Calibration": "Unavailable",
+      "Radar Testing": "Busy"
+    }
+  },
+  "Port of Djibouti": {
+    "alignment": "friendly",
+    "status": "Operational",
+    "dryDocks": { "available": 1, "total": 2 },
+    "weather": "Clear",
+    "securityLevel": "Elevated",
+    "maintenance": {
+      "Gas Turbine Workshop": "Busy",
+      "Electrical Workshop": "Available",
+      "Weapon Calibration": "Available",
+      "Radar Testing": "Available"
+    }
+  },
+  "Visakhapatnam Naval Base": {
+    "alignment": "self",
+    "status": "Operational",
+    "dryDocks": { "available": 2, "total": 3 },
+    "weather": "Partly Cloudy",
+    "securityLevel": "Normal",
+    "maintenance": {
+      "Gas Turbine Workshop": "Busy",
+      "Electrical Workshop": "Available",
+      "Weapon Calibration": "Busy",
+      "Radar Testing": "Available"
+    }
+  },
+  "Cochin Shipyard": {
+    "alignment": "self",
+    "status": "Operational",
+    "dryDocks": { "available": 4, "total": 5 },
+    "weather": "Overcast",
+    "securityLevel": "Normal",
+    "maintenance": {
+      "Gas Turbine Workshop": "Available",
+      "Electrical Workshop": "Available",
+      "Weapon Calibration": "Available",
+      "Radar Testing": "Available"
+    }
+  },
+  "Port Blair Naval Base": {
+    "alignment": "self",
+    "status": "Operational",
+    "dryDocks": { "available": 1, "total": 2 },
+    "weather": "Clear",
+    "securityLevel": "Elevated",
+    "maintenance": {
+      "Gas Turbine Workshop": "Available",
+      "Electrical Workshop": "Busy",
+      "Weapon Calibration": "Available",
+      "Radar Testing": "Busy"
+    }
+  },
+  "Hambantota Port": {
+    "alignment": "adversary",
+    "status": "Active",
+    "dryDocks": { "available": 2, "total": 3 },
+    "weather": "Clear",
+    "securityLevel": "High",
+    "maintenance": {
+      "Gas Turbine Workshop": "Unknown",
+      "Electrical Workshop": "Unknown",
+      "Weapon Calibration": "Unknown",
+      "Radar Testing": "Unknown"
+    }
+  }
+}

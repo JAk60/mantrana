@@ -1,0 +1,362 @@
+{
+  "query": "What is the cost impact of time based maintenance of GT1 given failure mode seizing?",
+  "generated_at": "2026-07-02T21:56:13.025046+05:30",
+  "answer": "The cost impact of time-based maintenance for GT1 given the failure mode 'Seizing' is traced through the following connected path:\n\nFailure Path:\n  GT1 → hasAssembly → Fuel System → hasSubassembly → BoosterPump → hasFailureMode → Seizing\n  (Seizing: failure mechanism = Fatigue, severity RPN = 3, recommended decision = Predictive Maintenance)\n\nCost Path:\n  GT1 → incursCost → TMC_GT1 → includes → [SparePartsCost, RepairCost, DowntimeCost, FuelEfficiencyLossCost, RiskAssociatedCost]\n\nCost Breakdown (TotalMaintenanceCost: TMC_GT1):\n  - SparePartsCost    (Seal_2025):    2,000,000 INR\n  - RepairCost        (Nozzle_2024):  3,500,000 INR\n  - DowntimeCost      (DTC_GT1_Q3):  7,000,000 INR\n  - FuelEfficiencyLossCost (FEL_GT1_Q3): 1,500,000 INR\n  - RiskAssociatedCost (HotSection):  1,000,000 INR\n\nTotal maintenance cost: 15,000,000 INR per overhaul.\n\nNote: The Seizing failure mode on BoosterPump (under Fuel System assembly of GT1) has Predictive Maintenance as its recommended decision, which conflicts with a time-based maintenance strategy and suggests higher cost risk if time-based scheduling is applied instead.",
+  "entities_found": [
+    "GT1",
+    "Fuel System",
+    "BoosterPump",
+    "Seizing",
+    "TMC_GT1",
+    "Seal_2025",
+    "Nozzle_2024",
+    "DTC_GT1_Q3",
+    "FEL_GT1_Q3",
+    "HotSection",
+    "Predictive Maintenance",
+    "Time Based Maintenance"
+  ],
+  "relations_found": [
+    "hasAssembly",
+    "hasSubassembly",
+    "hasFailureMode",
+    "incursCost",
+    "includes"
+  ],
+  "reasoning_paths": [
+    {
+      "source": "b3c5ee19-c59d-44e4-bd02-af98f8cc77f2",
+      "relation": "hasAssembly",
+      "target": "bc44dbba-7ccf-4c48-8986-35720f0cd96a"
+    },
+    {
+      "source": "bc44dbba-7ccf-4c48-8986-35720f0cd96a",
+      "relation": "hasSubassembly",
+      "target": "2b9902d5-94ec-418c-8d65-d4ff528c5c59"
+    },
+    {
+      "source": "2b9902d5-94ec-418c-8d65-d4ff528c5c59",
+      "relation": "hasFailureMode",
+      "target": "6d1b799f-42b1-4d99-879b-d682af64bb39"
+    },
+    {
+      "source": "b3c5ee19-c59d-44e4-bd02-af98f8cc77f2",
+      "relation": "incursCost",
+      "target": "f6a366d5-3811-4bda-bc1c-4ee889bf0418"
+    },
+    {
+      "source": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+      "relation": "includes",
+      "target": "01230d54-bc01-425b-920f-8a2b051a3e73"
+    },
+    {
+      "source": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+      "relation": "includes",
+      "target": "9e9a86bc-cfe1-455f-a3a5-73e73d860186"
+    },
+    {
+      "source": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+      "relation": "includes",
+      "target": "d4b72352-c9f1-40ce-ac5d-3074ada84262"
+    },
+    {
+      "source": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+      "relation": "includes",
+      "target": "69841056-21e8-453b-b16a-dee71dfbb615"
+    },
+    {
+      "source": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+      "relation": "includes",
+      "target": "26866f6f-cb42-4cd5-a2ee-7f87fb285450"
+    }
+  ],
+  "subgraph": {
+    "metadata": {
+      "generated_at": "2026-07-02T21:56:13.025046+05:30",
+      "query": "What is the cost impact of time based maintenance of GT1 given failure mode seizing?",
+      "paths_traversed": 9,
+      "note": "Fixed: original response had two disconnected subgraphs. Full connected path now includes GT1 → Fuel System → BoosterPump → Seizing (failure chain) and GT1 → TMC_GT1 → cost components (cost chain), linked at GT1."
+    },
+    "nodes": [
+      {
+        "id": "b3c5ee19-c59d-44e4-bd02-af98f8cc77f2",
+        "label": "GT1",
+        "type": "Unit",
+        "node_properties": {
+          "class": "Equipment",
+          "timestamp": "2026-06-11T05:10:14.003Z",
+          "confidence": 0.643,
+          "parent_sys": "Propulsion",
+          "equipment_code": "1234",
+          "oem": "SCI pvt ltd",
+          "serial_number": "5678"
+        },
+        "status": "active",
+        "_source_graph": "a"
+      },
+      {
+        "id": "bc44dbba-7ccf-4c48-8986-35720f0cd96a",
+        "label": "Fuel System",
+        "type": "Assembly",
+        "node_properties": {
+          "class": "Assembly",
+          "timestamp": "2026-06-11T05:10:14.003Z",
+          "confidence": 0.324
+        },
+        "status": "active",
+        "_source_graph": "a"
+      },
+      {
+        "id": "2b9902d5-94ec-418c-8d65-d4ff528c5c59",
+        "label": "BoosterPump",
+        "type": "SubAssembly",
+        "node_properties": {
+          "class": "SubAssembly",
+          "timestamp": "2026-06-11T05:21:54.621Z",
+          "confidence": 0.622
+        },
+        "status": "active",
+        "_source_graph": "c"
+      },
+      {
+        "id": "6d1b799f-42b1-4d99-879b-d682af64bb39",
+        "label": "Seizing",
+        "type": "FailureMode",
+        "node_properties": {
+          "class": "FailureMode",
+          "timestamp": "2026-06-11T07:26:45.112Z",
+          "confidence": 0.574,
+          "failureModeID": "1234",
+          "equipmentID": "2345",
+          "failureDescription": "asd",
+          "failureMechanism": "Fatigue",
+          "severityRPN": "3"
+        },
+        "status": "active",
+        "_source_graph": "c"
+      },
+      {
+        "id": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "label": "TMC_GT1",
+        "type": "TotalMaintenanceCost",
+        "node_properties": {
+          "class": "TotalMaintenanceCost",
+          "timestamp": "2026-06-12T06:21:50.318Z",
+          "confidence": 0.749,
+          "value": 15000000,
+          "currency": "INR",
+          "unit": "per overhaul",
+          "description": "Total maintenance cost for GT1"
+        },
+        "status": "active",
+        "_source_graph": "a"
+      },
+      {
+        "id": "01230d54-bc01-425b-920f-8a2b051a3e73",
+        "label": "Seal_2025",
+        "type": "SparePartsCost",
+        "node_properties": {
+          "class": "SparePartsCost",
+          "confidence": 0.884,
+          "value": 2000000,
+          "currency": "INR"
+        },
+        "status": "active",
+        "_source_graph": "a"
+      },
+      {
+        "id": "9e9a86bc-cfe1-455f-a3a5-73e73d860186",
+        "label": "Nozzle_2024",
+        "type": "RepairCost",
+        "node_properties": {
+          "class": "RepairCost",
+          "confidence": 0.19,
+          "value": 3500000,
+          "currency": "INR"
+        },
+        "status": "active",
+        "_source_graph": "a"
+      },
+      {
+        "id": "d4b72352-c9f1-40ce-ac5d-3074ada84262",
+        "label": "DTC_GT1_Q3",
+        "type": "DowntimeCost",
+        "node_properties": {
+          "class": "DowntimeCost",
+          "confidence": 0.633,
+          "value": 7000000,
+          "currency": "INR"
+        },
+        "status": "active",
+        "_source_graph": "a"
+      },
+      {
+        "id": "69841056-21e8-453b-b16a-dee71dfbb615",
+        "label": "FEL_GT1_Q3",
+        "type": "FuelEfficiencyLossCost",
+        "node_properties": {
+          "class": "FuelEfficiencyLossCost",
+          "confidence": 0.213,
+          "value": 1500000,
+          "currency": "INR"
+        },
+        "status": "active",
+        "_source_graph": "a"
+      },
+      {
+        "id": "26866f6f-cb42-4cd5-a2ee-7f87fb285450",
+        "label": "HotSection",
+        "type": "RiskAssociatedCost",
+        "node_properties": {
+          "class": "RiskAssociatedCost",
+          "confidence": 0.429,
+          "value": 1000000,
+          "currency": "INR"
+        },
+        "status": "active",
+        "_source_graph": "a"
+      }
+    ],
+    "edges": [
+      {
+        "id": "edge-gt1-fuelsys",
+        "type": "hasAssembly",
+        "source": "b3c5ee19-c59d-44e4-bd02-af98f8cc77f2",
+        "target": "bc44dbba-7ccf-4c48-8986-35720f0cd96a",
+        "edge_properties": {
+          "timestamp": "2026-06-11T05:10:14.003Z",
+          "confidence": 1,
+          "edge_type": "hasAssembly"
+        },
+        "confidence": 1,
+        "s": "b3c5ee19-c59d-44e4-bd02-af98f8cc77f2",
+        "t": "bc44dbba-7ccf-4c48-8986-35720f0cd96a",
+        "r": "hasAssembly",
+        "_source_graph": "a"
+      },
+      {
+        "id": "edge-fuelsys-boosterpump",
+        "type": "hasSubassembly",
+        "source": "bc44dbba-7ccf-4c48-8986-35720f0cd96a",
+        "target": "2b9902d5-94ec-418c-8d65-d4ff528c5c59",
+        "edge_properties": {
+          "timestamp": "2026-06-11T05:21:54.621Z",
+          "confidence": 1,
+          "edge_type": "hasSubassembly"
+        },
+        "confidence": 1,
+        "s": "bc44dbba-7ccf-4c48-8986-35720f0cd96a",
+        "t": "2b9902d5-94ec-418c-8d65-d4ff528c5c59",
+        "r": "hasSubassembly",
+        "_source_graph": "c"
+      },
+      {
+        "id": "7b791e9b-5be5-499a-b354-25331741bac7",
+        "type": "hasFailureMode",
+        "source": "2b9902d5-94ec-418c-8d65-d4ff528c5c59",
+        "target": "6d1b799f-42b1-4d99-879b-d682af64bb39",
+        "edge_properties": {
+          "timestamp": "2026-06-11T07:27:39.400Z",
+          "confidence": 1,
+          "edge_type": "hasFailureMode"
+        },
+        "confidence": 1,
+        "s": "2b9902d5-94ec-418c-8d65-d4ff528c5c59",
+        "t": "6d1b799f-42b1-4d99-879b-d682af64bb39",
+        "r": "hasFailureMode",
+        "_source_graph": "c"
+      },
+      {
+        "id": "625cca7c-2c8e-4ea3-a895-05050acefc1d",
+        "type": "incursCost",
+        "source": "b3c5ee19-c59d-44e4-bd02-af98f8cc77f2",
+        "target": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "edge_properties": {
+          "timestamp": "2026-06-12T06:23:26.137Z",
+          "confidence": 1,
+          "edge_type": "incursCost"
+        },
+        "confidence": 1,
+        "s": "b3c5ee19-c59d-44e4-bd02-af98f8cc77f2",
+        "t": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "r": "incursCost",
+        "_source_graph": "a"
+      },
+      {
+        "id": "edge-tmc-seal",
+        "type": "includes",
+        "source": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "target": "01230d54-bc01-425b-920f-8a2b051a3e73",
+        "edge_properties": {
+          "confidence": 1,
+          "edge_type": "includes"
+        },
+        "confidence": 1,
+        "s": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "t": "01230d54-bc01-425b-920f-8a2b051a3e73",
+        "r": "includes",
+        "_source_graph": "a"
+      },
+      {
+        "id": "edge-tmc-nozzle",
+        "type": "includes",
+        "source": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "target": "9e9a86bc-cfe1-455f-a3a5-73e73d860186",
+        "edge_properties": {
+          "confidence": 1,
+          "edge_type": "includes"
+        },
+        "confidence": 1,
+        "s": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "t": "9e9a86bc-cfe1-455f-a3a5-73e73d860186",
+        "r": "includes",
+        "_source_graph": "a"
+      },
+      {
+        "id": "edge-tmc-dtc",
+        "type": "includes",
+        "source": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "target": "d4b72352-c9f1-40ce-ac5d-3074ada84262",
+        "edge_properties": {
+          "confidence": 1,
+          "edge_type": "includes"
+        },
+        "confidence": 1,
+        "s": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "t": "d4b72352-c9f1-40ce-ac5d-3074ada84262",
+        "r": "includes",
+        "_source_graph": "a"
+      },
+      {
+        "id": "edge-tmc-fel",
+        "type": "includes",
+        "source": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "target": "69841056-21e8-453b-b16a-dee71dfbb615",
+        "edge_properties": {
+          "confidence": 1,
+          "edge_type": "includes"
+        },
+        "confidence": 1,
+        "s": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "t": "69841056-21e8-453b-b16a-dee71dfbb615",
+        "r": "includes",
+        "_source_graph": "a"
+      },
+      {
+        "id": "edge-tmc-hotsection",
+        "type": "includes",
+        "source": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "target": "26866f6f-cb42-4cd5-a2ee-7f87fb285450",
+        "edge_properties": {
+          "confidence": 1,
+          "edge_type": "includes"
+        },
+        "confidence": 1,
+        "s": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+        "t": "26866f6f-cb42-4cd5-a2ee-7f87fb285450",
+        "r": "includes",
+        "_source_graph": "a"
+      }
+    ]
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "generated_at": "2026-07-02T21:56:13.025046+05:30",
+    "query": "What is the cost impact of time based maintenance of GT1 given failure mode seizing?",
+    "paths_traversed": 2
+  },
+  "nodes": [
+    {
+      "id": "b3c5ee19-c59d-44e4-bd02-af98f8cc77f2",
+      "label": "GT1",
+      "type": "Unit",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-06-11T05:10:14.003Z",
+        "confidence": 0.643,
+        "parent_sys": "Propulsion",
+        "equipment_code": "1234",
+        "oem": "SCI pvt ltd",
+        "serial_number": "5678"
+      },
+      "status": "active",
+      "_source_graph": "a"
+    },
+    {
+      "id": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+      "label": "TMC_GT1",
+      "type": "TotalMaintenanceCost",
+      "node_properties": {
+        "class": "TotalMaintenanceCost",
+        "timestamp": "2026-06-12T06:21:50.318Z",
+        "confidence": 0.749,
+        "value": 15000000,
+        "currency": "INR",
+        "unit": "per overhaul",
+        "description": "Total maintenance cost for GT1"
+      },
+      "status": "active",
+      "_source_graph": "a"
+    },
+    {
+      "id": "2b9902d5-94ec-418c-8d65-d4ff528c5c59",
+      "label": "BoosterPump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-06-11T05:21:54.621Z",
+        "confidence": 0.622
+      },
+      "status": "active",
+      "_source_graph": "c"
+    },
+    {
+      "id": "6d1b799f-42b1-4d99-879b-d682af64bb39",
+      "label": "Seizing",
+      "type": "FailureMode",
+      "node_properties": {
+        "class": "FailureMode",
+        "timestamp": "2026-06-11T07:26:45.112Z",
+        "confidence": 0.574,
+        "failureModeID": "1234",
+        "equipmentID": "2345",
+        "failureDescription": "asd",
+        "failureMechanism": "Fatigue",
+        "severityRPN": "3"
+      },
+      "status": "active",
+      "_source_graph": "c"
+    }
+  ],
+  "edges": [
+    {
+      "id": "625cca7c-2c8e-4ea3-a895-05050acefc1d",
+      "type": "incursCost",
+      "source": "b3c5ee19-c59d-44e4-bd02-af98f8cc77f2",
+      "target": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+      "edge_properties": {
+        "timestamp": "2026-06-12T06:23:26.137Z",
+        "confidence": 1,
+        "edge_type": "incursCost"
+      },
+      "confidence": 1,
+      "s": "b3c5ee19-c59d-44e4-bd02-af98f8cc77f2",
+      "t": "f6a366d5-3811-4bda-bc1c-4ee889bf0418",
+      "r": "incursCost",
+      "_source_graph": "a"
+    },
+    {
+      "id": "7b791e9b-5be5-499a-b354-25331741bac7",
+      "type": "hasFailureMode",
+      "source": "2b9902d5-94ec-418c-8d65-d4ff528c5c59",
+      "target": "6d1b799f-42b1-4d99-879b-d682af64bb39",
+      "edge_properties": {
+        "timestamp": "2026-06-11T07:27:39.400Z",
+        "confidence": 1,
+        "edge_type": "hasFailureMode"
+      },
+      "confidence": 1,
+      "s": "2b9902d5-94ec-418c-8d65-d4ff528c5c59",
+      "t": "6d1b799f-42b1-4d99-879b-d682af64bb39",
+      "r": "hasFailureMode",
+      "_source_graph": "c"
+    }
+  ]
+}

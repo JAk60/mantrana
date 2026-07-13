@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "GT1",
+      "label": "GT1",
+      "type": "Equipment"
+    },
+    {
+      "id": "Fuel_System",
+      "label": "Fuel System",
+      "type": "Assembly"
+    },
+    {
+      "id": "Fine_Fuel_Filter",
+      "label": "Fine Fuel Filter",
+      "type": "SubAssembly"
+    },
+    {
+      "id": "BoosterPump",
+      "label": "BoosterPump",
+      "type": "SubAssembly"
+    },
+    {
+      "id": "HPAirSystem",
+      "label": "HPAirSystem",
+      "type": "Assembly"
+    },
+    {
+      "id": "AirFilter",
+      "label": "AirFilter",
+      "type": "SubAssembly"
+    },
+    {
+      "id": "LubeOilSystem",
+      "label": "LubeOilSystem",
+      "type": "Assembly"
+    },
+    {
+      "id": "OilPump",
+      "label": "OilPump",
+      "type": "SubAssembly"
+    },
+    {
+      "id": "FuelFilterClogging",
+      "label": "Clogging",
+      "type": "FailureMode"
+    },
+    {
+      "id": "AirFilterClogging",
+      "label": "Clogging",
+      "type": "FailureMode"
+    },
+    {
+      "id": "Seizing",
+      "label": "Seizing",
+      "type": "FailureMode"
+    },
+    {
+      "id": "Leaking",
+      "label": "Leaking",
+      "type": "FailureMode"
+    }
+  ],
+  "edges": [
+    {
+      "s": "GT1",
+      "t": "Fuel_System",
+      "r": "hasAssembly"
+    },
+    {
+      "s": "Fuel_System",
+      "t": "Fine_Fuel_Filter",
+      "r": "hasSubassembly"
+    },
+    {
+      "s": "Fine_Fuel_Filter",
+      "t": "FuelFilterClogging",
+      "r": "hasFailureMode"
+    },
+    {
+      "s": "Fuel_System",
+      "t": "BoosterPump",
+      "r": "hasSubassembly"
+    },
+    {
+      "s": "BoosterPump",
+      "t": "Seizing",
+      "r": "hasFailureMode"
+    },
+    {
+      "s": "GT1",
+      "t": "HPAirSystem",
+      "r": "hasAssembly"
+    },
+    {
+      "s": "HPAirSystem",
+      "t": "AirFilter",
+      "r": "hasSubassembly"
+    },
+    {
+      "s": "AirFilter",
+      "t": "AirFilterClogging",
+      "r": "hasFailureMode"
+    },
+    {
+      "s": "GT1",
+      "t": "LubeOilSystem",
+      "r": "hasAssembly"
+    },
+    {
+      "s": "LubeOilSystem",
+      "t": "OilPump",
+      "r": "hasSubassembly"
+    },
+    {
+      "s": "OilPump",
+      "t": "Leaking",
+      "r": "hasFailureMode"
+    }
+  ]
+}

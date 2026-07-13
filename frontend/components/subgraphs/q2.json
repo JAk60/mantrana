@@ -1,0 +1,17 @@
+{
+  "nodes": [
+    { "id": "INS_KOLKATA", "label": "INS KOLKATA", "type": "Ship" },
+    { "id": "Propulsion", "label": "Propulsion", "type": "System" },
+    { "id": "GT1", "label": "GT1", "type": "Equipment" },
+    { "id": "GT2", "label": "GT2", "type": "Equipment" },
+    { "id": "GT3", "label": "GT3", "type": "Equipment" },
+    { "id": "GT4", "label": "GT4", "type": "Equipment" }
+  ],
+  "edges": [
+    { "s": "INS_KOLKATA", "t": "Propulsion", "r": "hasSystem" },
+    { "s": "Propulsion", "t": "GT1", "r": "hasEquipment" },
+    { "s": "Propulsion", "t": "GT2", "r": "hasEquipment" },
+    { "s": "Propulsion", "t": "GT3", "r": "hasEquipment" },
+    { "s": "Propulsion", "t": "GT4", "r": "hasEquipment" }
+  ]
+}

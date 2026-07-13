@@ -1,0 +1,170 @@
+{
+    "config_id": "8abcc8ef-af7c-4f64-a150-344eeed41402",
+    "config_name": "DEMO_01",
+    "ship_id": "d03d2f7e-01b0-4758-b482-c0d7fe2b0a6e",
+    "ship_name": "INS ONE",
+    "total_duration": 20,
+    "created_at": "2026-07-12T13:17:37.801Z",
+    "phases": [
+        {
+            "phase_name": "Harbour",
+            "duration_hours": 5,
+            "sequence_order": 0,
+            "propulsion": {
+                "k": 1,
+                "n": 4
+            },
+            "power_generation": {
+                "k": 1,
+                "n": 4
+            },
+            "support": {
+                "k": 4,
+                "n": 6
+            },
+            "firing": {
+                "k": 0,
+                "n": 1
+            }
+        },
+        {
+            "phase_name": "Cruise",
+            "duration_hours": 10,
+            "sequence_order": 1,
+            "propulsion": {
+                "k": 1,
+                "n": 4
+            },
+            "power_generation": {
+                "k": 1,
+                "n": 4
+            },
+            "support": {
+                "k": 4,
+                "n": 6
+            },
+            "firing": {
+                "k": 0,
+                "n": 1
+            }
+        },
+        {
+            "phase_name": "Action Station",
+            "duration_hours": 5,
+            "sequence_order": 2,
+            "propulsion": {
+                "k": 2,
+                "n": 4
+            },
+            "power_generation": {
+                "k": 2,
+                "n": 4
+            },
+            "support": {
+                "k": 4,
+                "n": 6
+            },
+            "firing": {
+                "k": 1,
+                "n": 1
+            }
+        }
+    ],
+    "systems": {
+        "propulsion": {
+            "system_id": "e93c24f5-05c2-4be4-956f-d3d5d7f9199c",
+            "selected_equipment": [
+                {
+                    "component_id": "272aba05-0f98-462c-a8e0-310c1f294088",
+                    "name": "Gas Turbine",
+                    "nomenclature": "GT 1"
+                },
+                {
+                    "component_id": "c0046317-2b1b-4a3c-835c-993b97300763",
+                    "name": "Gas Turbine",
+                    "nomenclature": "GT 3"
+                },
+                {
+                    "component_id": "31bf66b9-6bc8-4f7f-b807-d09b3eb91e72",
+                    "name": "Gas Turbine",
+                    "nomenclature": "GT 4"
+                },
+                {
+                    "component_id": "376cbaa9-edbf-49ce-bba4-e345a92af25e",
+                    "name": "Gas Turbine",
+                    "nomenclature": "GT 2"
+                }
+            ]
+        },
+        "power_generation": {
+            "system_id": "b817ca9b-b5f7-4f9c-a33f-c7f5b96ba9ce",
+            "selected_equipment": [
+                {
+                    "component_id": "fefd5bab-3d50-40b3-a85c-0a0f4e00dc8a",
+                    "name": "Generators",
+                    "nomenclature": "GTG 2"
+                },
+                {
+                    "component_id": "4fc7d6e8-9d31-48b0-b93e-3e2785d5690b",
+                    "name": "Generators",
+                    "nomenclature": "GTG 3"
+                },
+                {
+                    "component_id": "35e65f25-d529-4604-9f91-4557626f41dc",
+                    "name": "Generators",
+                    "nomenclature": "GTG 1"
+                },
+                {
+                    "component_id": "7abd3b2e-fb04-47dc-8de5-d2bde00f27a5",
+                    "name": "Generators",
+                    "nomenclature": "GTG 4"
+                }
+            ]
+        },
+        "support": {
+            "system_id": "84fbacd3-ef78-489d-81a2-d5f1b7a5fc7a",
+            "selected_equipment": [
+                {
+                    "component_id": "e8f09160-b6c3-4e8f-8a6b-001fcf750f36",
+                    "name": "Air Conditioner",
+                    "nomenclature": "AC 3"
+                },
+                {
+                    "component_id": "5f8111fd-8182-48aa-a82a-0361c03aa2d4",
+                    "name": "Air Conditioner",
+                    "nomenclature": "AC 6"
+                },
+                {
+                    "component_id": "3bfa9a45-bdc3-489a-a2b3-7afb8a036743",
+                    "name": "Air Conditioner",
+                    "nomenclature": "AC 2"
+                },
+                {
+                    "component_id": "3bd534ef-fc41-452f-8765-84af58d5590d",
+                    "name": "Air Conditioner",
+                    "nomenclature": "AC 1"
+                },
+                {
+                    "component_id": "bb38bf55-9822-4ab9-ae71-90bc76e0dc01",
+                    "name": "Air Conditioner",
+                    "nomenclature": "AC 5"
+                },
+                {
+                    "component_id": "1915a4ad-2d87-46bd-a237-934cf63cc87b",
+                    "name": "Air Conditioner",
+                    "nomenclature": "AC 4"
+                }
+            ]
+        },
+        "firing": {
+            "system_id": "e4ab22a2-dfba-4893-b04d-79b8f417a72c",
+            "selected_equipment": [
+                {
+                    "component_id": "3cc86f1a-a6fd-4f81-a408-706ec21d840d",
+                    "name": "Super Rapid Gun Mount",
+                    "nomenclature": "SRGM 1"
+                }
+            ]
+        }
+    }
+}

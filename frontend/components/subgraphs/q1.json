@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "id": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#GT1",
+      "label": "GT1",
+      "type": "Assembly"
+    },
+    {
+      "id": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Fuel_System",
+      "label": "Fuel System",
+      "type": "Assembly"
+    },
+    {
+      "id": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#BoosterPump",
+      "label": "BoosterPump",
+      "type": "SubAssembly"
+    },
+    {
+      "id": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Seizing",
+      "label": "Seizing",
+      "type": "FailureMode"
+    },
+    {
+      "id": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#effect",
+      "label": "Fuel flow interruption",
+      "type": "Effect"
+    },
+    {
+      "id": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#con1",
+      "label": "Performance Loss",
+      "type": "Consequence"
+    },
+    {
+      "id": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Downtime_instance",
+      "label": "Downtime",
+      "type": "Downtime"
+    },
+    {
+      "id": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Logistics_instance",
+      "label": "Logistics",
+      "type": "Logistics"
+    },
+    {
+      "id": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Repair_instance",
+      "label": "Repair",
+      "type": "Repair"
+    },
+    {
+      "id": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#AssemblyTime_instance",
+      "label": "AssemblyTime",
+      "type": "AssemblyTime"
+    }
+  ],
+  "edges": [
+    {
+      "s": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#GT1",
+      "t": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Fuel_System",
+      "r": "hasAssembly"
+    },
+    {
+      "s": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Fuel_System",
+      "t": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#BoosterPump",
+      "r": "hasSubassembly"
+    },
+    {
+      "s": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#BoosterPump",
+      "t": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Seizing",
+      "r": "hasFailureMode"
+    },
+    {
+      "s": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Seizing",
+      "t": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#effect",
+      "r": "PRODUCES"
+    },
+    {
+      "s": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#effect",
+      "t": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#con1",
+      "r": "LEADS_TO"
+    },
+    {
+      "s": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#con1",
+      "t": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Downtime_instance",
+      "r": "hasDowntime"
+    },
+    {
+      "s": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Downtime_instance",
+      "t": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Logistics_instance",
+      "r": "hasLogistics"
+    },
+    {
+      "s": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Downtime_instance",
+      "t": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Repair_instance",
+      "r": "hasRepair"
+    },
+    {
+      "s": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#Downtime_instance",
+      "t": "http://example.org/draft/941c0db2-9067-4889-8680-fffe80b35cb2#AssemblyTime_instance",
+      "r": "hasAssemblyTime"
+    }
+  ]
+}
