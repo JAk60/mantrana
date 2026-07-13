@@ -415,7 +415,7 @@ const vesselRows: [string, string, string][] = [
 
     const map = new maplibregl.Map({
       container: containerRef.current,
-      style: BASEMAPS.dark,
+      style: BASEMAPS.satellite,
       center: initialCenter,
       zoom: initialZoom,
       minZoom: 0,

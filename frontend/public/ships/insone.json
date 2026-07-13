@@ -74,48 +74,56 @@
     "max_available_speed_knots": 27.5,
     "fuel_status_kilolitres": 830
   },
-  
-  
   "timeline": {
-
     "2026-02-06T10:30:00Z": {
       "location": "dockyard",
       "dockyard": "Dockyard B",
       "log": "Shifted to Dockyard B for scheduled intermediate refit, structural inspection, hull preservation, auxiliary machinery maintenance, and repairs to the DG2 generator system."
     },
-
     "2026-03-01T06:45:00Z": {
       "location": "mission",
       "missionType": "Anti-Piracy",
-      "coordinates": "11.1200° N, 46.3800° E",
-      "log": "Commenced anti-piracy patrols along designated commercial shipping routes. Continuous radar surveillance and high-readiness RIB teams were maintained to respond rapidly to suspicious maritime activity."
+      "coordinates": "11.1200\u00b0 N, 46.3800\u00b0 E",
+      "log": "Commenced anti-piracy patrols along designated commercial shipping routes. Continuous radar surveillance and high-readiness RIB teams were maintained to respond rapidly to suspicious maritime activity.",
+      "scenario": {
+        "missionStatement": "At approximately 2026-03-01T06:45:00Z, the Maritime Operations Centre (MOC), Mumbai, received intelligence indicating multiple piracy incidents targeting commercial vessels transiting the Internationally Recommended Transit Corridor (IRTC) in the western Arabian Sea. A merchant vessel, MV Eastern Horizon, reported being pursued by several high-speed skiffs at approximately 14.1850\u00b0N, 60.9420\u00b0E, nearly 760 nautical miles southwest of Mumbai Port. Intelligence suggests the presence of an organized pirate group operating from a suspected mother vessel in the vicinity, posing a significant threat to commercial shipping and freedom of navigation. A naval warship is required to deploy to the designated area of operations to establish maritime security, deter and intercept pirate vessels, protect commercial shipping, and conduct surveillance and boarding operations as necessary. As part of the mission planning process, the operational readiness of the ship is to be evaluated. The mission shall follow a phased operational profile consisting of 4 hours in Harbour, 12 hours during Transit, 8 hours conducting Anti-Piracy Operations, and 6 hours during Return Transit.",
+        "summary": "The warship completed the assigned Anti-Piracy mission successfully by securing the designated maritime corridor, escorting vulnerable merchant vessels, and deterring hostile pirate activity through sustained surveillance and interdiction operations. All identified suspicious contacts were investigated, and no commercial vessels were compromised during the mission. Mission-critical propulsion, navigation, communication, and surveillance systems remained fully operational throughout the deployment, enabling successful mission completion and maintaining operational readiness for subsequent tasking."
+      }
     },
-
-      "2026-04-12T10:30:00Z": {
+    "2026-04-12T10:30:00Z": {
       "location": "dockyard",
       "dockyard": "Dockyard B",
       "log": "Shifted to Dockyard B for scheduled intermediate refit, structural inspection, hull preservation, auxiliary machinery maintenance, and repairs to the DG2 generator system."
     },
-
     "2026-05-01T03:20:00Z": {
       "location": "mission",
       "missionType": "SAR",
-      "coordinates": "15.3400° N, 68.4500° E",
-      "log": "Responded to a distress signal from a cargo vessel. An ASW helicopter was launched for aerial search while onboard medical teams and rescue personnel remained prepared for casualty reception."
+      "coordinates": "15.3400\u00b0 N, 68.4500\u00b0 E",
+      "log": "Responded to a distress signal from a cargo vessel. An ASW helicopter was launched for aerial search while onboard medical teams and rescue personnel remained prepared for casualty reception.",
+      "scenario": {
+        "missionStatement": "At approximately 2026-05-01T03:20:00Z, the Maritime Operations Centre (MOC), Mumbai, received a distress signal from the merchant vessel MV Ocean Crest located at approximately 14.8620\u00b0N, 69.4750\u00b0E, nearly 420 nautical miles southwest of Mumbai Port. Initial reports indicate that the vessel suffered a major engine room fire resulting in complete loss of propulsion and multiple casualties onboard. Adverse weather conditions, including rough seas and reduced visibility, are expected to deteriorate further over the next 12 hours. A naval warship is required to proceed to the distress location to conduct Search and Rescue (SAR) operations, provide immediate medical assistance, evacuate survivors, and coordinate rescue efforts with maritime and aerial assets. As part of the mission planning process, the operational readiness of the ship is to be evaluated. The mission shall follow a phased operational profile consisting of 4 hours in Harbour, 8 hours during Transit, 6 hours conducting Search and Rescue operations, and 4 hours during Return Transit.",
+        "summary": "The warship completed the assigned Search and Rescue mission successfully, covering a transit distance of approximately 840 nautical miles (round trip). Rescue operations resulted in the safe evacuation of survivors, delivery of emergency medical assistance, and coordination with aerial rescue assets. All mission-critical systems remained operational throughout the deployment, enabling successful completion of the assigned objectives despite adverse weather conditions. The vessel returned to base with no critical defects reported and remained available for subsequent operational tasking."
+      }
     },
-
     "2026-06-10T19:55:00Z": {
       "location": "mission",
       "missionType": "HADR",
-      "coordinates": "06.2200° S, 105.4100° E",
-      "log": "Conducted Humanitarian Assistance and Disaster Relief operations by deploying relief stores, producing potable water, and supporting coastal communities using embarked aviation and small boats."
+      "coordinates": "06.2200\u00b0 S, 105.4100\u00b0 E",
+      "log": "Conducted Humanitarian Assistance and Disaster Relief operations by deploying relief stores, producing potable water, and supporting coastal communities using embarked aviation and small boats.",
+      "scenario": {
+        "missionStatement": "At approximately 2026-06-10T19:55:00Z, the Maritime Operations Centre (MOC), Mumbai, received a request for immediate Humanitarian Assistance and Disaster Relief (HADR) following the landfall of a severe cyclonic storm along the western coastline. Widespread flooding, disruption of communication networks, and damage to critical infrastructure have left several coastal communities isolated near approximately 15.7820\u00b0N, 73.6150\u00b0E, approximately 290 nautical miles south of Mumbai Port. Immediate assistance is required to deliver relief supplies, provide medical aid, evacuate stranded civilians, and support local authorities in restoring essential services. A naval warship is required to proceed to the affected area to coordinate relief operations, deploy rescue teams and boats, establish communication support, and facilitate humanitarian assistance. As part of the mission planning process, the operational readiness of the ship is to be evaluated. The mission shall follow a phased operational profile consisting of 4 hours in Harbour, 8 hours during Transit, 12 hours conducting Humanitarian Assistance and Disaster Relief operations, and 6 hours during Return Transit.",
+        "summary": "The designated warship successfully completed the Humanitarian Assistance and Disaster Relief mission by delivering emergency relief supplies, providing medical assistance, and evacuating stranded civilians from affected coastal areas. Rescue teams coordinated with civil authorities to restore communication links and support relief distribution in inaccessible regions. Despite challenging weather and infrastructure disruptions, all planned humanitarian objectives were achieved successfully, with mission-critical ship systems remaining fully operational throughout the deployment. The vessel returned to base without any major equipment deficiencies and remained available for further operational tasking."
+      }
     },
-
     "2026-07-02T00:38:54Z": {
       "location": "mission",
       "missionType": "SAR",
-      "coordinates": "18.9220° N, 72.8347° E",
-      "log": "Dispatched to investigate an emergency locator beacon. Search patterns were established at high speed while the embarked helicopter prepared for night search operations and bridge lookouts intensified visual scanning."
+      "coordinates": "18.9220\u00b0 N, 72.8347\u00b0 E",
+      "log": "Dispatched to investigate an emergency locator beacon. Search patterns were established at high speed while the embarked helicopter prepared for night search operations and bridge lookouts intensified visual scanning.",
+      "scenario": {
+        "missionStatement": "At approximately 2026-07-02T00:38:54Z, the Maritime Operations Centre (MOC), Mumbai, received an emergency distress alert from the offshore supply vessel MV Sea Guardian located at approximately 17.4250\u00b0N, 70.1840\u00b0E, nearly 280 nautical miles west of Mumbai Port. The vessel had collided with a submerged object, resulting in severe hull damage and progressive flooding. Several crew members were reported missing after abandoning the vessel in life rafts, while others required urgent medical assistance. With deteriorating weather conditions and limited daylight remaining, immediate Search and Rescue (SAR) operations were deemed critical. A naval warship is required to proceed to the designated area, establish on-scene command, conduct coordinated search operations, recover survivors, provide emergency medical treatment, and coordinate rescue efforts with maritime patrol aircraft and Coast Guard units. As part of the mission planning process, the operational readiness of the ship is to be evaluated. The mission shall follow a phased operational profile consisting of 3 hours in Harbour, 6 hours during Transit, 10 hours conducting Search and Rescue operations, and 6 hours during Return Transit.",
+        "summary": "The designated warship successfully reached the distress location and established on-scene command for coordinated Search and Rescue operations. Through systematic search patterns and coordination with maritime patrol aircraft and Coast Guard units, all identified survivors were located, rescued, and provided immediate medical assistance. The damaged vessel was secured until additional support arrived, and all assigned rescue objectives were completed safely despite deteriorating weather conditions. Mission-critical propulsion, navigation, communication, and medical support systems remained fully operational throughout the deployment, enabling successful mission completion and safe return to base."
+      }
     }
   },
   "strike": {
@@ -136,62 +144,62 @@
     "Net endurance post transit More than 3 days": "Yes"
   },
   "strengths": [
-  {
-    "metric": "Air Surveillance Score",
-    "value": "80",
-    "unit": "%"
-  },
-  {
-    "metric": "ESM Score",
-    "value": "95",
-    "unit": "%"
-  },
-  {
-    "metric": "SSR Available",
-    "value": "Yes",
-    "unit": ""
-  },
-  {
-    "metric": "ESM Range",
-    "value": "200 nm",
-    "unit": ""
-  },
-  {
-    "metric": "ESM Available",
-    "value": "Yes",
-    "unit": ""
-  }
-],
-"gaps": [
-  {
-    "metric": "ATAS Available",
-    "type": "critical",
-    "value": "Yes",
-    "unit": ""
-  },
-  {
-    "metric": "PDMS Count",
-    "type": "critical",
-    "value": 0,
-    "unit": ""
-  },
-  {
-    "metric": "ASW Helicopters",
-    "type": "critical",
-    "value": 2,
-    "unit": ""
-  },
-  {
-    "metric": "HADR Capability",
-    "type": "critical",
-    "value": "Yes",
-    "unit": ""
-  },
-  {
-    "metric": "HADR Bricks Onboard",
-    "type": "critical",
-    "value": 1,
-    "unit": ""
-  }
-]
+    {
+      "metric": "Air Surveillance Score",
+      "value": "80",
+      "unit": "%"
+    },
+    {
+      "metric": "ESM Score",
+      "value": "95",
+      "unit": "%"
+    },
+    {
+      "metric": "SSR Available",
+      "value": "Yes",
+      "unit": ""
+    },
+    {
+      "metric": "ESM Range",
+      "value": "200 nm",
+      "unit": ""
+    },
+    {
+      "metric": "ESM Available",
+      "value": "Yes",
+      "unit": ""
+    }
+  ],
+  "gaps": [
+    {
+      "metric": "ATAS Available",
+      "type": "critical",
+      "value": "Yes",
+      "unit": ""
+    },
+    {
+      "metric": "PDMS Count",
+      "type": "critical",
+      "value": 0,
+      "unit": ""
+    },
+    {
+      "metric": "ASW Helicopters",
+      "type": "critical",
+      "value": 2,
+      "unit": ""
+    },
+    {
+      "metric": "HADR Capability",
+      "type": "critical",
+      "value": "Yes",
+      "unit": ""
+    },
+    {
+      "metric": "HADR Bricks Onboard",
+      "type": "critical",
+      "value": 1,
+      "unit": ""
+    }
+  ]
 }

@@ -10,7 +10,7 @@ import {
   PromptInputTextarea,
 } from '@/components/ui/pinput';
 import { Button } from '@/components/ui/button';
-import { ArrowUp, Loader2, MapPin, Globe as GlobeIcon, Map as MapIcon, Layers, X } from 'lucide-react';
+import { ArrowUp, Loader2, MapPin, Globe as GlobeIcon, Map as MapIcon, Layers } from 'lucide-react';
 import CommandNavbar from './navbar';
 import ShipDependabilityPanel, { ShipCandidate } from './Shipdependabilitypanel';
 import ShipInfoPanel, { ShipInfo } from '@/components/ship_panel/shipPanel';
@@ -27,6 +27,12 @@ import {
 import { useGlobeMapEngine } from '@/hooks/Useglobemapengine';
 import { parseShipActivityQuery } from '@/lib/shipActivity';
 import ShipActivityPanel from './globe/views/ShipActivityPanel';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog';
 
 import eightShip from "./eightShip.json";
 import GraphCanvas from './GraphCanvas';
@@ -68,7 +74,7 @@ export default function GlobeMap({
   const [activityPanelOpen, setActivityPanelOpen] = useState(false);
   const [activityShipIds, setActivityShipIds] = useState<string[]>([]);
 
-  // Full knowledge-graph overlay (WholeKG)
+  // Full knowledge-graph dialog
   const [kgPanelOpen, setKgPanelOpen] = useState(false);
 
   // Track all possible side panel / overlay visibility settings
@@ -87,6 +93,7 @@ export default function GlobeMap({
     setPanelOpen(false);
     setShipPanelOpen(true);
   }, []);
+
   const {
     containerRef,
     mapRef,
@@ -190,7 +197,7 @@ export default function GlobeMap({
 
     setSearchError(null);
 
-    // Intercept "show full graph" (and variants) — opens the WholeKG overlay
+    // Intercept "show full graph" (and variants) — opens the KG dialog
     // instead of running it through geocoding/coordinate parsing.
     if (isKnowledgeGraphQuery(query)) {
       setKgPanelOpen(true);
@@ -341,7 +348,7 @@ export default function GlobeMap({
             onSubmit={handleSearchSubmit}
             className="bg-black text-white w-full shadow-lg"
           >
-            <PromptInputTextarea placeholder='Search a place, lat, lng, DMS, paste a report, or type "show complete knowledge graph"…' />
+            <PromptInputTextarea placeholder='Ask query..' />
             <PromptInputActions className="flex items-center justify-end pt-2">
               <PromptInputAction tooltip={isSearching ? 'Searching…' : 'Go to location'}>
                 <Button
@@ -405,22 +412,29 @@ export default function GlobeMap({
         width={PANEL_WIDTH}
       />
 
-      {/* Full knowledge-graph overlay — triggered by typing "show full graph"
-          (or a close variant) into the Atlas prompt above. Renders WholeKG
-          full-screen over the globe and auto-loads the graph data on open. */}
-      {kgPanelOpen && (
-        <div className="absolute inset-0 z-30 bg-[#0c0c10]">
-          <button
-            onClick={closeKgPanel}
-            title="Close knowledge graph"
-            className="absolute top-4 right-4 z-40 flex items-center justify-center w-9 h-9 rounded-xl bg-[#18181f]/90 border border-violet-500/30 backdrop-blur-md text-violet-300 hover:text-white hover:border-violet-400/70 transition-colors"
-          >
-            <X className="size-4" />
-          </button>
-          {/* <WholeKG autoLoad data={eightShip} /> */}
-          <GraphCanvas graph={eightShip}/>
-        </div>
-      )}
+      {/* Knowledge-graph shadcn Dialog — triggered by typing "show full graph"
+          (or a close variant) into the Atlas prompt above. Renders GraphCanvas
+          inside a large centered dialog over the globe. */}
+      <Dialog open={kgPanelOpen} onOpenChange={(open) => !open && closeKgPanel()}>
+        <DialogContent
+  className="w-[98vw] max-w-[98vw] h-[96vh] p-0 bg-[#0c0c10] border border-violet-500/20 shadow-[0_0_60px_rgba(139,92,246,0.15)] overflow-hidden flex flex-col"
+>
+          <DialogHeader className="px-5 py-3 border-b border-violet-500/15 shrink-0">
+            <DialogTitle className="text-sm font-mono tracking-widest text-violet-300 uppercase">
+              Knowledge Graph
+              <span className="ml-3 text-[10px] text-violet-500 font-normal normal-case tracking-normal">
+                Nodes:&nbsp;
+                <span className="text-cyan-400">{(eightShip as any)?.nodes?.length ?? 0}</span>
+                &nbsp;·&nbsp;Edges:&nbsp;
+                <span className="text-emerald-400">{(eightShip as any)?.edges?.length ?? 0}</span>
+              </span>
+            </DialogTitle>
+          </DialogHeader>
+          <div className="flex-1 min-h-0">
+            <GraphCanvas graph={eightShip} />
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

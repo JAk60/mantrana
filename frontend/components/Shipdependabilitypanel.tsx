@@ -443,9 +443,6 @@ function ExplainText({
                     className="mt-2 rounded-lg p-4 text-[12px] leading-relaxed"
                     style={{ background: DARK.card, border: `1px solid ${DARK.borderStrong}`, color: DARK.textSub, fontFamily: FONT_STACK }}
                   >
-                    <div className="font-bold uppercase tracking-widest text-[10px] mb-2" style={{ color: DARK.accent }}>
-                      Why These Predictions
-                    </div>
                     {scenario.explanation}
                   </div>
                 </motion.div>

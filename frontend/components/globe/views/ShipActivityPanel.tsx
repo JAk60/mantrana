@@ -19,15 +19,55 @@ function headingFor(entry: ShipTimelineEntry) {
   return 'Update';
 }
 
+function ExpandableContent({ entry }: { entry: ShipTimelineEntry }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, height: 0 }}
+      animate={{ opacity: 1, height: 'auto' }}
+      exit={{ opacity: 0, height: 0 }}
+      transition={{ duration: 0.2, ease: 'easeInOut' }}
+      className="overflow-hidden"
+    >
+      {entry.companionUnits?.length ? (
+        <p className="text-[11px] text-sky-400/90 font-medium mt-2">
+          With {entry.companionUnits.map((u) => SHIP_LABELS[u] ?? u).join(', ')}
+        </p>
+      ) : null}
+
+      {/* Scenario Mission Statement */}
+      {entry.scenario?.missionStatement && (
+        <div className="mt-3">
+          <p className="text-[10px] font-bold text-amber-500 uppercase tracking-widest mb-1">
+            Scenario
+          </p>
+          <p className="text-xs text-slate-400 leading-relaxed">
+            {entry.scenario.missionStatement}
+          </p>
+        </div>
+      )}
+
+      {/* Log / Summary */}
+      <div className="mt-3 pb-2">
+        <p className="text-[10px] font-bold text-amber-500 uppercase tracking-widest mb-1">
+          Summary
+        </p>
+        <p className="text-xs text-slate-400 leading-relaxed">
+          {entry.log}
+        </p>
+      </div>
+    </motion.div>
+  );
+}
+
 function TimelineItem({ entry, isLeft }: { entry: ShipTimelineEntry; isLeft: boolean }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div 
+    <div
       className="relative flex justify-between items-start w-full mb-10 group cursor-pointer"
       onClick={() => setIsExpanded(!isExpanded)}
     >
-      {/* Center Checkmark Node (Highlights when expanded) */}
+      {/* Center Checkmark Node */}
       <div className={`absolute left-1/2 -translate-x-1/2 top-0 flex items-center justify-center w-5 h-5 rounded-full border-2 shadow-sm z-10 transition-colors duration-300 ${
         isExpanded ? 'bg-blue-600 border-blue-400' : 'bg-[#0b121f] border-slate-500 group-hover:border-slate-300'
       }`}>
@@ -50,34 +90,16 @@ function TimelineItem({ entry, isLeft }: { entry: ShipTimelineEntry; isLeft: boo
                 {formatTimestamp(entry.timestamp)}
               </time>
             </div>
-            
+
             <h4 className="text-[13px] font-bold text-slate-100 mt-1 tracking-wide group-hover:text-blue-400 transition-colors">
               {headingFor(entry)}
             </h4>
-            
-            {/* Expandable Log Section */}
+
             <AnimatePresence initial={false}>
-              {isExpanded && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.2, ease: "easeInOut" }}
-                  className="overflow-hidden"
-                >
-                  {entry.companionUnits?.length ? (
-                    <p className="text-[11px] text-sky-400/90 font-medium mt-2">
-                      With {entry.companionUnits.map((u) => SHIP_LABELS[u] ?? u).join(', ')}
-                    </p>
-                  ) : null}
-                  
-                  <p className="text-xs text-slate-400 mt-1.5 leading-relaxed ml-auto pb-2">
-                    {entry.log}
-                  </p>
-                </motion.div>
-              )}
+              {isExpanded && <ExpandableContent entry={entry} />}
             </AnimatePresence>
           </div>
+
           {/* Empty Right Side Spacer */}
           <div className="w-[calc(50%-1.25rem)]" />
         </>
@@ -85,7 +107,7 @@ function TimelineItem({ entry, isLeft }: { entry: ShipTimelineEntry; isLeft: boo
         <>
           {/* Empty Left Side Spacer */}
           <div className="w-[calc(50%-1.25rem)]" />
-          
+
           {/* Content on the Right */}
           <div className="w-[calc(50%-1.25rem)] text-left pl-1 pt-0.5">
             <div className="flex items-center justify-start gap-2 flex-wrap mb-1.5">
@@ -98,32 +120,13 @@ function TimelineItem({ entry, isLeft }: { entry: ShipTimelineEntry; isLeft: boo
                 </span>
               )}
             </div>
-            
+
             <h4 className="text-[13px] font-bold text-slate-100 mt-1 tracking-wide group-hover:text-blue-400 transition-colors">
               {headingFor(entry)}
             </h4>
-            
-            {/* Expandable Log Section */}
+
             <AnimatePresence initial={false}>
-              {isExpanded && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.2, ease: "easeInOut" }}
-                  className="overflow-hidden"
-                >
-                  {entry.companionUnits?.length ? (
-                    <p className="text-[11px] text-sky-400/90 font-medium mt-2">
-                      With {entry.companionUnits.map((u) => SHIP_LABELS[u] ?? u).join(', ')}
-                    </p>
-                  ) : null}
-                  
-                  <p className="text-xs text-slate-400 mt-1.5 leading-relaxed mr-auto pb-2">
-                    {entry.log}
-                  </p>
-                </motion.div>
-              )}
+              {isExpanded && <ExpandableContent entry={entry} />}
             </AnimatePresence>
           </div>
         </>
@@ -139,10 +142,10 @@ function TimelineList({ entries }: { entries: ShipTimelineEntry[] }) {
       <div className="absolute top-0 bottom-0 left-1/2 w-px bg-slate-700/60 -translate-x-1/2" />
 
       {entries.map((entry, index) => (
-        <TimelineItem 
-          key={entry.timestamp} 
-          entry={entry} 
-          isLeft={index % 2 === 0} 
+        <TimelineItem
+          key={entry.timestamp}
+          entry={entry}
+          isLeft={index % 2 === 0}
         />
       ))}
     </div>
@@ -153,7 +156,7 @@ export default function ShipTimelinePanel({
   open,
   onClose,
   shipIds,
-  width = 460, 
+  width = 460,
 }: {
   open: boolean;
   onClose: () => void;

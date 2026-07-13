@@ -424,7 +424,7 @@ export function KGAnswerCard({
       {/* ── Answer header ── */}
       <div className="px-4 py-3 border-b border-[#1e2130]">
         {response.answer && (
-          <p className="text-[14px] text-[#c8cde8] leading-relaxed">{response.answer}</p>
+          <p className="text-[14px] text-white leading-relaxed">{response.answer}</p>
         )}
       </div>
 
@@ -449,10 +449,10 @@ export function KGAnswerCard({
               onClick={() => toggle('paths')}
               className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-[12px] font-medium border transition-colors ${openPanel === 'paths'
                 ? 'bg-[#0e1929] border-[#1a4a8a] text-[#6cabff]'
-                : 'bg-[#13161f] border-[#1e2130] text-[#a9b0d1] hover:border-[#2a3050] hover:text-[#e4e8fa]'
+                : 'bg-[#13161f] border-[#1e2130] text-white hover:border-[#2a3050] hover:text-[#e4e8fa]'
                 }`}
             >
-              <GitBranch className="size-3.5" />
+              <GitBranch className="size-3.5" color='white'/>
               Explain path
               {openPanel === 'paths' ? <ChevronUp className="size-3" /> : <ChevronDown className="size-3" />}
             </button>
@@ -469,7 +469,7 @@ export function KGAnswerCard({
 
           {barItems.length > 0 && (
             <>
-              <p className="text-[10px] uppercase tracking-widest text-[#8b92b0] mb-1">Time breakdown</p>
+              <p className="text-[10px] uppercase tracking-widest text-white mb-1">Time breakdown</p>
               {barItems.map((item, i) => (
                 <BarRow
                   key={i}
@@ -482,7 +482,7 @@ export function KGAnswerCard({
               ))}
               {totalDowntime && (
                 <div className="flex justify-between items-center mt-2 pt-2.5 border-t border-[#2a3050]">
-                  <span className="text-[13px] text-[#a9b0d1]">Total downtime</span>
+                  <span className="text-[13px] text-white">Total downtime</span>
                   <span className="text-[15px] font-bold text-white">{totalDowntime}</span>
                 </div>
               )}
@@ -710,7 +710,7 @@ export default function QueryView({
               <>
                 {entry.phase === 'loading' && (
                   <div className="rounded-2xl bg-[#13161f] border border-[#1e2130] p-3">
-                    <CardSkeleton label="Querying FMECA graph" />
+                    <CardSkeleton label="Querying graph" />
                   </div>
                 )}
                 {entry.phase === 'traversing' && (

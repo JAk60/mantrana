@@ -35,7 +35,7 @@ type SaveResult =
 
 export function SitrepUploader({ shipSlug, onClose }: SitrepUploaderProps) {
   const { result, isLoading, error, progress, readPDF, reset } = useSitrepReader();
-  
+
   const [files, setFiles] = useState<FileEntry[]>([]);
   const [isUploading, setIsUploading] = useState(false);
   const [viewingFile, setViewingFile] = useState<FileEntry | null>(null);
@@ -53,8 +53,7 @@ export function SitrepUploader({ shipSlug, onClose }: SitrepUploaderProps) {
   const processFiles = (selectedFiles: File[]) => {
     setSaveResult(null);
     if (selectedFiles.length > 0) {
-      // Trigger the reader hook on the dropped file to populate `result` state
-      readPDF(selectedFiles[0]); 
+      readPDF(selectedFiles[0]);
 
       const newEntries = selectedFiles.map((file) => ({
         id: Math.random().toString(36).substring(7),
@@ -77,20 +76,16 @@ export function SitrepUploader({ shipSlug, onClose }: SitrepUploaderProps) {
       if (fileToRemove) URL.revokeObjectURL(fileToRemove.previewUrl);
       return prev.filter((f) => f.id !== id);
     });
-    // If we remove the last file, reset the hook's state
     if (files.length === 1) reset();
   };
 
   const handleUploadAll = async () => {
-    // We rely directly on the hook's generated `result` just like your original code!
     if (!result || !shipSlug) return;
 
     setIsUploading(true);
     setSaveResult(null);
 
     try {
-      // Smart payload: if result already has a timeline property, send it as-is.
-      // Otherwise, wrap it in a timeline object.
       const payload = result.timeline ? result : { timeline: result };
 
       const res = await fetch(`/api/ships/${shipSlug}`, {
@@ -103,8 +98,6 @@ export function SitrepUploader({ shipSlug, onClose }: SitrepUploaderProps) {
       if (!res.ok) throw new Error(data.error ?? `HTTP ${res.status}`);
 
       setSaveResult({ ok: true, merged: data.merged || 1 });
-
-      // Visually mark all as uploaded
       setFiles((prev) => prev.map((f) => ({ ...f, uploaded: true })));
     } catch (err: any) {
       console.error('Upload failed:', err);
@@ -128,9 +121,9 @@ export function SitrepUploader({ shipSlug, onClose }: SitrepUploaderProps) {
   const pendingCount = files.filter((f) => !f.uploaded).length;
 
   return (
-    <div className="w-full flex flex-col rounded-xl bg-[#0d0f1a] border border-[#1c2035] shadow-[0_0_30px_rgba(0,0,0,0.5)] overflow-hidden mb-2">
+    <div className="w-full flex flex-col rounded-xl bg-[#0d0f1a] border border-[#1c2035] shadow-[0_0_30px_rgba(0,0,0,0.5)] overflow-hidden mb-2 max-h-[calc(100vh-2rem)]">
       {/* ── Header ── */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-[#1c2035] bg-[#10121e]">
+      <div className="flex items-center justify-between px-4 py-3 border-b border-[#1c2035] bg-[#10121e] shrink-0">
         <div className="flex items-center gap-2.5">
           <span className="relative flex size-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#3b82f6] opacity-60" />
@@ -173,149 +166,163 @@ export function SitrepUploader({ shipSlug, onClose }: SitrepUploaderProps) {
         </div>
       </div>
 
-      {/* ── Body ── */}
-      <div className="p-3 flex flex-col gap-2">
-        <input
-          type="file"
-          accept="application/pdf"
-          className="hidden"
-          ref={fileInputRef}
-          onChange={handleFileSelect}
-        />
+      {/* ── Scrollable Body ── */}
+      <div className="flex flex-col overflow-y-auto flex-1 min-h-0">
+        <div className="p-3 flex flex-col gap-2">
+          <input
+            type="file"
+            accept="application/pdf"
+            className="hidden"
+            ref={fileInputRef}
+            onChange={handleFileSelect}
+          />
 
-        {/* Empty state (w/ Drag & Drop) */}
-        {files.length === 0 && (
-          <div
-            onDragOver={(e) => {
-              e.preventDefault();
-              setDragging(true);
-            }}
-            onDragLeave={() => setDragging(false)}
-            onDrop={(e) => {
-              e.preventDefault();
-              setDragging(false);
-              processFiles(Array.from(e.dataTransfer.files));
-            }}
-            onClick={() => fileInputRef.current?.click()}
-            className={`flex flex-col items-center justify-center gap-2 py-7 rounded-lg border border-dashed transition-all group cursor-pointer ${
-              dragging
-                ? 'border-[#6cabff] bg-[#1a4a8a]/10'
-                : 'border-[#1c2035] hover:border-[#1a4a8a] hover:bg-[#1a4a8a]/5'
-            }`}
-          >
-            <div className="p-2.5 rounded-full bg-[#1a4a8a]/10 border border-[#1a4a8a]/20 group-hover:bg-[#1a4a8a]/20 transition-colors">
-              <Upload className="size-4 text-[#6cabff]" />
+          {/* Empty state (w/ Drag & Drop) */}
+          {files.length === 0 && (
+            <div
+              onDragOver={(e) => {
+                e.preventDefault();
+                setDragging(true);
+              }}
+              onDragLeave={() => setDragging(false)}
+              onDrop={(e) => {
+                e.preventDefault();
+                setDragging(false);
+                processFiles(Array.from(e.dataTransfer.files));
+              }}
+              onClick={() => fileInputRef.current?.click()}
+              className={`flex flex-col items-center justify-center gap-2 py-7 rounded-lg border border-dashed transition-all group cursor-pointer ${
+                dragging
+                  ? 'border-[#6cabff] bg-[#1a4a8a]/10'
+                  : 'border-[#1c2035] hover:border-[#1a4a8a] hover:bg-[#1a4a8a]/5'
+              }`}
+            >
+              <div className="p-2.5 rounded-full bg-[#1a4a8a]/10 border border-[#1a4a8a]/20 group-hover:bg-[#1a4a8a]/20 transition-colors">
+                <Upload className="size-4 text-[#6cabff]" />
+              </div>
+              <div className="text-center">
+                <p className="text-[12px] font-semibold text-[#6cabff]">
+                  {isLoading ? progress || 'Parsing PDF...' : 'Drop SITREP PDF here'}
+                </p>
+                <p className="text-[10px] text-[#3a4060] mt-0.5">
+                  {isLoading ? 'Please wait' : 'or click to browse'}
+                </p>
+              </div>
             </div>
-            <div className="text-center">
-              <p className="text-[12px] font-semibold text-[#6cabff]">
-                {isLoading ? progress || 'Parsing PDF...' : 'Drop SITREP PDF here'}
-              </p>
-              <p className="text-[10px] text-[#3a4060] mt-0.5">
-                {isLoading ? 'Please wait' : 'or click to browse'}
-              </p>
-            </div>
-          </div>
-        )}
+          )}
 
-        {/* File list */}
-        {files.length > 0 && (
-          <div className="flex flex-col gap-1.5">
-            {files.map((fileEntry, index) => (
-              <div
-                key={fileEntry.id}
-                className="flex items-center gap-2.5 bg-[#0a0c14] border border-[#1c2035] rounded-lg p-2.5 hover:border-[#263050] transition-colors group"
-              >
-                <div className="shrink-0 size-6 flex items-center justify-center rounded bg-[#1a2133] text-[#4a6090] text-[10px] font-bold tabular-nums border border-[#1c2035]">
-                  {String(index + 1).padStart(2, '0')}
-                </div>
+          {/* File list */}
+          {files.length > 0 && (
+            <div className="flex flex-col gap-1.5">
+              {files.map((fileEntry, index) => (
+                <div
+                  key={fileEntry.id}
+                  className="flex items-center gap-2.5 bg-[#0a0c14] border border-[#1c2035] rounded-lg p-2.5 hover:border-[#263050] transition-colors group"
+                >
+                  <div className="shrink-0 size-6 flex items-center justify-center rounded bg-[#1a2133] text-[#4a6090] text-[10px] font-bold tabular-nums border border-[#1c2035]">
+                    {String(index + 1).padStart(2, '0')}
+                  </div>
 
-                <div className="flex flex-col min-w-0 flex-1">
-                  <span className="text-[12px] font-medium text-[#c8cfe8] truncate leading-tight">
-                    {fileEntry.file.name}
-                  </span>
-                  <div className="flex items-center gap-1.5 mt-0.5">
-                    <span className="text-[10px] text-[#3a4060]">
-                      {(fileEntry.file.size / 1024 / 1024).toFixed(2)} MB
+                  <div className="flex flex-col min-w-0 flex-1">
+                    <span className="text-[12px] font-medium text-[#c8cfe8] truncate leading-tight">
+                      {fileEntry.file.name}
                     </span>
-                    {fileEntry.uploaded ? (
-                      <>
-                        <span className="text-[#1c2035]">·</span>
-                        <span className="text-[10px] text-[#4ade80] font-semibold flex items-center gap-0.5">
-                          <Check className="size-2.5" /> LIVE
-                        </span>
-                      </>
-                    ) : (
-                      <>
-                        <span className="text-[#1c2035]">·</span>
-                        <span className="text-[10px] text-[#3a4060]">PENDING</span>
-                      </>
+                    <div className="flex items-center gap-1.5 mt-0.5">
+                      <span className="text-[10px] text-[#3a4060]">
+                        {(fileEntry.file.size / 1024 / 1024).toFixed(2)} MB
+                      </span>
+                      {fileEntry.uploaded ? (
+                        <>
+                          <span className="text-[#1c2035]">·</span>
+                          <span className="text-[10px] text-[#4ade80] font-semibold flex items-center gap-0.5">
+                            <Check className="size-2.5" /> LIVE
+                          </span>
+                        </>
+                      ) : (
+                        <>
+                          <span className="text-[#1c2035]">·</span>
+                          <span className="text-[10px] text-[#3a4060]">PENDING</span>
+                        </>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="flex items-center gap-1 shrink-0">
+                    <button
+                      onClick={() => setViewingFile(fileEntry)}
+                      className="flex items-center gap-1 px-1.5 py-1 rounded text-[#4a6090] hover:text-[#6cabff] hover:bg-[#1a2133] transition-colors"
+                      title="Preview"
+                    >
+                      <Eye className="size-3.5" />
+                    </button>
+
+                    {!fileEntry.uploaded && !isUploading && (
+                      <button
+                        onClick={() => removeFile(fileEntry.id)}
+                        className="flex items-center gap-1 px-1.5 py-1 rounded text-[#4a5070] hover:text-[#f07272] hover:bg-[#2a1010] transition-colors"
+                        title="Remove"
+                      >
+                        <X className="size-3.5" />
+                      </button>
                     )}
                   </div>
                 </div>
+              ))}
+            </div>
+          )}
 
-                <div className="flex items-center gap-1 shrink-0">
-                  <button
-                    onClick={() => setViewingFile(fileEntry)}
-                    className="flex items-center gap-1 px-1.5 py-1 rounded text-[#4a6090] hover:text-[#6cabff] hover:bg-[#1a2133] transition-colors"
-                    title="Preview"
-                  >
-                    <Eye className="size-3.5" />
-                  </button>
-
-                  {!fileEntry.uploaded && !isUploading && (
-                    <button
-                      onClick={() => removeFile(fileEntry.id)}
-                      className="flex items-center gap-1 px-1.5 py-1 rounded text-[#4a5070] hover:text-[#f07272] hover:bg-[#2a1010] transition-colors"
-                      title="Remove"
-                    >
-                      <X className="size-3.5" />
-                    </button>
-                  )}
+          {/* Global Error & Success Feedback */}
+          {(error || saveResult) && (
+            <div
+              className={`px-3 py-2 mt-1 rounded-lg border text-[11px] font-medium ${
+                saveResult?.ok
+                  ? 'bg-[#166534]/10 border-[#4ade80]/20 text-[#4ade80]'
+                  : 'bg-[#7f1d1d]/10 border-[#f87171]/20 text-[#f87171]'
+              }`}
+            >
+              {error && <div>Parse Error: {error}</div>}
+              {saveResult && (
+                <div>
+                  {saveResult.ok
+                    ? `✓ Timeline updated successfully`
+                    : `✗ ${saveResult.error}`}
                 </div>
-              </div>
-            ))}
-          </div>
-        )}
+              )}
+            </div>
+          )}
 
-        {/* Global Error & Success Feedback */}
-        {(error || saveResult) && (
-          <div
-            className={`px-3 py-2 mt-1 rounded-lg border text-[11px] font-medium ${
-              saveResult?.ok
-                ? 'bg-[#166534]/10 border-[#4ade80]/20 text-[#4ade80]'
-                : 'bg-[#7f1d1d]/10 border-[#f87171]/20 text-[#f87171]'
-            }`}
-          >
-            {error && <div>Parse Error: {error}</div>}
-            {saveResult && (
-              <div>
-                {saveResult.ok
-                  ? `✓ Timeline updated successfully`
-                  : `✗ ${saveResult.error}`}
-              </div>
-            )}
-          </div>
-        )}
+          {/* Submit */}
+          {pendingCount > 0 && result && (
+            <button
+              onClick={handleUploadAll}
+              disabled={isUploading || isLoading}
+              className="mt-1 w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-gradient-to-r from-[#1a4a8a] to-[#1e3a6e] hover:from-[#1e5cb0] hover:to-[#1a4a8a] text-white transition-all text-[11px] font-bold tracking-widest disabled:opacity-40 disabled:cursor-not-allowed border border-[#1a4a8a] shadow-[0_0_20px_rgba(26,74,138,0.25)]"
+            >
+              {isUploading || isLoading ? (
+                <Loader2 className="size-3.5 animate-spin" />
+              ) : (
+                <FileUp className="size-3.5" />
+              )}
+              {isUploading
+                ? `TRANSMITTING…`
+                : isLoading
+                ? `PARSING DATA…`
+                : `ADD TO TIMELINE`}
+            </button>
+          )}
+        </div>
 
-        {/* Submit */}
-        {pendingCount > 0 && result && (
-          <button
-            onClick={handleUploadAll}
-            disabled={isUploading || isLoading}
-            className="mt-1 w-full flex items-center justify-center gap-2 py-2.5 rounded-lg bg-gradient-to-r from-[#1a4a8a] to-[#1e3a6e] hover:from-[#1e5cb0] hover:to-[#1a4a8a] text-white transition-all text-[11px] font-bold tracking-widest disabled:opacity-40 disabled:cursor-not-allowed border border-[#1a4a8a] shadow-[0_0_20px_rgba(26,74,138,0.25)]"
-          >
-            {isUploading || isLoading ? (
-              <Loader2 className="size-3.5 animate-spin" />
-            ) : (
-              <FileUp className="size-3.5" />
-            )}
-            {isUploading
-              ? `TRANSMITTING…`
-              : isLoading
-              ? `PARSING DATA…`
-              : `ADD TO TIMELINE`}
-          </button>
-        )}
+        {/* ── OR Divider ── */}
+        <div className="flex items-center gap-3 px-4 py-2 shrink-0">
+          <div className="flex-1 h-px bg-[#1c2035]" />
+          <span className="text-[10px] font-bold tracking-widest text-[#3a4060]">OR</span>
+          <div className="flex-1 h-px bg-[#1c2035]" />
+        </div>
+
+        {/* ── Ship Activity Panel ── */}
+        <div className="shrink-0">
+          <ShipActivityPanel onClose={onClose} />
+        </div>
       </div>
 
       {/* ── PDF Viewer Modal ── */}
@@ -354,10 +361,6 @@ export function SitrepUploader({ shipSlug, onClose }: SitrepUploaderProps) {
           </div>
         </div>
       )}
-      <div className='w-full h-2 mb-8 flex justify-center'>
-        OR
-      </div>
-      <ShipActivityPanel onClose={onclose}/>
     </div>
   );
 }

@@ -220,8 +220,8 @@ export default function GraphCanvas({
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchFocused, setSearchFocused] = useState(false);
 
-    const canvasHeight = height ?? (compact ? 220 : 480);
-
+    // AFTER
+    const canvasHeight = height ?? (compact ? 220 : undefined);
     // Compute highlight sets once — reused in the render effect
     const hlKey = highlightToKey(highlight);
     const { hlEdgeSet, hlNodeSet, hlEdgeCount } = buildHighlightSets(highlight);
@@ -772,9 +772,15 @@ export default function GraphCanvas({
             {/* Canvas — stopPropagation on wheel so compact graphs don't scroll parent */}
             <div
                 ref={containerRef}
-                style={{ ...styles.canvas, height: canvasHeight }}
+                style={{
+                    ...styles.canvas,
+                    ...(canvasHeight !== undefined
+                        ? { height: canvasHeight }
+                        : { flex: 1, minHeight: 0 }),
+                }}
                 onWheel={e => e.stopPropagation()}
             />
+
 
             {/* Node detail panel */}
             {panel && (
@@ -857,13 +863,16 @@ function StatChip({ label, value, color }: { label: string; value: string | numb
 }
 
 const styles: Record<string, CSSProperties> = {
-    wrapper: {
-        position: "relative",
-        background: C.bg,
-        border: `1px solid ${C.border}`,
-        borderRadius: 12,
-        overflow: "hidden",
-    },
+wrapper: {
+  position: "relative",
+  display: "flex",
+  flexDirection: "column",
+  background: C.bg,
+  border: `1px solid ${C.border}`,
+  borderRadius: 12,
+  overflow: "hidden",
+  height: "100%",
+},
     wrapperCompact: {
         borderRadius: 14,
         boxShadow: "0 2px 10px rgba(0,0,0,0.45)",
