@@ -6,6 +6,7 @@ import {
   Check,
   Loader2,
   Pencil,
+  Route,
   Save,
   Share2,
   Shield,
@@ -504,10 +505,10 @@ export default function ShipInfoPanel({
             {!activityOpen && (
               <button
                 onClick={() => setFmecaModalOpen(true)}
-                title="View FMECA knowledge graph"
+                title="View knowledge graph"
                 className="rounded-full p-1.5 text-[#a9b0d1] hover:bg-[#1a1e2e] hover:text-[#6cabff] transition-colors"
               >
-                <Share2 className="size-3.5" />
+                <Route className="size-3.5" />
               </button>
             )}
 

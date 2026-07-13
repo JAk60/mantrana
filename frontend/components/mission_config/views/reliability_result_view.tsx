@@ -363,7 +363,7 @@ export default function ReliabilityResultsView({
                 <tr className="border-b border-gray-800">
                   <th className="text-left py-3 px-4 font-semibold text-gray-500">Phase</th>
                   <th className="text-left py-3 px-4 font-semibold text-gray-500">Duration</th>
-                  <th className="text-left py-3 px-4 font-semibold text-gray-500">Reliability</th>
+                  {/* <th className="text-left py-3 px-4 font-semibold text-gray-500">Reliability</th> */}
                   <th className="text-left py-3 px-4 font-semibold text-gray-500">Preferred Equipment</th>
                 </tr>
               </thead>
@@ -379,11 +379,11 @@ export default function ReliabilityResultsView({
                       </div>
                     </td>
                     <td className="py-3 px-4"><span className="text-gray-400">{phase.duration_hours}h</span></td>
-                    <td className="py-3 px-4">
+                    {/* <td className="py-3 px-4">
                       <Badge>
                         {formatPercent(phase.phase_reliability)}
                       </Badge>
-                    </td>
+                    </td> */}
                     <td className="py-3 px-4">
                       <div className="flex flex-wrap gap-2">
                         {getPhaseCriticalEquipment(phase).map((eq, i) => (

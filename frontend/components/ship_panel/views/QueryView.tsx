@@ -497,7 +497,7 @@ export function KGAnswerCard({
 
           {failurePaths.length > 0 && (
             <PathBlock
-              title="Failure path"
+              title="path"
               hops={failurePaths.length}
               paths={failurePaths}
             />
@@ -522,9 +522,9 @@ export function KGAnswerCard({
           {/* ── Subgraph / FMECA canvas ── */}
           <div className="rounded-xl border border-[#1e2130] overflow-hidden">
             <div className="px-3 py-2 bg-[#0f1117] border-b border-[#1e2130] flex items-center justify-between">
-              <span className="text-[10px] uppercase tracking-widest text-[#8b92b0]">
+              {/* <span className="text-[10px] uppercase tracking-widest text-[#8b92b0]">
                 {graphLabel}
-              </span>
+              </span> */}
               <button
                 onClick={onOpenFmecaGraph}
                 className="text-[#8b92b0] hover:text-[#6cabff] transition-colors"
