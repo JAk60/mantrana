@@ -567,9 +567,9 @@ if (
 }
 if (
   normalizedQuestion ===
-    "list all failure modes on gas turbine gt1" ||
+    "list all failure modes on gas turbine" ||
   normalizedQuestion ===
-    "list all failure modes on gas turbine gt1?"
+    "list all failure modes on gas turbine?"
 ) {
   return {
     answer:
