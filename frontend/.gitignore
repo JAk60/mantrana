@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+files.zip
+maps/
+ne_10m_admin_0_countries/
+ne_10m_admin_0_countries.zip
+ne_10m_coastline/
+ne_10m_coastline.zip
+ne_10m_ocean/
+ne_10m_ocean.zip

@@ -36,6 +36,7 @@ import {
 
 import eightShip from "./eightShip.json";
 import GraphCanvas from './GraphCanvas';
+import { HistoricalImageryDialog } from '@/lib/map/historyMaps/HistoricalImageryDialog';
 
 // Phrases that should open the full knowledge-graph overlay instead of
 // being treated as a place/coordinate/ship-activity search.
@@ -56,60 +57,83 @@ export default function GlobeMap({
   const [savedPins, setSavedPins] = useState<SavedPin[]>([]);
   const savedMarkersRefState = useState<Map<string, maplibregl.Marker>>(new Map())[0];
 
-  // Ship-dependability split panel
-  const [panelOpen, setPanelOpen] = useState(false);
-  const [candidateShips, setCandidateShips] = useState<ShipCandidate[]>([]);
-  const [incidentCoords, setIncidentCoords] = useState<{ lat: number; lng: number } | null>(null);
+  const [imageryOpen, setImageryOpen] = useState(false);
+const [imageryPort, setImageryPort] = useState<{ name: string; lat: number; lng: number } | null>(null);
 
-  // Per-ship info split panel
-  const [shipPanelOpen, setShipPanelOpen] = useState(false);
-  const [selectedShip, setSelectedShip] = useState<ShipInfo | null>(null);
+// Ship-dependability split panel
+const [panelOpen, setPanelOpen] = useState(false);
+const [candidateShips, setCandidateShips] = useState<ShipCandidate[]>([]);
+const [incidentCoords, setIncidentCoords] = useState<{ lat: number; lng: number } | null>(null);
 
-  // Prompt-style location search/jump input
-  const [query, setQuery] = useState('');
-  const [isSearching, setIsSearching] = useState(false);
-  const [searchError, setSearchError] = useState<string | null>(null);
+// Per-ship info split panel
+const [shipPanelOpen, setShipPanelOpen] = useState(false);
+const [selectedShip, setSelectedShip] = useState<ShipInfo | null>(null);
 
-  // Ship activity tracking panels
-  const [activityPanelOpen, setActivityPanelOpen] = useState(false);
-  const [activityShipIds, setActivityShipIds] = useState<string[]>([]);
+// Prompt-style location search/jump input
+const [query, setQuery] = useState('');
+const [isSearching, setIsSearching] = useState(false);
+const [searchError, setSearchError] = useState<string | null>(null);
 
-  // Full knowledge-graph dialog
-  const [kgPanelOpen, setKgPanelOpen] = useState(false);
+// Ship activity tracking panels
+const [activityPanelOpen, setActivityPanelOpen] = useState(false);
+const [activityShipIds, setActivityShipIds] = useState<string[]>([]);
 
-  // Track all possible side panel / overlay visibility settings
-  const anyPanelOpen = panelOpen || shipPanelOpen || activityPanelOpen || kgPanelOpen;
+// Full knowledge-graph overlay (WholeKG)
+const [kgPanelOpen, setKgPanelOpen] = useState(false);
 
-  // Compute right offset for the map container based on which panel is open.
-  // ShipInfoPanel wins if multiple are somehow open simultaneously.
-  const activePanelWidth = shipPanelOpen
-    ? SHIP_PANEL_WIDTH
-    : panelOpen || activityPanelOpen
-    ? PANEL_WIDTH
-    : 0;
+// Track all possible side panel / overlay visibility settings
+const anyPanelOpen = panelOpen || shipPanelOpen || activityPanelOpen || kgPanelOpen;
 
-  const openShipInfoPanel = useCallback((ship: ShipInfo) => {
-    setSelectedShip(ship);
-    setPanelOpen(false);
-    setShipPanelOpen(true);
-  }, []);
+// Compute right offset for the map container based on which panel is open.
+// ShipInfoPanel wins if multiple are somehow open simultaneously.
+const activePanelWidth = shipPanelOpen
+? SHIP_PANEL_WIDTH
+: panelOpen || activityPanelOpen
+? PANEL_WIDTH
+: 0;
 
-  const {
-    containerRef,
-    mapRef,
-    searchMarkerRef,
-    mapReady,
-    basemap,
-    cycleBasemap,
-    projection,
-    setProjection,
-    pointerInfo,
-    showPointInfo,
-    pointStyle,
-    closePointInfo,
-  } = useGlobeMapEngine({ initialCenter, initialZoom, showGrid, onShipClick: openShipInfoPanel });
+const openShipInfoPanel = useCallback((ship: ShipInfo) => {
+  setSelectedShip(ship);
+  setPanelOpen(false);
+  setShipPanelOpen(true);
+}, []);
+const {
+  containerRef,
+  mapRef,
+  searchMarkerRef,
+  mapReady,
+  basemap,
+  cycleBasemap,
+  projection,
+  setProjection,
+  pointerInfo,
+  showPointInfo,
+  pointStyle,
+  closePointInfo,
+} = useGlobeMapEngine({ initialCenter, initialZoom, showGrid, onShipClick: openShipInfoPanel });
 
-  // Resize the MapLibre canvas after the panel slide transition completes (300 ms).
+
+useEffect(() => {
+  const map = mapRef.current;
+  if (!map || !mapReady) return; // wait until the map actually exists
+
+  const container = map.getContainer();
+
+  const handleClick = (e: MouseEvent) => {
+    const btn = (e.target as HTMLElement).closest<HTMLElement>(
+      '[data-action="open-historical-imagery"]',
+    );
+    if (!btn) return;
+    const payload = btn.dataset.port;
+    if (!payload) return;
+    setImageryPort(JSON.parse(decodeURIComponent(payload)));
+    setImageryOpen(true);
+  };
+
+  container.addEventListener('click', handleClick);
+  return () => container.removeEventListener('click', handleClick);
+}, [mapReady, mapRef]);
+// Resize the MapLibre canvas after the panel slide transition completes (300 ms).
   // This ensures MapLibre occupies the correct visible area and re-centers properly.
   useEffect(() => {
     const map = mapRef.current;
@@ -404,7 +428,11 @@ export default function GlobeMap({
         ship={selectedShip}
         width={SHIP_PANEL_WIDTH}
       />
-
+      <HistoricalImageryDialog
+        open={imageryOpen}
+        onOpenChange={setImageryOpen}
+        port={imageryPort}
+      />
       <ShipActivityPanel
         open={activityPanelOpen}
         onClose={() => setActivityPanelOpen(false)}
@@ -412,29 +440,22 @@ export default function GlobeMap({
         width={PANEL_WIDTH}
       />
 
-      {/* Knowledge-graph shadcn Dialog — triggered by typing "show full graph"
-          (or a close variant) into the Atlas prompt above. Renders GraphCanvas
-          inside a large centered dialog over the globe. */}
-      <Dialog open={kgPanelOpen} onOpenChange={(open) => !open && closeKgPanel()}>
-        <DialogContent
-  className="w-[98vw] max-w-[98vw] h-[96vh] p-0 bg-[#0c0c10] border border-violet-500/20 shadow-[0_0_60px_rgba(139,92,246,0.15)] overflow-hidden flex flex-col"
->
-          <DialogHeader className="px-5 py-3 border-b border-violet-500/15 shrink-0">
-            <DialogTitle className="text-sm font-mono tracking-widest text-violet-300 uppercase">
-              Knowledge Graph
-              <span className="ml-3 text-[10px] text-violet-500 font-normal normal-case tracking-normal">
-                Nodes:&nbsp;
-                <span className="text-cyan-400">{(eightShip as any)?.nodes?.length ?? 0}</span>
-                &nbsp;·&nbsp;Edges:&nbsp;
-                <span className="text-emerald-400">{(eightShip as any)?.edges?.length ?? 0}</span>
-              </span>
-            </DialogTitle>
-          </DialogHeader>
-          <div className="flex-1 min-h-0">
-            <GraphCanvas graph={eightShip} />
-          </div>
-        </DialogContent>
-      </Dialog>
+      {/* Full knowledge-graph overlay — triggered by typing "show full graph"
+          (or a close variant) into the Atlas prompt above. Renders WholeKG
+          full-screen over the globe and auto-loads the graph data on open. */}
+      {kgPanelOpen && (
+        <div className="absolute inset-0 z-30 bg-[#0c0c10]">
+          <button
+            onClick={closeKgPanel}
+            title="Close knowledge graph"
+            className="absolute top-4 right-4 z-40 flex items-center justify-center w-9 h-9 rounded-xl bg-[#18181f]/90 border border-violet-500/30 backdrop-blur-md text-violet-300 hover:text-white hover:border-violet-400/70 transition-colors"
+          >
+            <X className="size-4" />
+          </button>
+          {/* <WholeKG autoLoad data={eightShip} /> */}
+          <GraphCanvas graph={eightShip} />
+        </div>
+      )}
     </div>
   );
 }
