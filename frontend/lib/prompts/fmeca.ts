@@ -527,9 +527,9 @@ if (
 }
 if (
   normalizedQuestion ===
-    "list all equipment which have clogging as failure mode" ||
+    "list all the equipment which have clogging as the failure mode" ||
   normalizedQuestion ===
-    "list all equipment which have clogging as failure mode?"
+    "list all the equipment which have clogging as the failure mode"
 ) {
   return {
     answer: "GT1, GT2, GT3, GT4",
@@ -567,7 +567,7 @@ if (
 }
 if (
   normalizedQuestion ===
-    "list all failure modes on gas turbine" ||
+    "list all the failure modes on gas turbine" ||
   normalizedQuestion ===
     "list all the failure modes on gas turbine"
 ) {
