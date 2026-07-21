@@ -29,6 +29,7 @@ export function HistoricalImageryDialog({
   const [compareMode, setCompareMode] = useState(false);
   const [metadata, setMetadata] = useState<ResolvedMetadata | null>(null);
   const [metadataLoading, setMetadataLoading] = useState(false);
+  const [note, setNote] = useState('');
 
   useEffect(() => {
     if (open && entries.length > 0 && selectedId === null) {
@@ -42,6 +43,7 @@ export function HistoricalImageryDialog({
       setCompareId(null);
       setCompareMode(false);
       setMetadata(null);
+      setNote('');
     }
   }, [open, port?.name]);
 
@@ -93,6 +95,13 @@ export function HistoricalImageryDialog({
     a.target = '_blank';
     a.rel = 'noopener noreferrer';
     a.click();
+  };
+
+  const handleNoteSubmit = () => {
+    if (!note.trim()) return;
+    // TODO: wire up your note/search handler here
+    console.log('Note submitted:', note);
+    setNote('');
   };
 
   return (
@@ -149,6 +158,25 @@ export function HistoricalImageryDialog({
                 ) : (
                   <ImageViewer entry={selectedEntry} portName={port.name} />
                 )}
+              </div>
+
+              {/* Input + Button below the viewer */}
+              <div className="flex shrink-0 items-center gap-2 border-t border-slate-800 px-4 py-3">
+                <input
+                  type="text"
+                  value={note}
+                  onChange={(e) => setNote(e.target.value)}
+                  onKeyDown={(e) => e.key === 'Enter' && handleNoteSubmit()}
+                  placeholder="Ask query…"
+                  className="flex-1 rounded-md border border-slate-700 bg-slate-800/60 px-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 outline-none transition-colors focus:border-cyan-400/60 focus:ring-1 focus:ring-cyan-400/20"
+                />
+                <button
+                  onClick={handleNoteSubmit}
+                  disabled={!note.trim()}
+                  className="rounded-md border border-slate-700 bg-slate-800/60 px-3 py-1.5 text-xs font-medium text-slate-300 transition-colors hover:border-cyan-400/60 hover:text-white disabled:cursor-not-allowed disabled:opacity-40"
+                >
+                  Analyse
+                </button>
               </div>
 
               <ImageMetadata
