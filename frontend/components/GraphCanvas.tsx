@@ -127,11 +127,6 @@ function normalizeEdge(edge: GraphEdge): NormalizedEdge {
 }
 
 // ─── buildHighlightSets ───────────────────────────────────────────────────────
-// Returns:
-//   hlEdgeSet  — "srcId::localRelation::tgtId" keys for edge glow
-//                Also adds a no-relation fallback key "srcId::::tgtId"
-//   hlNodeSet  — node ids that appear in any path
-//   hlEdgeCount — actual number of distinct edges (not doubled by the fallback)
 function buildHighlightSets(highlight: HighlightPath[] | undefined): {
     hlEdgeSet: Set<string>;
     hlNodeSet: Set<string>;
@@ -151,9 +146,7 @@ function buildHighlightSets(highlight: HighlightPath[] | undefined): {
         hlNodeSet.add(src);
         hlNodeSet.add(tgt);
 
-        // Primary key: with relation
         hlEdgeSet.add(`${src}::${rel}::${tgt}`);
-        // Fallback key: without relation (matches any edge between these two nodes)
         hlEdgeSet.add(`${src}::::${tgt}`);
         hlEdgeCount++;
     }
@@ -220,12 +213,29 @@ export default function GraphCanvas({
     const [searchOpen, setSearchOpen] = useState(false);
     const [searchFocused, setSearchFocused] = useState(false);
 
-    // AFTER
     const canvasHeight = height ?? (compact ? 220 : undefined);
-    // Compute highlight sets once — reused in the render effect
     const hlKey = highlightToKey(highlight);
     const { hlEdgeSet, hlNodeSet, hlEdgeCount } = buildHighlightSets(highlight);
     const hasHighlight = hlEdgeCount > 0;
+
+    // ─── Helper: clamp panel position within the container ───────────────────
+    const clampPos = useCallback((
+        clickX: number,
+        clickY: number,
+        panelW = 290,
+        panelH = 320,
+    ): { x: number; y: number } => {
+        const rect = containerRef.current?.getBoundingClientRect() ?? {
+            left: 0, top: 0, width: 600, height: 400,
+        };
+        // Convert viewport coords → container-relative coords
+        let x = clickX - rect.left + 14;
+        let y = clickY - rect.top - 10;
+        // Clamp so panel stays inside container
+        x = Math.max(4, Math.min(x, rect.width - panelW - 4));
+        y = Math.max(4, Math.min(y, rect.height - panelH - 4));
+        return { x, y };
+    }, []);
 
     useEffect(() => { graphRef.current = graph; }, [graph]);
     useEffect(() => { onNodeClickRef.current = onNodeClick; }, [onNodeClick]);
@@ -351,7 +361,6 @@ export default function GraphCanvas({
                             _isHl: isHl,
                         };
                     })
-                    // Highlighted edges render on top
                     .sort((a, b) => (a._isHl === b._isHl ? 0 : a._isHl ? 1 : -1))
                     .map(({ _isHl, ...edge }) => edge);
 
@@ -404,9 +413,13 @@ export default function GraphCanvas({
                         const nodeId = params.nodes[0];
                         const node = graphRef.current?.nodes.find(n => String(n.id) === String(nodeId));
                         if (node) {
-                            const domPos = params.event.center;
+                            const { x, y } = clampPos(
+                                params.event.center.x,
+                                params.event.center.y,
+                                290, 320,
+                            );
                             setPanel(node);
-                            setPanelPos({ x: domPos.x + 12, y: domPos.y - 10 });
+                            setPanelPos({ x, y });
                             onNodeClickRef.current?.(node);
                         }
                         setPanelEdge(null);
@@ -414,9 +427,13 @@ export default function GraphCanvas({
                         const edgeId = params.edges[0];
                         const originalEdge = edgeDataRef.current[edgeId];
                         if (originalEdge) {
-                            const domPos = params.event.center;
+                            const { x, y } = clampPos(
+                                params.event.center.x,
+                                params.event.center.y,
+                                290, 200,
+                            );
                             setPanelEdge(originalEdge);
-                            setPanelEdgePos({ x: domPos.x + 12, y: domPos.y - 10 });
+                            setPanelEdgePos({ x, y });
                             onEdgeClickRef.current?.(originalEdge);
                         }
                         setPanel(null);
@@ -439,7 +456,6 @@ export default function GraphCanvas({
                 networkRef.current = null;
             }
         };
-        // hlKey encodes the full highlight state
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [graph, hlKey, compact]);
 
@@ -616,6 +632,18 @@ export default function GraphCanvas({
         );
     };
 
+    // ─── Node props to display ────────────────────────────────────────────────
+    const nodePropEntries = panel
+        ? Object.entries(flattenProps(getNodeProps(panel) as Record<string, unknown>))
+        : [];
+
+    // ─── Edge props to display ────────────────────────────────────────────────
+    const edgePropEntries = panelEdge
+        ? Object.entries(getEdgeExtraProps(panelEdge))
+        : [];
+
+    const nodeTypeColor = panel ? colorForKey(String(panel.type ?? "default")) : C.accent;
+
     return (
         <div style={{ ...styles.wrapper, ...(compact ? styles.wrapperCompact : undefined) }}>
             {!compact && (
@@ -769,86 +797,106 @@ export default function GraphCanvas({
                 </div>
             )}
 
-            {/* Canvas — stopPropagation on wheel so compact graphs don't scroll parent */}
+            {/*
+              Canvas wrapper — position:relative so absolute children
+              (floatPanel) are scoped here. overflow:visible so panels
+              can spill outside the canvas area if needed.
+            */}
             <div
-                ref={containerRef}
                 style={{
-                    ...styles.canvas,
+                    position: "relative",
                     ...(canvasHeight !== undefined
                         ? { height: canvasHeight }
                         : { flex: 1, minHeight: 0 }),
                 }}
-                onWheel={e => e.stopPropagation()}
-            />
+            >
+                <div
+                    ref={containerRef}
+                    style={{ ...styles.canvas, width: "100%", height: "100%" }}
+                    onWheel={e => e.stopPropagation()}
+                />
 
-
-            {/* Node detail panel */}
-            {panel && (
-                <div style={{
-                    ...styles.floatPanel,
-                    borderTop: `3px solid ${C.accent}`,
-                    left: Math.min(panelPos.x, (typeof window !== "undefined" ? window.innerWidth : 800) - 310),
-                    top: Math.min(panelPos.y, (typeof window !== "undefined" ? window.innerHeight : 600) - 300),
-                }}>
-                    <div style={styles.floatHeader}>
-                        <span style={{ fontWeight: 600, fontSize: 13, color: C.navy }}>{panel.label}</span>
-                        <button style={styles.floatClose} onClick={() => setPanel(null)}>×</button>
-                    </div>
-                    <span style={{
-                        display: "inline-block",
-                        background: `${colorForKey(String(panel.type ?? "default"))}22`,
-                        color: colorForKey(String(panel.type ?? "default")),
-                        fontSize: 10, fontWeight: 600, borderRadius: 4,
-                        padding: "2px 7px", marginBottom: 10,
-                    }}>
-                        {panel.type || "Unknown"}
-                    </span>
-                    {Object.entries(flattenProps(getNodeProps(panel))).map(([k, v]) => (
-                        <div key={k} style={styles.propRow}>
-                            <span style={{ color: C.muted, fontSize: 11, minWidth: 90, flexShrink: 0 }}>{k}</span>
-                            <span style={{ color: C.text, fontSize: 11, wordBreak: "break-all" }}>{v}</span>
+                {/* ── Node detail panel ─────────────────────────────────────────── */}
+                {panel && (
+                    <div
+                        style={{
+                            ...styles.floatPanel,
+                            borderTop: `3px solid ${nodeTypeColor}`,
+                            left: panelPos.x,
+                            top: panelPos.y,
+                        }}
+                    >
+                        <div style={styles.floatHeader}>
+                            <span style={{ fontWeight: 600, fontSize: 13, color: C.navy, flex: 1, minWidth: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+                                {panel.label}
+                            </span>
+                            <button style={styles.floatClose} onClick={() => setPanel(null)}>×</button>
                         </div>
-                    ))}
-                    {Object.keys(flattenProps(getNodeProps(panel))).length === 0 && (
-                        <div style={{ color: C.muted, fontSize: 12, marginTop: 4 }}>No additional properties</div>
-                    )}
-                </div>
-            )}
 
-            {/* Edge detail panel */}
-            {panelEdge && (
-                <div style={{
-                    ...styles.floatPanel,
-                    borderTop: `3px solid ${C.amber}`,
-                    left: Math.min(panelEdgePos.x, (typeof window !== "undefined" ? window.innerWidth : 800) - 310),
-                    top: Math.min(panelEdgePos.y, (typeof window !== "undefined" ? window.innerHeight : 600) - 300),
-                }}>
-                    <div style={styles.floatHeader}>
-                        <span style={{ fontWeight: 600, fontSize: 12, color: C.navy }}>Edge</span>
-                        <button style={styles.floatClose} onClick={() => setPanelEdge(null)}>×</button>
-                    </div>
-                    <div style={{
-                        display: "flex", alignItems: "center", gap: 4, flexWrap: "wrap",
-                        marginBottom: 10, padding: "6px 10px",
-                        background: C.bg3, borderRadius: 6, fontSize: 11,
-                    }}>
-                        <span style={{ color: C.blue, fontWeight: 500 }}>{getNodeLabel(panelEdge.s)}</span>
-                        <span style={{ color: colorForKey(localName(panelEdge.r) || "related") }}>
-                            → {localName(panelEdge.r)} →
+                        {/* Type badge */}
+                        <span style={{
+                            display: "inline-block",
+                            background: `${nodeTypeColor}22`,
+                            color: nodeTypeColor,
+                            fontSize: 10, fontWeight: 600, borderRadius: 4,
+                            padding: "2px 7px", marginBottom: 10,
+                            letterSpacing: "0.04em",
+                        }}>
+                            {panel.type || "Unknown"}
                         </span>
-                        <span style={{ color: C.blue, fontWeight: 500 }}>{getNodeLabel(panelEdge.t)}</span>
+
+                        {/* Properties */}
+                        {nodePropEntries.length > 0 ? (
+                            nodePropEntries.map(([k, v]) => (
+                                <div key={k} style={styles.propRow}>
+                                    <span style={{ color: C.muted, fontSize: 11, minWidth: 90, flexShrink: 0 }}>{k}</span>
+                                    <span style={{ color: C.text, fontSize: 11, wordBreak: "break-all" }}>{v}</span>
+                                </div>
+                            ))
+                        ) : (
+                            <div style={{ color: C.muted, fontSize: 12, marginTop: 4 }}>No additional properties</div>
+                        )}
                     </div>
-                    {Object.entries(getEdgeExtraProps(panelEdge)).map(([k, v]) => (
-                        <div key={k} style={styles.propRow}>
-                            <span style={{ color: C.muted, fontSize: 11, minWidth: 90, flexShrink: 0 }}>{k}</span>
-                            <span style={{ color: C.text, fontSize: 11, wordBreak: "break-all" }}>{v}</span>
+                )}
+
+                {/* ── Edge detail panel ─────────────────────────────────────────── */}
+                {panelEdge && (
+                    <div
+                        style={{
+                            ...styles.floatPanel,
+                            borderTop: `3px solid ${C.amber}`,
+                            left: panelEdgePos.x,
+                            top: panelEdgePos.y,
+                        }}
+                    >
+                        <div style={styles.floatHeader}>
+                            <span style={{ fontWeight: 600, fontSize: 12, color: C.navy }}>Edge</span>
+                            <button style={styles.floatClose} onClick={() => setPanelEdge(null)}>×</button>
                         </div>
-                    ))}
-                    {Object.keys(getEdgeExtraProps(panelEdge)).length === 0 && (
-                        <div style={{ color: C.muted, fontSize: 12, marginTop: 4 }}>No additional properties</div>
-                    )}
-                </div>
-            )}
+                        <div style={{
+                            display: "flex", alignItems: "center", gap: 4, flexWrap: "wrap",
+                            marginBottom: 10, padding: "6px 10px",
+                            background: C.bg3, borderRadius: 6, fontSize: 11,
+                        }}>
+                            <span style={{ color: C.blue, fontWeight: 500 }}>{getNodeLabel(panelEdge.s)}</span>
+                            <span style={{ color: colorForKey(localName(panelEdge.r) || "related") }}>
+                                → {localName(panelEdge.r)} →
+                            </span>
+                            <span style={{ color: C.blue, fontWeight: 500 }}>{getNodeLabel(panelEdge.t)}</span>
+                        </div>
+                        {edgePropEntries.length > 0 ? (
+                            edgePropEntries.map(([k, v]) => (
+                                <div key={k} style={styles.propRow}>
+                                    <span style={{ color: C.muted, fontSize: 11, minWidth: 90, flexShrink: 0 }}>{k}</span>
+                                    <span style={{ color: C.text, fontSize: 11, wordBreak: "break-all" }}>{v}</span>
+                                </div>
+                            ))
+                        ) : (
+                            <div style={{ color: C.muted, fontSize: 12, marginTop: 4 }}>No additional properties</div>
+                        )}
+                    </div>
+                )}
+            </div>
         </div>
     );
 }
@@ -863,16 +911,17 @@ function StatChip({ label, value, color }: { label: string; value: string | numb
 }
 
 const styles: Record<string, CSSProperties> = {
-wrapper: {
-  position: "relative",
-  display: "flex",
-  flexDirection: "column",
-  background: C.bg,
-  border: `1px solid ${C.border}`,
-  borderRadius: 12,
-  overflow: "hidden",
-  height: "100%",
-},
+    wrapper: {
+        position: "relative",
+        display: "flex",
+        flexDirection: "column",
+        background: C.bg,
+        border: `1px solid ${C.border}`,
+        borderRadius: 12,
+        // NOTE: must NOT be overflow:hidden — that clips the float panels
+        overflow: "visible",
+        height: "100%",
+    },
     wrapperCompact: {
         borderRadius: 14,
         boxShadow: "0 2px 10px rgba(0,0,0,0.45)",
@@ -883,8 +932,11 @@ wrapper: {
         borderBottom: `1px solid ${C.border}`,
         background: C.bg2,
         flexWrap: "wrap",
+        // statsBar clips its own dropdown via z-index, not overflow
+        position: "relative",
+        zIndex: 10,
     },
-    canvas: { width: "100%", background: C.bg },
+    canvas: { background: C.bg },
     dropdown: {
         position: "absolute",
         top: "calc(100% + 6px)", right: 0,
@@ -919,19 +971,29 @@ wrapper: {
         transition: "background 0.1s", fontFamily: "inherit",
     },
     floatPanel: {
-        position: "absolute", width: 280,
-        background: C.bg2, border: `1px solid ${C.border}`,
-        borderRadius: 10, padding: 14, fontFamily: "inherit",
-        zIndex: 100, boxShadow: "0 8px 32px rgba(0,0,0,0.6)",
-        maxHeight: 320, overflowY: "auto",
+        position: "absolute",
+        width: 280,
+        background: C.bg2,
+        border: `1px solid ${C.border}`,
+        borderRadius: 10,
+        padding: 14,
+        fontFamily: "inherit",
+        zIndex: 100,
+        boxShadow: "0 8px 32px rgba(0,0,0,0.7)",
+        maxHeight: 320,
+        overflowY: "auto",
+        // Smooth entrance
+        animation: "kg-panel-in 0.14s ease",
     },
     floatHeader: {
         display: "flex", justifyContent: "space-between", alignItems: "center",
         marginBottom: 8, paddingBottom: 8, borderBottom: `1px solid ${C.border}`,
+        gap: 8,
     },
     floatClose: {
         background: "none", border: "none", color: C.muted,
-        cursor: "pointer", fontSize: 18, lineHeight: 1, padding: 0, fontWeight: 300,
+        cursor: "pointer", fontSize: 18, lineHeight: 1, padding: 0,
+        fontWeight: 300, flexShrink: 0,
     },
     propRow: {
         display: "flex", gap: 10,

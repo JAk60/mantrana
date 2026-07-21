@@ -1,0 +1,1346 @@
+{
+  "metadata": {
+    "version": 16,
+    "timestamp": "2026-07-11T08:20:29.654921Z",
+    "confidence": 0.836
+  },
+  "nodes": [
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Eastern",
+      "label": "Eastern",
+      "type": "Command",
+      "node_properties": {
+        "class": "Command",
+        "timestamp": "2026-07-11T08:19:45.579383Z",
+        "confidence": 0.943
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fleet_A",
+      "label": "Fleet A",
+      "type": "Fleet",
+      "node_properties": {
+        "class": "Fleet",
+        "timestamp": "2026-07-11T08:19:45.593926Z",
+        "confidence": 0.929
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#INS_TUSHIL",
+      "label": "INS KOLKATA",
+      "type": "Ship",
+      "node_properties": {
+        "class": "Ship",
+        "timestamp": "2026-07-11T08:19:45.603925Z",
+        "confidence": 0.788,
+        "date_of_commission": "2022-12-21",
+        "command": "Eastern",
+        "requirement_readiness_threshold": "0.78"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Propulsion",
+      "label": "Propulsion",
+      "type": "System",
+      "node_properties": {
+        "class": "System",
+        "timestamp": "2026-07-11T08:19:45.611929Z",
+        "confidence": 0.944,
+        "system_code": "1234",
+        "parent_ship": "INS KOLKATA"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Power_Generation",
+      "label": "Power_Generation",
+      "type": "System",
+      "node_properties": {
+        "class": "System",
+        "timestamp": "2026-07-11T08:19:45.619932Z",
+        "confidence": 0.931,
+        "system_code": "2345",
+        "parent_ship": "INS KOLKATA"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Firing",
+      "label": "Firing",
+      "type": "System",
+      "node_properties": {
+        "class": "System",
+        "timestamp": "2026-07-11T08:19:45.628454Z",
+        "confidence": 0.776,
+        "system_code": "4534",
+        "parent_ship": "INS KOLKATA"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Support",
+      "label": "Support",
+      "type": "System",
+      "node_properties": {
+        "class": "System",
+        "timestamp": "2026-07-11T08:19:45.636460Z",
+        "confidence": 0.983,
+        "system_code": "3423",
+        "parent_ship": "INS KOLKATA"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT1",
+      "label": "GT1",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.642454Z",
+        "confidence": 0.76,
+        "equipment_code": "234",
+        "oem": "dw",
+        "serial_number": "2343",
+        "parent_sys": "Propulsion"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT2",
+      "label": "GT2",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.649657Z",
+        "confidence": 0.743,
+        "equipment_code": "21435",
+        "oem": "de",
+        "serial_number": "2134",
+        "parent_sys": "Propulsion"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT3",
+      "label": "GT3",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.656644Z",
+        "confidence": 0.79,
+        "equipment_code": "232",
+        "oem": "de",
+        "serial_number": "2454",
+        "parent_sys": "Propulsion"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT4",
+      "label": "GT4",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.664656Z",
+        "confidence": 0.8,
+        "equipment_code": "2345",
+        "oem": "fr",
+        "serial_number": "123",
+        "parent_sys": "Propulsion"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GTG1",
+      "label": "GTG1",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.670656Z",
+        "confidence": 0.994,
+        "equipment_code": "978",
+        "oem": "de",
+        "serial_number": "342",
+        "parent_sys": "Power_Generation"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GTG2",
+      "label": "GTG2",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.676660Z",
+        "confidence": 0.901,
+        "equipment_code": "1",
+        "oem": "s",
+        "serial_number": "2",
+        "parent_sys": "Power_Generation"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GTG3",
+      "label": "GTG3",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.683669Z",
+        "confidence": 0.888,
+        "equipment_code": "2",
+        "oem": "sd",
+        "serial_number": "3",
+        "parent_sys": "Power_Generation"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GTG4",
+      "label": "GTG4",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.690781Z",
+        "confidence": 0.715,
+        "equipment_code": "3",
+        "oem": "d",
+        "serial_number": "4",
+        "parent_sys": "Power_Generation"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#AC1",
+      "label": "AC1",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.697814Z",
+        "confidence": 0.913,
+        "equipment_code": "5",
+        "oem": "t",
+        "serial_number": "4",
+        "parent_sys": "Support"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#AC2",
+      "label": "AC2",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.704815Z",
+        "confidence": 0.918,
+        "equipment_code": "8",
+        "oem": "y",
+        "serial_number": "7",
+        "parent_sys": "Support"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#AC3",
+      "label": "AC3",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.711823Z",
+        "confidence": 0.754,
+        "equipment_code": "23",
+        "oem": "ds",
+        "serial_number": "21",
+        "parent_sys": "Support"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#AC4",
+      "label": "AC4",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.718828Z",
+        "confidence": 0.724,
+        "equipment_code": "23",
+        "oem": "s",
+        "serial_number": "49",
+        "parent_sys": "Support"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#AC5",
+      "label": "AC5",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.725552Z",
+        "confidence": 0.974,
+        "equipment_code": "7",
+        "oem": "d",
+        "serial_number": "7",
+        "parent_sys": "Support"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#AC6",
+      "label": "AC6",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.732660Z",
+        "confidence": 0.818,
+        "equipment_code": "3",
+        "oem": "s",
+        "serial_number": "454",
+        "parent_sys": "Support"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#SRGM",
+      "label": "SRGM",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-07-11T08:19:45.739561Z",
+        "confidence": 0.99,
+        "equipment_code": "4",
+        "oem": "d",
+        "serial_number": "4",
+        "parent_sys": "Firing"
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System",
+      "label": "Fuel System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-11T08:19:45.746400Z",
+        "confidence": 0.733
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System",
+      "label": "HpAir System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-11T08:19:45.753288Z",
+        "confidence": 0.759
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System",
+      "label": "LubeOil System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-11T08:19:45.761540Z",
+        "confidence": 0.918
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System_74b0582a",
+      "label": "Fuel System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-11T08:19:45.769441Z",
+        "confidence": 0.947
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System_5d2e7b0d",
+      "label": "HpAir System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-11T08:19:45.777964Z",
+        "confidence": 0.907
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System_8eed4973",
+      "label": "LubeOil System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-11T08:19:45.785983Z",
+        "confidence": 0.951
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System_058a38d7",
+      "label": "Fuel System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-11T08:19:45.793703Z",
+        "confidence": 0.906
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System_4af62b72",
+      "label": "HpAir System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-11T08:19:45.801817Z",
+        "confidence": 0.888
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System_a5c3acd3",
+      "label": "LubeOil System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-11T08:19:45.808848Z",
+        "confidence": 0.758
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System_7989d13c",
+      "label": "Fuel System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-11T08:19:45.816869Z",
+        "confidence": 0.838
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System_ab5a88e5",
+      "label": "HpAir System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-11T08:19:45.822489Z",
+        "confidence": 0.74
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System_5335cf9e",
+      "label": "LubeOil System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-07-11T08:19:45.830245Z",
+        "confidence": 0.73
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Compressor",
+      "label": "Air Compressor",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.839150Z",
+        "confidence": 0.769
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Filter",
+      "label": "Air Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.845999Z",
+        "confidence": 0.759
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Compressor_c22ef6f9",
+      "label": "Air Compressor",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.855895Z",
+        "confidence": 0.755
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Filter_3f9f8942",
+      "label": "Air Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.866580Z",
+        "confidence": 0.918
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Compressor_b6337edc",
+      "label": "Air Compressor",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.876874Z",
+        "confidence": 0.887
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Filter_9fccfbc9",
+      "label": "Air Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.886985Z",
+        "confidence": 0.887
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Compressor_99d6e87c",
+      "label": "Air Compressor",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.897434Z",
+        "confidence": 0.995
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Filter_a11f78fe",
+      "label": "Air Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.908464Z",
+        "confidence": 0.939
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fine_Fuel_Filter",
+      "label": "Fine Fuel Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.919552Z",
+        "confidence": 0.917
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Booster_Pump",
+      "label": "Booster Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.928811Z",
+        "confidence": 0.93
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fine_Fuel_Filter_dfa9f97f",
+      "label": "Fine Fuel Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.937926Z",
+        "confidence": 0.721
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Booster_Pump_3335913d",
+      "label": "Booster Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.949493Z",
+        "confidence": 0.94
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fine_Fuel_Filter_e7fcfa62",
+      "label": "Fine Fuel Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.955394Z",
+        "confidence": 0.76
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Booster_Pump_3c53a53d",
+      "label": "Booster Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.962449Z",
+        "confidence": 0.931
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fine_Fuel_Filter_a2b7356f",
+      "label": "Fine Fuel Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.969453Z",
+        "confidence": 0.957
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Booster_Pump_9ced41b3",
+      "label": "Booster Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.978286Z",
+        "confidence": 0.814
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Pump",
+      "label": "Oil Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.986346Z",
+        "confidence": 0.791
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Filter",
+      "label": "Oil Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:45.994344Z",
+        "confidence": 0.795
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Pump_3fc7d910",
+      "label": "Oil Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:46.001068Z",
+        "confidence": 0.873
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Filter_e7e218c0",
+      "label": "Oil Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:46.007966Z",
+        "confidence": 0.743
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Pump_378c753c",
+      "label": "Oil Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:46.012981Z",
+        "confidence": 0.861
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Filter_9d0ffa56",
+      "label": "Oil Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:46.018982Z",
+        "confidence": 0.815
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Pump_9d9fbd75",
+      "label": "Oil Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:46.026528Z",
+        "confidence": 0.836
+      }
+    },
+    {
+      "id": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Filter_6effbff3",
+      "label": "Oil Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-07-11T08:19:46.033639Z",
+        "confidence": 0.915
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "59dbf483-f391-4ff2-9953-36968e7816d4",
+      "type": "hasFleet",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Eastern",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fleet_A",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.034540Z",
+        "confidence": 0.969,
+        "edge_type": "hasFleet"
+      },
+      "confidence": 0.969
+    },
+    {
+      "id": "a2783db1-b785-483c-9dcd-2a1702c792f9",
+      "type": "hasShip",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fleet_A",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#INS_TUSHIL",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.034540Z",
+        "confidence": 0.945,
+        "edge_type": "hasShip"
+      },
+      "confidence": 0.945
+    },
+    {
+      "id": "274b359f-56e0-479c-b08f-2c540b4a617a",
+      "type": "hasSystem",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#INS_TUSHIL",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Propulsion",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.034540Z",
+        "confidence": 0.884,
+        "edge_type": "hasSystem"
+      },
+      "confidence": 0.884
+    },
+    {
+      "id": "d455dd4b-2b76-4859-a8ca-90d6b16fe815",
+      "type": "hasSystem",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#INS_TUSHIL",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Power_Generation",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.034540Z",
+        "confidence": 0.786,
+        "edge_type": "hasSystem"
+      },
+      "confidence": 0.786
+    },
+    {
+      "id": "af453b24-a9c7-4c8c-8039-31b57012b6d3",
+      "type": "hasSystem",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#INS_TUSHIL",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Firing",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.034540Z",
+        "confidence": 0.855,
+        "edge_type": "hasSystem"
+      },
+      "confidence": 0.855
+    },
+    {
+      "id": "f6499fef-ae35-467e-bca8-0ea85f3742e4",
+      "type": "hasSystem",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#INS_TUSHIL",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Support",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.034540Z",
+        "confidence": 0.858,
+        "edge_type": "hasSystem"
+      },
+      "confidence": 0.858
+    },
+    {
+      "id": "f8c9a425-07dc-43f6-a836-6e6e234cf674",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Propulsion",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT1",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.979,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.979
+    },
+    {
+      "id": "81f7d2fa-0985-422b-b1ae-1640eb11364b",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Propulsion",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT2",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.765,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.765
+    },
+    {
+      "id": "19140e50-c682-4a5a-b0d4-91c292ba1bb0",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Propulsion",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT3",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.766,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.766
+    },
+    {
+      "id": "485781a4-1fec-4ac9-a459-0d53b801836a",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Propulsion",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT4",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.87,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.87
+    },
+    {
+      "id": "f35439be-ad22-48a4-93c6-aaf4a0c43036",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Power_Generation",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GTG1",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.96,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.96
+    },
+    {
+      "id": "c6cba4d2-294e-442c-bc37-b05cd8eaa992",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Power_Generation",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GTG2",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.903,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.903
+    },
+    {
+      "id": "72b61e4e-9310-4d18-9d04-a9f8cf006083",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Power_Generation",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GTG3",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.971,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.971
+    },
+    {
+      "id": "29883e92-caf4-429b-b86e-1612ffc0ba8d",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Power_Generation",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GTG4",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.833,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.833
+    },
+    {
+      "id": "0ebeaed2-dae9-4677-b81e-d1ad63d90c15",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Firing",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#SRGM",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.903,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.903
+    },
+    {
+      "id": "f8ad39b5-e401-4445-9f4b-07545bf604b7",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Support",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#AC1",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.924,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.924
+    },
+    {
+      "id": "8c84f097-b899-436a-847b-c79f2ab4e1e0",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Support",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#AC2",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.8,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.8
+    },
+    {
+      "id": "77091c0b-94d1-4c17-adb0-8ef95f3ce686",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Support",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#AC3",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.847,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.847
+    },
+    {
+      "id": "635e5d21-b2e4-415d-827f-94fa0c82e1dc",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Support",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#AC4",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.73,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.73
+    },
+    {
+      "id": "9ebd0ff0-7df4-4bdc-9040-1e7b30cef350",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Support",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#AC5",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.953,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.953
+    },
+    {
+      "id": "7668f8ea-c9c5-4cd3-bd7b-574bac0edf92",
+      "type": "hasEquipment",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Support",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#AC6",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.971,
+        "edge_type": "hasEquipment"
+      },
+      "confidence": 0.971
+    },
+    {
+      "id": "49993745-26b0-40a2-a979-ccae68d1f5ec",
+      "type": "hasAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT1",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.757,
+        "edge_type": "hasAssembly"
+      },
+      "confidence": 0.757
+    },
+    {
+      "id": "583c31fa-334b-40ff-a9fa-77bdc14c57c7",
+      "type": "hasAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT1",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.93,
+        "edge_type": "hasAssembly"
+      },
+      "confidence": 0.93
+    },
+    {
+      "id": "a27f1766-8ab8-4c89-8a62-a1d2ac402f6f",
+      "type": "hasAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT1",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.86,
+        "edge_type": "hasAssembly"
+      },
+      "confidence": 0.86
+    },
+    {
+      "id": "bfb3459e-c8a6-4f00-b4c4-32f74bbb0a1e",
+      "type": "hasAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT2",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System_74b0582a",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.982,
+        "edge_type": "hasAssembly"
+      },
+      "confidence": 0.982
+    },
+    {
+      "id": "1dd4ebbf-1704-475f-ad66-9250e29cef71",
+      "type": "hasAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT2",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System_5d2e7b0d",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.797,
+        "edge_type": "hasAssembly"
+      },
+      "confidence": 0.797
+    },
+    {
+      "id": "ffdbcad4-2d18-4c08-98d9-1eea5a19c5eb",
+      "type": "hasAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT2",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System_8eed4973",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.846,
+        "edge_type": "hasAssembly"
+      },
+      "confidence": 0.846
+    },
+    {
+      "id": "3e039ee6-913e-4436-9d23-8b7208b10365",
+      "type": "hasAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT3",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System_058a38d7",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.798,
+        "edge_type": "hasAssembly"
+      },
+      "confidence": 0.798
+    },
+    {
+      "id": "85b7ebf7-383f-4ea5-acb3-de22c3e6760e",
+      "type": "hasAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT3",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System_4af62b72",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.836,
+        "edge_type": "hasAssembly"
+      },
+      "confidence": 0.836
+    },
+    {
+      "id": "1509000b-ceb9-45cf-a71a-ea8145ff10ef",
+      "type": "hasAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT3",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System_a5c3acd3",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.727,
+        "edge_type": "hasAssembly"
+      },
+      "confidence": 0.727
+    },
+    {
+      "id": "bfadaf68-50b5-4f4c-8465-4ff9b50fe6a0",
+      "type": "hasAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT4",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System_7989d13c",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.721,
+        "edge_type": "hasAssembly"
+      },
+      "confidence": 0.721
+    },
+    {
+      "id": "dc25271a-c911-4bab-8164-5f938c4870a5",
+      "type": "hasAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT4",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System_ab5a88e5",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.898,
+        "edge_type": "hasAssembly"
+      },
+      "confidence": 0.898
+    },
+    {
+      "id": "ab96700b-8e39-46d3-8c34-5c14f22ab35e",
+      "type": "hasAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#GT4",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System_5335cf9e",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.035645Z",
+        "confidence": 0.787,
+        "edge_type": "hasAssembly"
+      },
+      "confidence": 0.787
+    },
+    {
+      "id": "05f35dff-78cf-48f5-b8d8-8cf69630f49d",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fine_Fuel_Filter",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.817,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.817
+    },
+    {
+      "id": "5d22640f-e70f-4950-8b9f-f78beabfd0c5",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Booster_Pump",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.708,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.708
+    },
+    {
+      "id": "69b4f99b-9446-40bd-92a3-4f892ff3b1e8",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Compressor",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.909,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.909
+    },
+    {
+      "id": "ad858131-73e0-4cc4-910c-6f98e137f80b",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Filter",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.921,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.921
+    },
+    {
+      "id": "edc7332f-bbe1-49d4-a2f9-de18947b604e",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Pump",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.822,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.822
+    },
+    {
+      "id": "a2297e2d-79dc-4605-8b81-75514ce23435",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Filter",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.968,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.968
+    },
+    {
+      "id": "5888309f-4718-4655-a23a-14f9b5bc8c12",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System_74b0582a",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fine_Fuel_Filter_dfa9f97f",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.871,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.871
+    },
+    {
+      "id": "92eccec9-6f32-4a79-b9eb-086c3b1c6f00",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System_74b0582a",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Booster_Pump_3335913d",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.836,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.836
+    },
+    {
+      "id": "ebf997f1-b738-4f4b-8ff3-71fbcae25176",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System_5d2e7b0d",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Compressor_c22ef6f9",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.981,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.981
+    },
+    {
+      "id": "67953426-bc0c-4128-a73c-97d628066fa7",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System_5d2e7b0d",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Filter_3f9f8942",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.874,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.874
+    },
+    {
+      "id": "804872ca-fe95-456b-bc6e-139f5cdc7746",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System_8eed4973",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Pump_3fc7d910",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.71,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.71
+    },
+    {
+      "id": "e84639a0-6a50-482b-8915-ae6ec8d100e4",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System_8eed4973",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Filter_e7e218c0",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.85,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.85
+    },
+    {
+      "id": "1f3ef6ef-c93d-47cc-b80f-69bcfa8a6dbf",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System_058a38d7",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fine_Fuel_Filter_e7fcfa62",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.937,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.937
+    },
+    {
+      "id": "a30044e6-c728-41d9-a06d-d55d981d4cf8",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System_058a38d7",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Booster_Pump_3c53a53d",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.922,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.922
+    },
+    {
+      "id": "c99734d1-b2eb-4588-9ea2-55de93aad835",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System_4af62b72",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Compressor_b6337edc",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.782,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.782
+    },
+    {
+      "id": "fddf2477-c636-46ac-976d-c22a2f6e18d0",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System_4af62b72",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Filter_9fccfbc9",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.785,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.785
+    },
+    {
+      "id": "6e198834-ad6d-45b0-97fa-1d53f088eff0",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System_a5c3acd3",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Pump_378c753c",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.779,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.779
+    },
+    {
+      "id": "b02b7a8c-7cde-45ad-9a23-fdbf37ea69ce",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System_a5c3acd3",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Filter_9d0ffa56",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.797,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.797
+    },
+    {
+      "id": "1274530a-44b8-4470-9382-5f8dda53da71",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System_7989d13c",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fine_Fuel_Filter_a2b7356f",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.783,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.783
+    },
+    {
+      "id": "e402fa2f-8ce0-493b-bfd8-f762fb7973d5",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Fuel_System_7989d13c",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Booster_Pump_9ced41b3",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.801,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.801
+    },
+    {
+      "id": "aa65c6a3-2ea2-4653-a9e6-d1964f6c3e79",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System_ab5a88e5",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Compressor_99d6e87c",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.93,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.93
+    },
+    {
+      "id": "47952093-2c07-49b0-9796-202f3e942c3a",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#HpAir_System_ab5a88e5",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Air_Filter_a11f78fe",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.834,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.834
+    },
+    {
+      "id": "b90cec0b-4f86-4644-9d62-70184e0330a6",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System_5335cf9e",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Pump_9d9fbd75",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.999,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.999
+    },
+    {
+      "id": "5eb4ed6a-abce-4b96-9811-27116880fa9a",
+      "type": "hasSubAssembly",
+      "source": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#LubeOil_System_5335cf9e",
+      "target": "http://example.org/draft/5d7f30c6-432d-4b04-8e4c-1442c092f836#Oil_Filter_6effbff3",
+      "edge_properties": {
+        "timestamp": "2026-07-11T08:19:46.036641Z",
+        "confidence": 0.716,
+        "edge_type": "hasSubAssembly"
+      },
+      "confidence": 0.716
+    }
+  ]
+}

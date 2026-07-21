@@ -1,0 +1,383 @@
+{
+  "metadata": {
+    "version": 6,
+    "timestamp": "2026-07-21T15:24:45.519282Z",
+    "confidence": 0.714
+  },
+  "nodes": [
+    {
+      "id": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "label": "Mumbai Port",
+      "type": "Location",
+      "node_properties": {
+        "class": "Location",
+        "timestamp": "2026-07-21T15:24:45.519282Z",
+        "confidence": 0.82,
+        "subclass": "Port",
+        "name": "Mumbai",
+        "lat": "18",
+        "long": "72",
+        "controllingAuthority": "Port",
+        "port_name": "Mumbai Port",
+        "country": "India",
+        "state": "Maharashtra"
+      }
+    },
+    {
+      "id": "2d530235-e4d4-4458-a0ee-be0c0f1f2821",
+      "label": "Environment",
+      "type": "Environment",
+      "node_properties": {
+        "class": "Environment",
+        "timestamp": "2026-07-21T15:24:45.519282Z",
+        "confidence": 0.709,
+        "temperature": "28",
+        "navigationHazards": "None",
+        "seaState": "3",
+        "bathymetry": "45",
+        "currents": "1.2",
+        "wind": "15 knots sw",
+        "waterColumn": "Therma",
+        "weather": "Clear",
+        "sea_state": "Moderate",
+        "tide": "High"
+      }
+    },
+    {
+      "id": "d2430651-4182-49db-9e5d-d0ad22418ec1",
+      "label": "Identity",
+      "type": "Identity",
+      "node_properties": {
+        "class": "Identity",
+        "timestamp": "2026-07-21T15:24:45.519282Z",
+        "confidence": 0.753,
+        "identityId": "PB-001",
+        "identityName": "PB-001",
+        "identityType": "Naval",
+        "identityCode": "IN-PB-NB",
+        "imo_port_code": "INBOM",
+        "authority": "Mumbai Port Authority"
+      }
+    },
+    {
+      "id": "d5d6aa04-6c3c-4735-a9db-71dbb111a383",
+      "label": "Spatial",
+      "type": "Spatial",
+      "node_properties": {
+        "class": "Spatial",
+        "timestamp": "2026-07-21T15:24:45.519282Z",
+        "confidence": 0.962,
+        "coordinates": "18.941\u00b0 N, 72.855\u00b0 E",
+        "maritimeZone": "Internal Waters",
+        "friendlyAdversaryAffiliation": "Friendly",
+        "accessRights": "Access",
+        "controllingAuthority": "Port",
+        "latitude": "18.95",
+        "longitude": "72.84"
+      }
+    },
+    {
+      "id": "f5b0e060-05a5-40f3-82e5-4789f914441d",
+      "label": "ThreatAndSecurity",
+      "type": "ThreatAndSecurity",
+      "node_properties": {
+        "class": "ThreatAndSecurity",
+        "timestamp": "2026-07-21T15:24:45.519282Z",
+        "confidence": 0.974,
+        "threatLevel": "Moderate",
+        "recentIncident": "None",
+        "adversaryProximity": "Sensitive",
+        "detectionRisk": "High",
+        "timeToReason": "45 min",
+        "fuelToReach": "2400",
+        "security_level": "Medium",
+        "piracy_risk": "Low"
+      }
+    },
+    {
+      "id": "ab67f039-af92-48db-ad49-18a6d58736ad",
+      "label": "Capabilities",
+      "type": "Capabilities",
+      "node_properties": {
+        "class": "Capabilities",
+        "timestamp": "2026-07-21T15:24:45.519282Z",
+        "confidence": 0.977,
+        "fuelAndAFCAT": "500 KL",
+        "ammunition": "Full stock",
+        "repair": "Dry-dock",
+        "water": "200 KL/day",
+        "medical": "Level-2",
+        "connectivity": "Air",
+        "communications": "HF",
+        "max_draft_m": "14.5",
+        "berths": "63"
+      }
+    },
+    {
+      "id": "10e3d3c6-fcb9-44d1-a58b-5190387f2a4a",
+      "label": "Status",
+      "type": "Status",
+      "node_properties": {
+        "class": "Status",
+        "timestamp": "2026-07-21T15:24:45.519282Z",
+        "confidence": 0.875,
+        "occupancy": "Active",
+        "lastUpdateTimestamp": "2025-06-12T06:23:01.482Z",
+        "operational_status": "Operational"
+      }
+    },
+    {
+      "id": "452eaa4d-d00a-494d-8fb4-96771fbd7db9",
+      "label": "NavalAssets",
+      "type": "NavalAssets",
+      "node_properties": {
+        "class": "NavalAssets",
+        "timestamp": "2026-07-21T15:24:45.519282Z",
+        "confidence": 0.73,
+        "nearbyFriendlyShips": "INS KOLKATA",
+        "nearbyAdversaryShips": "Chinese PLAN Surveillance",
+        "nearbyFriendlyPorts": "Mormugao Port",
+        "nearbyAdversaryPorts": "Karachi",
+        "nearby_base": "INS Angre"
+      }
+    },
+    {
+      "id": "86763474-9ce0-489b-98f6-8a4bf2a04d69",
+      "label": "PurposeFunction",
+      "type": "PurposeFunction",
+      "node_properties": {
+        "class": "PurposeFunction",
+        "timestamp": "2026-07-21T15:24:45.519282Z",
+        "confidence": 0.735,
+        "purposeType": "Naval",
+        "primary_function": "Commercial and Naval Logistics"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "88a51d2c-0f45-4914-bc8e-3c7510315dc4",
+      "type": "hasEnvironment",
+      "source": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "target": "2d530235-e4d4-4458-a0ee-be0c0f1f2821",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "hasEnvironment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "49ca065e-743e-43e2-8732-da08558a5039",
+      "type": "hasIdentity",
+      "source": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "target": "d2430651-4182-49db-9e5d-d0ad22418ec1",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "hasIdentity",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "70a19919-ada8-48d0-9d50-fe58a5614864",
+      "type": "hasSpatial",
+      "source": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "target": "d5d6aa04-6c3c-4735-a9db-71dbb111a383",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "hasSpatial",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "8a2f39e3-91b6-484c-b7f9-138c5c338efa",
+      "type": "hasThreatAndSecurity",
+      "source": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "target": "f5b0e060-05a5-40f3-82e5-4789f914441d",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "hasThreatAndSecurity",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "4d9ffc89-c1c4-4ebc-ad19-04d241cf1d3a",
+      "type": "hasCapabilities",
+      "source": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "target": "ab67f039-af92-48db-ad49-18a6d58736ad",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "hasCapabilities",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "db727131-fa29-4dc5-90f5-0c22bbb56a24",
+      "type": "hasStatus",
+      "source": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "target": "10e3d3c6-fcb9-44d1-a58b-5190387f2a4a",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "hasStatus",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "ab6da05d-066a-41c1-a12b-bfefaa03621c",
+      "type": "hasNavalAssets",
+      "source": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "target": "452eaa4d-d00a-494d-8fb4-96771fbd7db9",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "hasNavalAssets",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "1b0fb701-d701-4995-b6bd-559911214e8d",
+      "type": "hasPurposeFunction",
+      "source": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "target": "86763474-9ce0-489b-98f6-8a4bf2a04d69",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "hasPurposeFunction",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "02e2e7a7-9ca1-403f-81e5-01a116e6c0ce",
+      "type": "isPartOf",
+      "source": "2d530235-e4d4-4458-a0ee-be0c0f1f2821",
+      "target": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "8deb10aa-13ae-41f5-adce-b8ae754e0485",
+      "type": "isPartOf",
+      "source": "d2430651-4182-49db-9e5d-d0ad22418ec1",
+      "target": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "06ab2e54-77c5-40c0-9587-058d65b33fed",
+      "type": "isPartOf",
+      "source": "d5d6aa04-6c3c-4735-a9db-71dbb111a383",
+      "target": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "222d940c-7f76-4f47-82c8-8cf7f258c89a",
+      "type": "isPartOf",
+      "source": "f5b0e060-05a5-40f3-82e5-4789f914441d",
+      "target": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "02d9fffb-6920-4266-92a7-124cbb94064c",
+      "type": "isPartOf",
+      "source": "ab67f039-af92-48db-ad49-18a6d58736ad",
+      "target": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "1ecab100-8c62-4fca-aba6-4bdde84afa91",
+      "type": "isPartOf",
+      "source": "10e3d3c6-fcb9-44d1-a58b-5190387f2a4a",
+      "target": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "b6dc4e59-0a5e-4727-be8a-7e8a7f47d8db",
+      "type": "isPartOf",
+      "source": "452eaa4d-d00a-494d-8fb4-96771fbd7db9",
+      "target": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "3a15b7b5-3850-4117-8d4b-96e6c0ae4b51",
+      "type": "isPartOf",
+      "source": "86763474-9ce0-489b-98f6-8a4bf2a04d69",
+      "target": "fa26889a-998d-4eac-9af6-9c96ebcafcdb",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-07-21T15:10:02.751647Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    }
+  ]
+}

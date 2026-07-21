@@ -1,0 +1,2258 @@
+{
+  "metadata": {
+    "version": 9,
+    "timestamp": "2026-07-21T09:53:44.637375Z",
+    "confidence": 0.997
+  },
+  "nodes": [
+    {
+      "id": "f9a2fbd4-eba0-4afe-9979-20b840cc9643",
+      "label": "Eastern",
+      "type": "Command",
+      "node_properties": {
+        "class": "Command",
+        "timestamp": "2026-04-24T09:02:32.030Z",
+        "confidence": 0.477
+      }
+    },
+    {
+      "id": "1926eee2-61fa-4358-9fbf-ea18bc6c64f9",
+      "label": "Fleet A",
+      "type": "Fleet",
+      "node_properties": {
+        "class": "Fleet",
+        "timestamp": "2026-04-24T09:02:44.361Z",
+        "confidence": 0.724
+      }
+    },
+    {
+      "id": "b91e0064-71c9-4419-bcf6-64c6c6c65cf9",
+      "label": "INS TUSHIL",
+      "type": "Ship",
+      "node_properties": {
+        "class": "Ship",
+        "timestamp": "2026-04-24T09:03:24.785Z",
+        "confidence": 0.102,
+        "date_of_commission": "2022-12-21",
+        "command": "Eastern",
+        "requirement_readiness_threshold": "0.78"
+      }
+    },
+    {
+      "id": "edc00ad1-c2dc-4c14-98f8-b674caffad35",
+      "label": "Propulsion",
+      "type": "System",
+      "node_properties": {
+        "class": "System",
+        "timestamp": "2026-04-24T09:04:18.899Z",
+        "confidence": 0.383,
+        "system_code": "1234",
+        "parent_ship": "INS ONE"
+      }
+    },
+    {
+      "id": "7d6e74ed-5cad-444d-81af-a4f9ea441500",
+      "label": "Power_Generation",
+      "type": "System",
+      "node_properties": {
+        "class": "System",
+        "timestamp": "2026-04-24T09:04:59.521Z",
+        "confidence": 0.306,
+        "system_code": "2345",
+        "parent_ship": "INS ONE"
+      }
+    },
+    {
+      "id": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "label": "Support",
+      "type": "System",
+      "node_properties": {
+        "class": "System",
+        "timestamp": "2026-04-24T09:05:28.350Z",
+        "confidence": 0.639,
+        "system_code": "3423",
+        "parent_ship": "INS ONE"
+      }
+    },
+    {
+      "id": "568db921-7f29-4d02-a143-3c6d7ffec010",
+      "label": "Firing",
+      "type": "System",
+      "node_properties": {
+        "class": "System",
+        "timestamp": "2026-04-24T09:05:47.418Z",
+        "confidence": 0.292,
+        "system_code": "4534",
+        "parent_ship": "INS ONE"
+      }
+    },
+    {
+      "id": "fb7d86e1-bf70-474e-b014-76a6d961ed59",
+      "label": "GT1",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:10:40.029Z",
+        "confidence": 0.851,
+        "equipment_code": "234",
+        "oem": "dw",
+        "serial_number": "2343",
+        "parent_sys": "Propulsion"
+      }
+    },
+    {
+      "id": "2a233811-8808-43ac-9ce1-65422f33f9bd",
+      "label": "GT2",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:11:07.030Z",
+        "confidence": 0.119,
+        "equipment_code": "21435",
+        "oem": "de",
+        "serial_number": "2134",
+        "parent_sys": "Propulsion"
+      }
+    },
+    {
+      "id": "bcdf5eef-e397-4200-8942-fb00bb8c362a",
+      "label": "GT3",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:11:33.992Z",
+        "confidence": 0.728,
+        "equipment_code": "232",
+        "oem": "de",
+        "serial_number": "2454",
+        "parent_sys": "Propulsion"
+      }
+    },
+    {
+      "id": "2a58f532-e19e-43fa-b242-95d1bb984519",
+      "label": "GT4",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:11:59.081Z",
+        "confidence": 0.099,
+        "equipment_code": "2345",
+        "oem": "fr",
+        "serial_number": "123",
+        "parent_sys": "Propulsion"
+      }
+    },
+    {
+      "id": "3c53e7f6-b4d2-4c99-b8ee-5445b9ddbafd",
+      "label": "GTG1",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:12:38.605Z",
+        "confidence": 0.787,
+        "equipment_code": "978",
+        "oem": "de",
+        "serial_number": "342",
+        "parent_sys": "Power_Generation"
+      }
+    },
+    {
+      "id": "2e61d289-e720-4cf7-b9c2-5e90b78c74d0",
+      "label": "GTG2",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:13:05.667Z",
+        "confidence": 0.108,
+        "equipment_code": "1",
+        "oem": "s",
+        "serial_number": "2",
+        "parent_sys": "Power_Generation"
+      }
+    },
+    {
+      "id": "805b1981-0726-4749-bf60-5e1139e6e683",
+      "label": "GTG3",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:13:30.318Z",
+        "confidence": 0.323,
+        "equipment_code": "2",
+        "oem": "sd",
+        "serial_number": "3",
+        "parent_sys": "Power_Generation"
+      }
+    },
+    {
+      "id": "732929e5-6796-402e-9d71-c439129dcb54",
+      "label": "GTG4",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:14:09.036Z",
+        "confidence": 0.047,
+        "equipment_code": "3",
+        "oem": "d",
+        "serial_number": "4",
+        "parent_sys": "Power_Generation"
+      }
+    },
+    {
+      "id": "246ed095-909f-473f-b04d-73932c03b0aa",
+      "label": "AC1",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:14:36.005Z",
+        "confidence": 0.402,
+        "equipment_code": "5",
+        "oem": "t",
+        "serial_number": "4",
+        "parent_sys": "Support"
+      }
+    },
+    {
+      "id": "aaad6310-459a-49d1-8035-5f4b470fc011",
+      "label": "AC2",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:14:58.668Z",
+        "confidence": 0.836,
+        "equipment_code": "8",
+        "oem": "y",
+        "serial_number": "7",
+        "parent_sys": "Support"
+      }
+    },
+    {
+      "id": "00babf1b-1e0f-49a9-8143-c8d14f6a6a87",
+      "label": "AC3",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:15:27.672Z",
+        "confidence": 0.188,
+        "equipment_code": "23",
+        "oem": "ds",
+        "serial_number": "21",
+        "parent_sys": "Support"
+      }
+    },
+    {
+      "id": "2b9f7ff2-4c65-4b24-80f0-22e95d3d0b76",
+      "label": "AC4",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:15:51.433Z",
+        "confidence": 0.129,
+        "equipment_code": "23",
+        "oem": "s",
+        "serial_number": "49",
+        "parent_sys": "Support"
+      }
+    },
+    {
+      "id": "b6df8388-49b9-47fb-916c-097e6d47b9f1",
+      "label": "AC5",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:16:25.798Z",
+        "confidence": 0.774,
+        "equipment_code": "7",
+        "oem": "d",
+        "serial_number": "7",
+        "parent_sys": "Support"
+      }
+    },
+    {
+      "id": "8e010cbe-1d39-4e6c-bebc-7737c814d1e9",
+      "label": "AC6",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:16:46.805Z",
+        "confidence": 0.555,
+        "equipment_code": "3",
+        "oem": "s",
+        "serial_number": "454",
+        "parent_sys": "Support"
+      }
+    },
+    {
+      "id": "3a8f929f-adac-47d8-b963-0a2098799bdf",
+      "label": "SRGM",
+      "type": "Equipment",
+      "node_properties": {
+        "class": "Equipment",
+        "timestamp": "2026-04-24T09:17:09.411Z",
+        "confidence": 0.302,
+        "equipment_code": "4",
+        "oem": "d",
+        "serial_number": "4",
+        "parent_sys": "Firing"
+      }
+    },
+    {
+      "id": "407e05a3-35ed-4d7d-8f88-d699b1349cca",
+      "label": "HpAir System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-04-27T05:53:57.192Z",
+        "confidence": 0.923
+      }
+    },
+    {
+      "id": "5d2e7b0d-7eb3-4aff-898d-7f882d6bb872",
+      "label": "HpAir System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-04-27T05:54:23.966Z",
+        "confidence": 0.004
+      }
+    },
+    {
+      "id": "4af62b72-5120-462d-8ba0-0a9af9adf5e8",
+      "label": "HpAir System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-04-27T05:55:03.337Z",
+        "confidence": 0.03
+      }
+    },
+    {
+      "id": "ab5a88e5-c232-42b2-afad-c2363b17a8e2",
+      "label": "HpAir System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-04-27T05:55:18.361Z",
+        "confidence": 0.515
+      }
+    },
+    {
+      "id": "a36b7517-c3b1-4c36-9232-569c1bef1c66",
+      "label": "Fuel System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-04-27T05:57:14.019Z",
+        "confidence": 0.56
+      }
+    },
+    {
+      "id": "74b0582a-69d3-449a-bf9e-93801a12c769",
+      "label": "Fuel System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-04-27T05:57:31.430Z",
+        "confidence": 0.184
+      }
+    },
+    {
+      "id": "058a38d7-9f19-43a7-bd01-a890e12f69ef",
+      "label": "Fuel System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-04-27T06:01:58.303Z",
+        "confidence": 0.708
+      }
+    },
+    {
+      "id": "7989d13c-da0b-4e7c-9c94-a0e07c99ea7c",
+      "label": "Fuel System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-04-27T06:02:11.932Z",
+        "confidence": 0.955
+      }
+    },
+    {
+      "id": "c63d043e-c1db-4fed-b90d-a6e1fd7bc402",
+      "label": "LubeOil System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-04-27T06:07:15.134Z",
+        "confidence": 0.59
+      }
+    },
+    {
+      "id": "8eed4973-d65d-4c21-88f3-938b5511bfd1",
+      "label": "LubeOil System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-04-27T06:07:32.915Z",
+        "confidence": 0.485
+      }
+    },
+    {
+      "id": "a5c3acd3-a6b1-44ad-96d9-614f528577b6",
+      "label": "LubeOil System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-04-27T06:07:45.995Z",
+        "confidence": 0.222
+      }
+    },
+    {
+      "id": "5335cf9e-f618-442c-a1dd-057bdd3ccf05",
+      "label": "LubeOil System",
+      "type": "Assembly",
+      "node_properties": {
+        "class": "Assembly",
+        "timestamp": "2026-04-27T06:08:33.892Z",
+        "confidence": 0.705
+      }
+    },
+    {
+      "id": "c9ba5a99-b8e5-4146-9fe8-d5192c9a97f9",
+      "label": "Air Compressor",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T06:27:21.056Z",
+        "confidence": 0.888
+      }
+    },
+    {
+      "id": "c22ef6f9-8a49-4bdf-8b4e-0e89b5490108",
+      "label": "Air Compressor",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T06:27:34.167Z",
+        "confidence": 0.975
+      }
+    },
+    {
+      "id": "b6337edc-8b64-4ebe-b68a-c8c269a82a8c",
+      "label": "Air Compressor",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T06:28:10.760Z",
+        "confidence": 0.729
+      }
+    },
+    {
+      "id": "99d6e87c-2880-46f2-a15d-78971d2c41f4",
+      "label": "Air Compressor",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T06:28:21.070Z",
+        "confidence": 0.602
+      }
+    },
+    {
+      "id": "60b71d96-87a8-428a-b034-bff03f8fe790",
+      "label": "Air Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T06:30:22.818Z",
+        "confidence": 0.59
+      }
+    },
+    {
+      "id": "3f9f8942-f48d-4961-a656-5790d5982599",
+      "label": "Air Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T06:30:56.250Z",
+        "confidence": 0.24
+      }
+    },
+    {
+      "id": "9fccfbc9-35ad-47d4-8ada-25bf87381635",
+      "label": "Air Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T06:31:09.476Z",
+        "confidence": 0.65
+      }
+    },
+    {
+      "id": "a11f78fe-c6ca-43f0-afe8-52e78798b8fc",
+      "label": "Air Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T06:31:25.070Z",
+        "confidence": 0.805
+      }
+    },
+    {
+      "id": "561df660-987e-4d93-b03c-2bc7d6cbea61",
+      "label": "Oil Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T08:50:52.132Z",
+        "confidence": 0.956
+      }
+    },
+    {
+      "id": "3fc7d910-eb91-4816-96b3-0c4d524972ea",
+      "label": "Oil Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T08:51:08.169Z",
+        "confidence": 0.131
+      }
+    },
+    {
+      "id": "378c753c-9850-433f-94c9-6e2ed6a7c91f",
+      "label": "Oil Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T08:51:23.681Z",
+        "confidence": 0.027
+      }
+    },
+    {
+      "id": "9d9fbd75-d6cf-4d4d-ae43-57d18c7a1beb",
+      "label": "Oil Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T08:51:34.287Z",
+        "confidence": 0.571
+      }
+    },
+    {
+      "id": "70fa0ec8-f4ef-4719-ab6d-7c342a3c57b0",
+      "label": "Oil Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T08:58:47.124Z",
+        "confidence": 0.598
+      }
+    },
+    {
+      "id": "e7e218c0-b9be-4a3b-b014-b364907e0a3b",
+      "label": "Oil Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T08:58:57.367Z",
+        "confidence": 0.896
+      }
+    },
+    {
+      "id": "9d0ffa56-78d8-41f3-aa46-d5654c3be7ca",
+      "label": "Oil Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T08:59:07.341Z",
+        "confidence": 0.296
+      }
+    },
+    {
+      "id": "6effbff3-0ecb-4070-9b2b-26228198bf65",
+      "label": "Oil Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T08:59:31.951Z",
+        "confidence": 0.647
+      }
+    },
+    {
+      "id": "630ec903-681f-4fc9-a749-6ea266b0f86f",
+      "label": "Fine Fuel Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T09:06:31.294Z",
+        "confidence": 0.921
+      }
+    },
+    {
+      "id": "dfa9f97f-7dd4-4341-8b93-258db7ef6635",
+      "label": "Fine Fuel Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T09:06:47.977Z",
+        "confidence": 0.692
+      }
+    },
+    {
+      "id": "e7fcfa62-e090-4397-a3d0-dc231214d53a",
+      "label": "Fine Fuel Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T09:06:54.742Z",
+        "confidence": 0.672
+      }
+    },
+    {
+      "id": "a2b7356f-5b1e-412c-8171-a2711bd8b6c8",
+      "label": "Fine Fuel Filter",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T09:07:03.911Z",
+        "confidence": 0.927
+      }
+    },
+    {
+      "id": "81fe17b2-855b-42bd-8640-ba7c8ff0e97a",
+      "label": "Booster Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T09:11:29.435Z",
+        "confidence": 0.631
+      }
+    },
+    {
+      "id": "3335913d-ff06-4350-805b-f6ddf0956875",
+      "label": "Booster Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T09:11:38.933Z",
+        "confidence": 0.63
+      }
+    },
+    {
+      "id": "3c53a53d-70b3-4b6b-8da9-6b90c8ec8b44",
+      "label": "Booster Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T09:11:58.921Z",
+        "confidence": 0.566
+      }
+    },
+    {
+      "id": "9ced41b3-259a-4484-a491-856314da962a",
+      "label": "Booster Pump",
+      "type": "SubAssembly",
+      "node_properties": {
+        "class": "SubAssembly",
+        "timestamp": "2026-04-27T09:12:17.735Z",
+        "confidence": 0.057
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "afabc7f5-cf0b-4a35-9406-1987b1a660d5",
+      "type": "hasFleet",
+      "source": "f9a2fbd4-eba0-4afe-9979-20b840cc9643",
+      "target": "1926eee2-61fa-4358-9fbf-ea18bc6c64f9",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:06:04.108Z",
+        "confidence": 1.0,
+        "edge_type": "hasFleet",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "a6992cca-3314-45d5-a2c8-e5d7237756bb",
+      "type": "hasShip",
+      "source": "1926eee2-61fa-4358-9fbf-ea18bc6c64f9",
+      "target": "b91e0064-71c9-4419-bcf6-64c6c6c65cf9",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:06:24.253Z",
+        "confidence": 1.0,
+        "edge_type": "hasShip",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "66257c5b-d7f7-49c9-88b8-4b605f55d7fe",
+      "type": "hasSystem",
+      "source": "b91e0064-71c9-4419-bcf6-64c6c6c65cf9",
+      "target": "edc00ad1-c2dc-4c14-98f8-b674caffad35",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:06:39.870Z",
+        "confidence": 1.0,
+        "edge_type": "hasSystem",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "576d2467-8401-47e7-a10e-35034d9a73ca",
+      "type": "hasSystem",
+      "source": "b91e0064-71c9-4419-bcf6-64c6c6c65cf9",
+      "target": "7d6e74ed-5cad-444d-81af-a4f9ea441500",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:06:48.868Z",
+        "confidence": 1.0,
+        "edge_type": "hasSystem",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "a1eb8b30-fb1f-4beb-a30d-6a365d571169",
+      "type": "hasSystem",
+      "source": "b91e0064-71c9-4419-bcf6-64c6c6c65cf9",
+      "target": "568db921-7f29-4d02-a143-3c6d7ffec010",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:07:01.318Z",
+        "confidence": 1.0,
+        "edge_type": "hasSystem",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "0fe0e17b-d11d-4d61-a442-c2391a8208d5",
+      "type": "hasSystem",
+      "source": "b91e0064-71c9-4419-bcf6-64c6c6c65cf9",
+      "target": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:07:11.849Z",
+        "confidence": 1.0,
+        "edge_type": "hasSystem",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "08b15bfe-8c86-4ea2-923d-3887e53073f4",
+      "type": "hasEquipment",
+      "source": "edc00ad1-c2dc-4c14-98f8-b674caffad35",
+      "target": "fb7d86e1-bf70-474e-b014-76a6d961ed59",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:17:23.448Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "f09f71a5-ad5d-49a5-a7fd-75b3eb316678",
+      "type": "hasEquipment",
+      "source": "edc00ad1-c2dc-4c14-98f8-b674caffad35",
+      "target": "2a233811-8808-43ac-9ce1-65422f33f9bd",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:17:34.807Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "70e15bf4-7b89-4a07-b5a0-35da793a98b3",
+      "type": "hasEquipment",
+      "source": "edc00ad1-c2dc-4c14-98f8-b674caffad35",
+      "target": "bcdf5eef-e397-4200-8942-fb00bb8c362a",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:17:42.187Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "7baa3a6b-c992-41db-a2b9-ca77fea6b75a",
+      "type": "hasEquipment",
+      "source": "edc00ad1-c2dc-4c14-98f8-b674caffad35",
+      "target": "2a58f532-e19e-43fa-b242-95d1bb984519",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:17:54.734Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "0396102b-b54a-4b4e-a60c-84e3809165a2",
+      "type": "hasEquipment",
+      "source": "7d6e74ed-5cad-444d-81af-a4f9ea441500",
+      "target": "3c53e7f6-b4d2-4c99-b8ee-5445b9ddbafd",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:18:06.934Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "d554956a-b0cb-45a0-997c-fec8f91619f1",
+      "type": "hasEquipment",
+      "source": "7d6e74ed-5cad-444d-81af-a4f9ea441500",
+      "target": "2e61d289-e720-4cf7-b9c2-5e90b78c74d0",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:18:17.169Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "12e6926a-7a20-4825-9f68-9def2d4cd685",
+      "type": "hasEquipment",
+      "source": "7d6e74ed-5cad-444d-81af-a4f9ea441500",
+      "target": "805b1981-0726-4749-bf60-5e1139e6e683",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:18:27.791Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "45d1e2f9-8922-44d3-9549-ee4a0f7e9030",
+      "type": "hasEquipment",
+      "source": "7d6e74ed-5cad-444d-81af-a4f9ea441500",
+      "target": "732929e5-6796-402e-9d71-c439129dcb54",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:18:36.986Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "05f8921f-7d2a-4bc6-8e2e-e19fb6d775ac",
+      "type": "hasEquipment",
+      "source": "568db921-7f29-4d02-a143-3c6d7ffec010",
+      "target": "3a8f929f-adac-47d8-b963-0a2098799bdf",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:18:49.750Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "6dd06f4a-3fea-48ac-b6c4-d12b98dd1cc0",
+      "type": "hasEquipment",
+      "source": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "target": "246ed095-909f-473f-b04d-73932c03b0aa",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:18:58.462Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "aaf0f6b1-0b5a-4d72-9b33-26ee8f8b3144",
+      "type": "hasEquipment",
+      "source": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "target": "aaad6310-459a-49d1-8035-5f4b470fc011",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:19:07.055Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "412c4e49-6b42-4aa9-b278-e420e2990a72",
+      "type": "hasEquipment",
+      "source": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "target": "00babf1b-1e0f-49a9-8143-c8d14f6a6a87",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:19:20.744Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "cf6fcbbe-38f9-41d9-b8a5-a3aa945dddd9",
+      "type": "hasEquipment",
+      "source": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "target": "2b9f7ff2-4c65-4b24-80f0-22e95d3d0b76",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:19:38.651Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "af6f65a1-ccda-4259-8555-e2d5083924da",
+      "type": "hasEquipment",
+      "source": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "target": "b6df8388-49b9-47fb-916c-097e6d47b9f1",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:19:56.049Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "087abd07-d7b9-4db2-adcc-abfa2d142f96",
+      "type": "hasEquipment",
+      "source": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "target": "8e010cbe-1d39-4e6c-bebc-7737c814d1e9",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:20:09.421Z",
+        "confidence": 1.0,
+        "edge_type": "hasEquipment",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "8219bd83-4868-4fe3-bf4f-0299c6c3cf40",
+      "type": "hasAssembly",
+      "source": "fb7d86e1-bf70-474e-b014-76a6d961ed59",
+      "target": "a36b7517-c3b1-4c36-9232-569c1bef1c66",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T05:58:38.652Z",
+        "confidence": 1.0,
+        "edge_type": "hasAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "ba98bdbb-4ddd-41f4-9d34-2a56298cc23f",
+      "type": "hasAssembly",
+      "source": "2a233811-8808-43ac-9ce1-65422f33f9bd",
+      "target": "74b0582a-69d3-449a-bf9e-93801a12c769",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T05:59:19.784Z",
+        "confidence": 1.0,
+        "edge_type": "hasAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "1e8b0e04-0b20-4c41-82ab-c3fb6a06b2ae",
+      "type": "hasAssembly",
+      "source": "bcdf5eef-e397-4200-8942-fb00bb8c362a",
+      "target": "058a38d7-9f19-43a7-bd01-a890e12f69ef",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:04:50.172Z",
+        "confidence": 1.0,
+        "edge_type": "hasAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "e01fcca7-7bc7-4a30-ac77-d4266b558c57",
+      "type": "hasAssembly",
+      "source": "2a58f532-e19e-43fa-b242-95d1bb984519",
+      "target": "7989d13c-da0b-4e7c-9c94-a0e07c99ea7c",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:05:11.671Z",
+        "confidence": 1.0,
+        "edge_type": "hasAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "faaf4489-49e2-4bb6-86e3-289a9f24cba2",
+      "type": "hasAssembly",
+      "source": "fb7d86e1-bf70-474e-b014-76a6d961ed59",
+      "target": "407e05a3-35ed-4d7d-8f88-d699b1349cca",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:17:41.189Z",
+        "confidence": 1.0,
+        "edge_type": "hasAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "f1bb7cc7-ad45-4049-8e10-5ed6bd99b1bb",
+      "type": "hasAssembly",
+      "source": "fb7d86e1-bf70-474e-b014-76a6d961ed59",
+      "target": "c63d043e-c1db-4fed-b90d-a6e1fd7bc402",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:17:57.464Z",
+        "confidence": 1.0,
+        "edge_type": "hasAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "036e30a7-8da0-4303-ae57-427c36cd959d",
+      "type": "hasAssembly",
+      "source": "2a233811-8808-43ac-9ce1-65422f33f9bd",
+      "target": "5d2e7b0d-7eb3-4aff-898d-7f882d6bb872",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:18:15.545Z",
+        "confidence": 1.0,
+        "edge_type": "hasAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "99a676d6-dfeb-48db-bc10-efbe2d014b16",
+      "type": "hasAssembly",
+      "source": "2a233811-8808-43ac-9ce1-65422f33f9bd",
+      "target": "8eed4973-d65d-4c21-88f3-938b5511bfd1",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:19:17.019Z",
+        "confidence": 1.0,
+        "edge_type": "hasAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "12d122d4-1a5e-4d17-b15d-b5c296ab0b6a",
+      "type": "hasAssembly",
+      "source": "bcdf5eef-e397-4200-8942-fb00bb8c362a",
+      "target": "4af62b72-5120-462d-8ba0-0a9af9adf5e8",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:19:33.438Z",
+        "confidence": 1.0,
+        "edge_type": "hasAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "7f511836-7012-411e-9e37-f42b129d891c",
+      "type": "hasAssembly",
+      "source": "bcdf5eef-e397-4200-8942-fb00bb8c362a",
+      "target": "a5c3acd3-a6b1-44ad-96d9-614f528577b6",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:19:49.209Z",
+        "confidence": 1.0,
+        "edge_type": "hasAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "4e9482b5-9188-4dfe-b036-b6c9fe2eea0f",
+      "type": "hasAssembly",
+      "source": "2a58f532-e19e-43fa-b242-95d1bb984519",
+      "target": "ab5a88e5-c232-42b2-afad-c2363b17a8e2",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:20:11.146Z",
+        "confidence": 1.0,
+        "edge_type": "hasAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "7e9d88d2-54cf-4d2d-8529-dc4a1c14ea9b",
+      "type": "hasAssembly",
+      "source": "2a58f532-e19e-43fa-b242-95d1bb984519",
+      "target": "5335cf9e-f618-442c-a1dd-057bdd3ccf05",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:21:00.643Z",
+        "confidence": 1.0,
+        "edge_type": "hasAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "04ab6dd5-c2a8-4bb8-acf2-2c981638ce64",
+      "type": "hasSubAssembly",
+      "source": "407e05a3-35ed-4d7d-8f88-d699b1349cca",
+      "target": "c9ba5a99-b8e5-4146-9fe8-d5192c9a97f9",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:34:07.581Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "70aff6d8-d37f-4380-8b10-845f7bf8f94b",
+      "type": "hasSubAssembly",
+      "source": "407e05a3-35ed-4d7d-8f88-d699b1349cca",
+      "target": "60b71d96-87a8-428a-b034-bff03f8fe790",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:34:22.233Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "c8eec67f-a2ae-41d6-be5d-2669ddb8cb3a",
+      "type": "hasSubAssembly",
+      "source": "5d2e7b0d-7eb3-4aff-898d-7f882d6bb872",
+      "target": "c22ef6f9-8a49-4bdf-8b4e-0e89b5490108",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:34:43.863Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "e371f786-e5e4-498f-ae96-b856ed20731f",
+      "type": "hasSubAssembly",
+      "source": "5d2e7b0d-7eb3-4aff-898d-7f882d6bb872",
+      "target": "3f9f8942-f48d-4961-a656-5790d5982599",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:35:17.618Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "e08e4f5e-ea62-41b0-8b79-999611acd77c",
+      "type": "hasSubAssembly",
+      "source": "4af62b72-5120-462d-8ba0-0a9af9adf5e8",
+      "target": "b6337edc-8b64-4ebe-b68a-c8c269a82a8c",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:36:10.176Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "fcbd2d37-1ba6-4f34-8b7f-6539fabd69fb",
+      "type": "hasSubAssembly",
+      "source": "4af62b72-5120-462d-8ba0-0a9af9adf5e8",
+      "target": "9fccfbc9-35ad-47d4-8ada-25bf87381635",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:37:09.401Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "8b7b3798-262d-4f65-8141-0d0ce861d7a9",
+      "type": "hasSubAssembly",
+      "source": "ab5a88e5-c232-42b2-afad-c2363b17a8e2",
+      "target": "99d6e87c-2880-46f2-a15d-78971d2c41f4",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:37:47.215Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "156e7450-8f83-48c2-ac51-9d0b9dd1546c",
+      "type": "hasSubAssembly",
+      "source": "ab5a88e5-c232-42b2-afad-c2363b17a8e2",
+      "target": "a11f78fe-c6ca-43f0-afe8-52e78798b8fc",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:38:01.957Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "78b95513-19ac-414a-bb50-92e81ebedc95",
+      "type": "hasSubAssembly",
+      "source": "c63d043e-c1db-4fed-b90d-a6e1fd7bc402",
+      "target": "561df660-987e-4d93-b03c-2bc7d6cbea61",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T08:52:44.011Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "8ee58622-6ee9-43e3-a6bd-b767a96635f5",
+      "type": "hasSubAssembly",
+      "source": "8eed4973-d65d-4c21-88f3-938b5511bfd1",
+      "target": "3fc7d910-eb91-4816-96b3-0c4d524972ea",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T08:56:30.843Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "b3203ed7-da8d-453b-a614-8aae8bcb1a69",
+      "type": "hasSubAssembly",
+      "source": "a5c3acd3-a6b1-44ad-96d9-614f528577b6",
+      "target": "378c753c-9850-433f-94c9-6e2ed6a7c91f",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T08:56:46.165Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "d2fe56fb-7a5d-46cc-ba30-be1c9342edb4",
+      "type": "hasSubAssembly",
+      "source": "5335cf9e-f618-442c-a1dd-057bdd3ccf05",
+      "target": "9d9fbd75-d6cf-4d4d-ae43-57d18c7a1beb",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T08:57:06.666Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "06c57ae3-c85d-44d8-93e5-8adf0f205ddc",
+      "type": "hasSubAssembly",
+      "source": "c63d043e-c1db-4fed-b90d-a6e1fd7bc402",
+      "target": "70fa0ec8-f4ef-4719-ab6d-7c342a3c57b0",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:01:10.345Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "1d23ef84-3ae5-4c95-a05b-cabc4354ab2c",
+      "type": "hasSubAssembly",
+      "source": "8eed4973-d65d-4c21-88f3-938b5511bfd1",
+      "target": "e7e218c0-b9be-4a3b-b014-b364907e0a3b",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:01:25.775Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "0296500c-6de0-4fb4-a5e9-944974389669",
+      "type": "hasSubAssembly",
+      "source": "a5c3acd3-a6b1-44ad-96d9-614f528577b6",
+      "target": "9d0ffa56-78d8-41f3-aa46-d5654c3be7ca",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:02:10.680Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "8a059882-ff83-441c-b5b0-b031b417ce53",
+      "type": "hasSubAssembly",
+      "source": "5335cf9e-f618-442c-a1dd-057bdd3ccf05",
+      "target": "6effbff3-0ecb-4070-9b2b-26228198bf65",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:02:29.350Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "501ec204-e7a6-42dc-a62e-ebf2aaa8298b",
+      "type": "hasSubAssembly",
+      "source": "a36b7517-c3b1-4c36-9232-569c1bef1c66",
+      "target": "630ec903-681f-4fc9-a749-6ea266b0f86f",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:08:48.733Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "ce9d63b1-e4dc-4604-9a3b-90217dbdb0bb",
+      "type": "hasSubAssembly",
+      "source": "74b0582a-69d3-449a-bf9e-93801a12c769",
+      "target": "dfa9f97f-7dd4-4341-8b93-258db7ef6635",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:09:01.883Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "c8a05102-802d-4e9b-bdc8-27cced21f5aa",
+      "type": "hasSubAssembly",
+      "source": "058a38d7-9f19-43a7-bd01-a890e12f69ef",
+      "target": "e7fcfa62-e090-4397-a3d0-dc231214d53a",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:09:16.853Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "40a58229-39f5-4b3b-aa61-a4d19c36e5d5",
+      "type": "hasSubAssembly",
+      "source": "7989d13c-da0b-4e7c-9c94-a0e07c99ea7c",
+      "target": "a2b7356f-5b1e-412c-8171-a2711bd8b6c8",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:09:40.602Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "66dfde83-5402-4bb0-b16c-0a6db8f11207",
+      "type": "hasSubAssembly",
+      "source": "a36b7517-c3b1-4c36-9232-569c1bef1c66",
+      "target": "81fe17b2-855b-42bd-8640-ba7c8ff0e97a",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:13:11.827Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "679be16b-c25e-4f92-a3c0-4da90a8802c9",
+      "type": "hasSubAssembly",
+      "source": "74b0582a-69d3-449a-bf9e-93801a12c769",
+      "target": "3335913d-ff06-4350-805b-f6ddf0956875",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:13:27.868Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "e21244d0-50a7-4e71-85a5-9db515620884",
+      "type": "hasSubAssembly",
+      "source": "058a38d7-9f19-43a7-bd01-a890e12f69ef",
+      "target": "3c53a53d-70b3-4b6b-8da9-6b90c8ec8b44",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:14:07.269Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "c8b778e7-52e0-4180-bb48-3dae290e8696",
+      "type": "hasSubAssembly",
+      "source": "7989d13c-da0b-4e7c-9c94-a0e07c99ea7c",
+      "target": "9ced41b3-259a-4484-a491-856314da962a",
+      "is_reverse": false,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:23:52.068Z",
+        "confidence": 1.0,
+        "edge_type": "hasSubAssembly",
+        "is_reverse": false
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "6341d41f-199f-41a1-8a4f-1ad0038ff866",
+      "type": "isPartOf",
+      "source": "1926eee2-61fa-4358-9fbf-ea18bc6c64f9",
+      "target": "f9a2fbd4-eba0-4afe-9979-20b840cc9643",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:06:04.108Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "c141efbf-4b77-4e34-a9d2-04369d3a26b0",
+      "type": "isPartOf",
+      "source": "b91e0064-71c9-4419-bcf6-64c6c6c65cf9",
+      "target": "1926eee2-61fa-4358-9fbf-ea18bc6c64f9",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:06:24.253Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "facd7be5-77cf-4080-a86d-2584f1384703",
+      "type": "isPartOf",
+      "source": "edc00ad1-c2dc-4c14-98f8-b674caffad35",
+      "target": "b91e0064-71c9-4419-bcf6-64c6c6c65cf9",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:06:39.870Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "83f874d8-5e9f-4525-9a4c-27e951eb29f7",
+      "type": "isPartOf",
+      "source": "7d6e74ed-5cad-444d-81af-a4f9ea441500",
+      "target": "b91e0064-71c9-4419-bcf6-64c6c6c65cf9",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:06:48.868Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "3dfb27d1-4310-49d2-b81f-73d8c9bf40de",
+      "type": "isPartOf",
+      "source": "568db921-7f29-4d02-a143-3c6d7ffec010",
+      "target": "b91e0064-71c9-4419-bcf6-64c6c6c65cf9",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:07:01.318Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "999dece8-27a7-4f8b-99d5-66677c860aa4",
+      "type": "isPartOf",
+      "source": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "target": "b91e0064-71c9-4419-bcf6-64c6c6c65cf9",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:07:11.849Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "bfb9f7c6-700a-4262-8608-2fc9555ca21f",
+      "type": "isPartOf",
+      "source": "fb7d86e1-bf70-474e-b014-76a6d961ed59",
+      "target": "edc00ad1-c2dc-4c14-98f8-b674caffad35",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:17:23.448Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "47b5478c-50aa-4108-8c8a-2f7ed9a3436b",
+      "type": "isPartOf",
+      "source": "2a233811-8808-43ac-9ce1-65422f33f9bd",
+      "target": "edc00ad1-c2dc-4c14-98f8-b674caffad35",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:17:34.807Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "a18ead7e-626d-4a5e-bcc9-a0cbe09b5a0a",
+      "type": "isPartOf",
+      "source": "bcdf5eef-e397-4200-8942-fb00bb8c362a",
+      "target": "edc00ad1-c2dc-4c14-98f8-b674caffad35",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:17:42.187Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "0a4e3dd6-2316-40e6-939e-e4c26998001a",
+      "type": "isPartOf",
+      "source": "2a58f532-e19e-43fa-b242-95d1bb984519",
+      "target": "edc00ad1-c2dc-4c14-98f8-b674caffad35",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:17:54.734Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "e47075fd-d4f7-4c3f-848b-8fc6e39f765c",
+      "type": "isPartOf",
+      "source": "3c53e7f6-b4d2-4c99-b8ee-5445b9ddbafd",
+      "target": "7d6e74ed-5cad-444d-81af-a4f9ea441500",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:18:06.934Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "481a99f1-9433-46fb-87b3-3c0a956640fb",
+      "type": "isPartOf",
+      "source": "2e61d289-e720-4cf7-b9c2-5e90b78c74d0",
+      "target": "7d6e74ed-5cad-444d-81af-a4f9ea441500",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:18:17.169Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "071d6562-9d4f-41ea-ae99-55546d9ecb45",
+      "type": "isPartOf",
+      "source": "805b1981-0726-4749-bf60-5e1139e6e683",
+      "target": "7d6e74ed-5cad-444d-81af-a4f9ea441500",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:18:27.791Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "20aa58ef-21b1-4519-83ee-3c299a53851b",
+      "type": "isPartOf",
+      "source": "732929e5-6796-402e-9d71-c439129dcb54",
+      "target": "7d6e74ed-5cad-444d-81af-a4f9ea441500",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:18:36.986Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "832f254d-72f5-49d5-bc74-c1ae4bd8e2d2",
+      "type": "isPartOf",
+      "source": "3a8f929f-adac-47d8-b963-0a2098799bdf",
+      "target": "568db921-7f29-4d02-a143-3c6d7ffec010",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:18:49.750Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "620250f9-11fa-4e61-a833-ae560f0ed4b5",
+      "type": "isPartOf",
+      "source": "246ed095-909f-473f-b04d-73932c03b0aa",
+      "target": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:18:58.462Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "0429ec49-63e6-4539-a3e0-6dab87c5099e",
+      "type": "isPartOf",
+      "source": "aaad6310-459a-49d1-8035-5f4b470fc011",
+      "target": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:19:07.055Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "720232ae-164f-4418-8c88-047e3aec405e",
+      "type": "isPartOf",
+      "source": "00babf1b-1e0f-49a9-8143-c8d14f6a6a87",
+      "target": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:19:20.744Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "37459bea-3106-46d9-83fc-9583d11c24f8",
+      "type": "isPartOf",
+      "source": "2b9f7ff2-4c65-4b24-80f0-22e95d3d0b76",
+      "target": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:19:38.651Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "efa7faba-81be-4c7a-a8ae-162180641467",
+      "type": "isPartOf",
+      "source": "b6df8388-49b9-47fb-916c-097e6d47b9f1",
+      "target": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:19:56.049Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "d46f3aa6-c0cb-4205-ad11-080abb1ffa9b",
+      "type": "isPartOf",
+      "source": "8e010cbe-1d39-4e6c-bebc-7737c814d1e9",
+      "target": "5be162f1-4c20-493d-9801-5ad2fc9aca7c",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-24T09:20:09.421Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "e9222bd2-e0f2-4671-9c13-e2f174e525fc",
+      "type": "isPartOf",
+      "source": "a36b7517-c3b1-4c36-9232-569c1bef1c66",
+      "target": "fb7d86e1-bf70-474e-b014-76a6d961ed59",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T05:58:38.652Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "e7758945-712e-49ac-be8f-f7bcb8f3664c",
+      "type": "isPartOf",
+      "source": "74b0582a-69d3-449a-bf9e-93801a12c769",
+      "target": "2a233811-8808-43ac-9ce1-65422f33f9bd",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T05:59:19.784Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "a1704bb2-50ed-456f-9dfb-7b67a4300a85",
+      "type": "isPartOf",
+      "source": "058a38d7-9f19-43a7-bd01-a890e12f69ef",
+      "target": "bcdf5eef-e397-4200-8942-fb00bb8c362a",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:04:50.172Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "6925bf1b-7472-48d5-abe3-df4e36c9e4e8",
+      "type": "isPartOf",
+      "source": "7989d13c-da0b-4e7c-9c94-a0e07c99ea7c",
+      "target": "2a58f532-e19e-43fa-b242-95d1bb984519",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:05:11.671Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "cf192db2-6a04-499d-a8fa-d22d1266560f",
+      "type": "isPartOf",
+      "source": "407e05a3-35ed-4d7d-8f88-d699b1349cca",
+      "target": "fb7d86e1-bf70-474e-b014-76a6d961ed59",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:17:41.189Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "666b065d-621a-4ba1-a975-453d27344bcf",
+      "type": "isPartOf",
+      "source": "c63d043e-c1db-4fed-b90d-a6e1fd7bc402",
+      "target": "fb7d86e1-bf70-474e-b014-76a6d961ed59",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:17:57.464Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "2ff27b6a-343d-436d-a149-ab6fbe281bb3",
+      "type": "isPartOf",
+      "source": "5d2e7b0d-7eb3-4aff-898d-7f882d6bb872",
+      "target": "2a233811-8808-43ac-9ce1-65422f33f9bd",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:18:15.545Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "55721860-666e-4957-8fa7-8ef8d406e34e",
+      "type": "isPartOf",
+      "source": "8eed4973-d65d-4c21-88f3-938b5511bfd1",
+      "target": "2a233811-8808-43ac-9ce1-65422f33f9bd",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:19:17.019Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "aa28d99e-2757-45cd-bc11-604efd40867e",
+      "type": "isPartOf",
+      "source": "4af62b72-5120-462d-8ba0-0a9af9adf5e8",
+      "target": "bcdf5eef-e397-4200-8942-fb00bb8c362a",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:19:33.438Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "8e2184b5-831e-4ea9-86b3-161649189e28",
+      "type": "isPartOf",
+      "source": "a5c3acd3-a6b1-44ad-96d9-614f528577b6",
+      "target": "bcdf5eef-e397-4200-8942-fb00bb8c362a",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:19:49.209Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "69a814cb-56ed-418f-a294-dc86e6b37ce4",
+      "type": "isPartOf",
+      "source": "ab5a88e5-c232-42b2-afad-c2363b17a8e2",
+      "target": "2a58f532-e19e-43fa-b242-95d1bb984519",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:20:11.146Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "fc30871b-e7d3-4be7-83db-4d3233e12977",
+      "type": "isPartOf",
+      "source": "5335cf9e-f618-442c-a1dd-057bdd3ccf05",
+      "target": "2a58f532-e19e-43fa-b242-95d1bb984519",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:21:00.643Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "cb1b27c9-f350-4cee-86ea-7b455f29c018",
+      "type": "isPartOf",
+      "source": "c9ba5a99-b8e5-4146-9fe8-d5192c9a97f9",
+      "target": "407e05a3-35ed-4d7d-8f88-d699b1349cca",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:34:07.581Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "dad03723-4cf2-4f00-9007-bd6973c7a092",
+      "type": "isPartOf",
+      "source": "60b71d96-87a8-428a-b034-bff03f8fe790",
+      "target": "407e05a3-35ed-4d7d-8f88-d699b1349cca",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:34:22.233Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "e69bcf4d-066f-4a30-ad3d-9664c417fdab",
+      "type": "isPartOf",
+      "source": "c22ef6f9-8a49-4bdf-8b4e-0e89b5490108",
+      "target": "5d2e7b0d-7eb3-4aff-898d-7f882d6bb872",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:34:43.863Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "f8c82742-6a44-4e33-a22f-1b3a8b7c34f6",
+      "type": "isPartOf",
+      "source": "3f9f8942-f48d-4961-a656-5790d5982599",
+      "target": "5d2e7b0d-7eb3-4aff-898d-7f882d6bb872",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:35:17.618Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "784a14f4-5bd6-4432-9599-636f1fd3675e",
+      "type": "isPartOf",
+      "source": "b6337edc-8b64-4ebe-b68a-c8c269a82a8c",
+      "target": "4af62b72-5120-462d-8ba0-0a9af9adf5e8",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:36:10.176Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "86c29202-d4d1-42c5-96ea-57a5bd9c57b6",
+      "type": "isPartOf",
+      "source": "9fccfbc9-35ad-47d4-8ada-25bf87381635",
+      "target": "4af62b72-5120-462d-8ba0-0a9af9adf5e8",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:37:09.401Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "18427cf5-ca92-4d98-ad84-98efc779f83f",
+      "type": "isPartOf",
+      "source": "99d6e87c-2880-46f2-a15d-78971d2c41f4",
+      "target": "ab5a88e5-c232-42b2-afad-c2363b17a8e2",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:37:47.215Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "da22fdd3-e152-4846-a4a5-cb9fed538beb",
+      "type": "isPartOf",
+      "source": "a11f78fe-c6ca-43f0-afe8-52e78798b8fc",
+      "target": "ab5a88e5-c232-42b2-afad-c2363b17a8e2",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T06:38:01.957Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "f02ac189-2798-4e35-b6bb-8b5a52faa43f",
+      "type": "isPartOf",
+      "source": "561df660-987e-4d93-b03c-2bc7d6cbea61",
+      "target": "c63d043e-c1db-4fed-b90d-a6e1fd7bc402",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T08:52:44.011Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "c8e77ccd-ed23-42b6-9b88-1d74390d8207",
+      "type": "isPartOf",
+      "source": "3fc7d910-eb91-4816-96b3-0c4d524972ea",
+      "target": "8eed4973-d65d-4c21-88f3-938b5511bfd1",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T08:56:30.843Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "74ea48f5-326c-4e0b-8195-b4bde1d02cf4",
+      "type": "isPartOf",
+      "source": "378c753c-9850-433f-94c9-6e2ed6a7c91f",
+      "target": "a5c3acd3-a6b1-44ad-96d9-614f528577b6",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T08:56:46.165Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "20e529fd-bf32-42de-acc1-3108ecca013f",
+      "type": "isPartOf",
+      "source": "9d9fbd75-d6cf-4d4d-ae43-57d18c7a1beb",
+      "target": "5335cf9e-f618-442c-a1dd-057bdd3ccf05",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T08:57:06.666Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "2c16e54b-f8e7-492a-8c62-e2c896a86654",
+      "type": "isPartOf",
+      "source": "70fa0ec8-f4ef-4719-ab6d-7c342a3c57b0",
+      "target": "c63d043e-c1db-4fed-b90d-a6e1fd7bc402",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:01:10.345Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "28189562-6505-4a85-825c-66a49b1251ac",
+      "type": "isPartOf",
+      "source": "e7e218c0-b9be-4a3b-b014-b364907e0a3b",
+      "target": "8eed4973-d65d-4c21-88f3-938b5511bfd1",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:01:25.775Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "222ce8fb-fe30-48b5-8616-c5892a36d34e",
+      "type": "isPartOf",
+      "source": "9d0ffa56-78d8-41f3-aa46-d5654c3be7ca",
+      "target": "a5c3acd3-a6b1-44ad-96d9-614f528577b6",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:02:10.680Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "13604aba-7d79-4da7-87c2-78006d00a6ad",
+      "type": "isPartOf",
+      "source": "6effbff3-0ecb-4070-9b2b-26228198bf65",
+      "target": "5335cf9e-f618-442c-a1dd-057bdd3ccf05",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:02:29.350Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "cc79eeb6-bd99-4006-801f-78d1fbe276aa",
+      "type": "isPartOf",
+      "source": "630ec903-681f-4fc9-a749-6ea266b0f86f",
+      "target": "a36b7517-c3b1-4c36-9232-569c1bef1c66",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:08:48.733Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "078d722e-829d-41e1-8325-43684fbae44a",
+      "type": "isPartOf",
+      "source": "dfa9f97f-7dd4-4341-8b93-258db7ef6635",
+      "target": "74b0582a-69d3-449a-bf9e-93801a12c769",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:09:01.883Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "17a6efef-0d36-4e63-a1db-62389c801dd9",
+      "type": "isPartOf",
+      "source": "e7fcfa62-e090-4397-a3d0-dc231214d53a",
+      "target": "058a38d7-9f19-43a7-bd01-a890e12f69ef",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:09:16.853Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "812a63aa-0066-4e3d-aa67-acff48191cde",
+      "type": "isPartOf",
+      "source": "a2b7356f-5b1e-412c-8171-a2711bd8b6c8",
+      "target": "7989d13c-da0b-4e7c-9c94-a0e07c99ea7c",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:09:40.602Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "f6b4cb07-4256-4a67-811e-5060d54aa709",
+      "type": "isPartOf",
+      "source": "81fe17b2-855b-42bd-8640-ba7c8ff0e97a",
+      "target": "a36b7517-c3b1-4c36-9232-569c1bef1c66",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:13:11.827Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "79b72e8a-16c5-460e-b693-09a0acaf3954",
+      "type": "isPartOf",
+      "source": "3335913d-ff06-4350-805b-f6ddf0956875",
+      "target": "74b0582a-69d3-449a-bf9e-93801a12c769",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:13:27.868Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "31f6e5f3-ae32-4f06-85a2-5415c1da2385",
+      "type": "isPartOf",
+      "source": "3c53a53d-70b3-4b6b-8da9-6b90c8ec8b44",
+      "target": "058a38d7-9f19-43a7-bd01-a890e12f69ef",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:14:07.269Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    },
+    {
+      "id": "d4902642-dea9-44d0-bc64-b4af9219d3e0",
+      "type": "isPartOf",
+      "source": "9ced41b3-259a-4484-a491-856314da962a",
+      "target": "7989d13c-da0b-4e7c-9c94-a0e07c99ea7c",
+      "is_reverse": true,
+      "edge_properties": {
+        "timestamp": "2026-04-27T09:23:52.068Z",
+        "confidence": 1.0,
+        "edge_type": "isPartOf",
+        "is_reverse": true
+      },
+      "confidence": 1.0
+    }
+  ]
+}

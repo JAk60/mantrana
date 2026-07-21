@@ -28,8 +28,8 @@ import {
 } from '@/lib/map/popups/grid_points';
 import { fetchBathymetricProfile, fetchCurrentsAndTides, fetchLocation, fetchSeaState } from '@/lib/map/popupEnrichment_bathymetric';
 import { buildPortPopupHtml } from '@/lib/map/popups/ports';
-
-// ─── Types ────────────────────────────────────────────────────────────────────
+import { registerKGGlobals, unregisterKGGlobals, stashGridKGData } from '@/lib/map/kg/kgGlobals';
+import { haversineNm, RADIUS_NM } from '@/lib/map/mapConfig'; // adjust import if haversineNm lives elsewhere
 
 type UseGlobeMapEngineArgs = {
   initialCenter: [number, number];
@@ -37,8 +37,6 @@ type UseGlobeMapEngineArgs = {
   showGrid:      boolean;
   onShipClick:   (ship: ShipInfo) => void;
 };
-
-// ─── Hook ─────────────────────────────────────────────────────────────────────
 
 export function useGlobeMapEngine({
   initialCenter,
@@ -59,8 +57,6 @@ export function useGlobeMapEngine({
   const [basemap,     setBasemap]     = useState<BasemapKey>('dark');
   const [projection,  setProjection]  = useState<ProjectionKey>('mercator');
 
-  // ─── Sub-hooks ──────────────────────────────────────────────────────────────
-
   const pointerInfo = useMapPointer(mapRef.current, mapReady, initialCenter, initialZoom);
 
   const {
@@ -68,8 +64,6 @@ export function useGlobeMapEngine({
     isobathsOn, setIsobathsOn, shippingOn, setShippingOn,
     resetSources, reapplyActiveLayers,
   } = useLazyLayers(mapRef, mapReady);
-
-  // ─── Helpers ────────────────────────────────────────────────────────────────
 
   const setGeo = useCallback((source: string, features: GeoJSON.Feature[]) => {
     const src = mapRef.current?.getSource(source) as maplibregl.GeoJSONSource | undefined;
@@ -89,8 +83,6 @@ export function useGlobeMapEngine({
     [basemap],
   );
 
-  // ─── Grid build ──────────────────────────────────────────────────────────────
-
   const buildGrid = useCallback(() => {
     const map = mapRef.current;
     if (!map) return;
@@ -106,8 +98,6 @@ export function useGlobeMapEngine({
       setTimeout(work, 0);
     }
   }, [setGeo]);
-
-  // ─── Popup helpers ───────────────────────────────────────────────────────────
 
   const closePointInfo = useCallback(() => {
     popupRef.current?.remove();
@@ -127,7 +117,6 @@ export function useGlobeMapEngine({
   // ─── Grid point popup ────────────────────────────────────────────────────────
 
   const showPointInfo = useCallback((lat: number, lng: number) => {
-    // Cancel any in-flight enrichment from a previous popup
     activeAbortRef.current?.abort();
     activeAbortRef.current = new AbortController();
     const { signal } = activeAbortRef.current;
@@ -136,16 +125,29 @@ export function useGlobeMapEngine({
     const lngR = Number(lng.toFixed(4));
     const { locId, seaId, depthId, seabedId, currentId, tideId } = gridPopupIds(latR, lngR);
 
+    // ── Stash nearby ships immediately (synchronous — data already in memory) ──
+    const shipsInRadius = SHIP_LOCATIONS
+      .map(s => ({ ...s, distNm: Math.round(haversineNm(lat, lng, s.lat, s.lng)) }))
+      .filter(s => s.distNm <= RADIUS_NM);
+
+    stashGridKGData(latR, lngR, {
+      nearbyAssets: {
+        friendlyShips: shipsInRadius.length > 0
+          ? shipsInRadius.map(s => s.name).join(', ')
+          : 'None in range',
+        totalAssets: shipsInRadius.length,
+      },
+    });
+
     // Render skeleton popup immediately
     openPopup([lng, lat], buildGridPopupHtml(lat, lng));
 
-    // Fire all enrichments in parallel — each writes into its own DOM element
+    // Fire all enrichments in parallel
     fetchLocation(latR, lngR, locId, signal);
     fetchBathymetricProfile(latR, lngR, depthId, seabedId, signal);
     fetchCurrentsAndTides(latR, lngR, currentId, tideId, signal);
     fetchSeaState(latR, lngR, seaId, signal);
 
-    // Abort enrichment if the popup is closed before fetches complete
     popupRef.current?.on('close', () => {
       activeAbortRef.current?.abort();
     });
@@ -172,50 +174,53 @@ export function useGlobeMapEngine({
 
     map.on('load', () => {
       mapRef.current = map;
+
+      // ── Grid tab handler ────────────────────────────────────────────────────
       window.__gridPopupTab = (tabId: string, btn: HTMLElement) => {
-  // The drawer id is "drawer-{locId}" and tabId gives us the locId
-  // e.g. tabId = "grid-loc-20_0000-65_0000", drawerId = "drawer-grid-loc-20_0000-65_0000"
-  // BUT the locId is the FIRST panel id — we need to extract the shared suffix
+        let el: HTMLElement | null = btn;
+        let drawer: HTMLElement | null = null;
+        while (el) {
+          drawer = el.querySelector?.('[id^="drawer-"]') as HTMLElement | null;
+          if (drawer) break;
+          const parent = el.parentElement;
+          if (parent) {
+            drawer = parent.querySelector('[id^="drawer-"]') as HTMLElement | null;
+            if (drawer) break;
+          }
+          el = el.parentElement;
+        }
 
-  // Simpler: find the drawer by looking for any drawer near the button
-  let el: HTMLElement | null = btn;
-  let drawer: HTMLElement | null = null;
-  while (el) {
-    drawer = el.querySelector?.('[id^="drawer-"]') as HTMLElement | null;
-    if (drawer) break;
-    // Also check siblings (the flex wrapper)
-    const parent = el.parentElement;
-    if (parent) {
-      drawer = parent.querySelector('[id^="drawer-"]') as HTMLElement | null;
-      if (drawer) break;
-    }
-    el = el.parentElement;
-  }
+        if (!drawer) {
+          console.warn('__gridPopupTab: drawer not found for tab', tabId);
+          return;
+        }
 
-  if (!drawer) {
-    console.warn('__gridPopupTab: drawer not found for tab', tabId);
-    return;
-  }
+        drawer.style.width = '380px';
 
-  // Open drawer
-  drawer.style.width = '380px';
+        const titleEl = drawer.querySelector('[id^="drawer-title-"]') as HTMLElement | null;
+        if (titleEl) titleEl.textContent = btn.textContent?.trim() ?? '';
 
-  // Update title
-  const titleEl = drawer.querySelector('[id^="drawer-title-"]') as HTMLElement | null;
-  if (titleEl) titleEl.textContent = btn.textContent?.trim() ?? '';
+        const contentEl = drawer.querySelector('[id^="drawer-content-"]') as HTMLElement | null;
+        if (contentEl) {
+          contentEl.querySelectorAll(':scope > div').forEach((el) => {
+            (el as HTMLElement).style.display = 'none';
+          });
+        }
 
-  // Hide all panes, show target
-  const contentEl = drawer.querySelector('[id^="drawer-content-"]') as HTMLElement | null;
-  if (contentEl) {
-    contentEl.querySelectorAll(':scope > div').forEach((el) => {
-      (el as HTMLElement).style.display = 'none';
-    });
-  }
+        const target = document.getElementById(tabId);
+        if (target) target.style.display = 'block';
+        else console.warn('__gridPopupTab: pane not found', tabId);
+      };
 
-  const target = document.getElementById(tabId);
-  if (target) target.style.display = 'block';
-  else console.warn('__gridPopupTab: pane not found', tabId);
-};
+      // ── Close drawer helper ─────────────────────────────────────────────────
+      window.__closeGridPopupDrawer = (drawerId: string) => {
+        const drawer = document.getElementById(drawerId);
+        if (drawer) drawer.style.width = '0';
+      };
+
+      // ── Register KG globals ─────────────────────────────────────────────────
+      registerKGGlobals();
+
       if (containerRef.current) containerRef.current.style.backgroundColor = '#081C2C';
 
       addBaseGeoLayers(map, palette());
@@ -245,7 +250,7 @@ export function useGlobeMapEngine({
         el.title = port.name;
 
         const photoId   = `port-photo-${idSafe(port.name)}`;
-        const portPopup = new maplibregl.Popup({ offset: 16, maxWidth: '320px' })
+        const portPopup = new maplibregl.Popup({ offset: 16, maxWidth: '680px' })
           .setHTML(buildPortPopupHtml(port, statusColor, photoId));
 
         portPopup.on('open', () => {
@@ -284,6 +289,7 @@ export function useGlobeMapEngine({
       shipMarkersRef.current = [];
       portMarkersRef.current.forEach((m) => m.remove());
       portMarkersRef.current = [];
+      unregisterKGGlobals();
       map.remove();
       mapRef.current = null;
     };
@@ -354,26 +360,19 @@ export function useGlobeMapEngine({
     });
   }, []);
 
-  // ─── Public API ──────────────────────────────────────────────────────────────
-
   return {
     containerRef,
     mapRef,
     searchMarkerRef,
     mapReady,
-    // Grid
     gridOn, setGridOn,
-    // Basemap / projection
     basemap, cycleBasemap,
     projection, setProjection,
-    // Naval layers
     bathyOn,    setBathyOn,
     eezOn,      setEezOn,
     isobathsOn, setIsobathsOn,
     shippingOn, setShippingOn,
-    // Pointer
     pointerInfo,
-    // Popup helpers
     showPointInfo,
     closePointInfo,
   };
